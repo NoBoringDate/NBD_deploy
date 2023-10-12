@@ -1,0 +1,74 @@
+<div class="popup-bg-ques" style="z-index: 300;" id="popup-bg_add"> 
+    <div class="popup-ques">
+        <div style="height: 33rem; width: 100%">
+        <div>
+            <div class="col" style="padding: 1rem;" id="new_main_ques">
+            <form method="post" id="main_ques">
+                <div class="row">
+                    <div class="col-md-8"><textarea required id="newMainQues" name="question" class="form-custom form-control"></textarea></div>    <!-- вопрос -->
+                    <div class="col-md-4">
+                        <div class="row content-center" style="padding: 0 0 0.5rem">
+                            <a class="btn green-full-button text-center" style="height: auto; width:auto" onclick="createMainQues();">Сохранить</a>
+                        </div>
+                        <div class="row content-center">
+                            <a class="btn pink-full-button text-center" style="height: auto; width:auto" onclick="cancel_popup_ques();">Отмена</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="offset-title"></div>
+                <div id="new_main_add_answer">
+                    <div class="row" style="border: 0.1rem solid #63b6e7; border-radius: 0.5rem; padding: 0.5rem 0.3rem 0 0.3rem"><!-- ответ на вопрос -->
+                        <div style="padding: 0.2rem 0.5rem 1rem 0.5rem;">
+                            <div style=" padding: 0 0 0.5rem 0">
+                                <p>Ответ:</p>
+                            </div>
+                            <input class="form-custom form-control" required id="newMainAnswer" name="answer1" style="font-size:1rem; width:100%;">
+                        </div>    
+                        <div>
+                            <div class="row"> 
+                                <div class="col content-center">    
+                                    <p style="font-size:0.8rem;">intellect :</p>  <!-- значение интеллекта для ответа -->  
+                                    <p><select name="intellect1" required id="NMintellect" style="border: 2px solid #63b6e7">
+                                        <option selected disabled hidden></option>
+                                        <option value="1">1</option>
+                                        <option value="0.5">0.5</option>
+                                        <option value="0">0</option>
+                                       </select></p>
+                                </div>    
+                                <div class="col content-center">    
+                                    <p style="font-size:0.8rem">physical :</p>   <!-- значение физ активность для ответа -->
+                                    <p><select name="phys1" required id="NMphys" style="border: 2px solid #63b6e7">
+                                        <option selected disabled hidden></option>
+                                        <option value="1">1</option>
+                                        <option value="0.5">0.5</option>
+                                        <option value="0">0</option>
+                                       </select></p>
+                                </div>         
+                                <div class="col content-center">    
+                                    <p style="font-size:0.8rem">skill :</p>   <!-- значение навыков для ответа -->
+                                    <p><select name="skill1" required id="NMskill" style="border: 2px solid #63b6e7">
+                                        <option selected disabled hidden></option>
+                                        <option value="1">1</option>
+                                        <option value="0.5">0.5</option>
+                                        <option value="0">0</option>
+                                       </select></p>
+                                </div>  
+                                </div>
+                            <div style="padding: 0 0.5rem 0.8rem">
+                                <p style="height: 0.5rem;">Ответ на ответ:</p>
+                                    <input required id="newMainAnswerToAnswer" name="answer_to_answer1" class="content-center form-custom form-control" style="font-size:1rem; width: 100%">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <div class="col content-center">
+                    <div class="row" style="height: 1rem;"></div>
+                    <a class="btn row blue-full-button" onclick="add_answer_main_in_new_ques();">Добавить новый ответ</a>
+                </div>
+            </form>    
+            </div>
+        </div>    
+    </div>
+</div>
+</div>

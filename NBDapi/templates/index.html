@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}{{page_title}}{% endblock %}
+{% block nav_button %}
+<div class="collapse navbar-collapse" id="navcol-3">
+  <ul class="navbar-nav mx-auto"></ul><a class="btn btn-success link-dark border rounded-pill border-dark" href="/addsuggestion" type="button">Добавить предложение</a>
+</div>
+<div class="collapse navbar-collapse" id="navcol-3">
+  <ul class="navbar-nav mx-auto"></ul><a class="btn btn-success link-dark border rounded-pill border-dark" href="/suggestions" type="button">Список предложений</a>
+</div>
+{%endblock%}
+{% block content %}
+<H1>Welcome to NBD</H1>
+{% endblock %}
+

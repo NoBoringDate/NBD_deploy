@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>{% block title %}{%endblock %}</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/mystyle.css">
+    {% block link %}{% endblock %}
+    <script src="/static/js/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+  
+    <nav class="navbar navbar-expand-md bg-dark" style="height: 64px; position:fixed;z-index:100;width:100%;">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <img src="/static/img/logo.png" width="115" height="31">
+                <span class="fs-3 text-white" style="padding-left: 10px;">NBD</span>
+            </a>
+            {% block nav_button %}{% endblock %}
+            <div class="nav-links">
+                {% if role != "marketer"%}<a class="nav-link" href="/questions">Вопросы</a>{% endif %}
+                <a class="nav-link" href="/suggestions">Предложения</a>
+                <a class="nav-link" href="/promoters/">Промоутеры</a>
+                {% if role != "marketer"%}<a class="nav-link" href="/texts/">Текста</a>{% endif %}
+                {% if role != "marketer"%}<a class="nav-link" href="/sendmessage">Рассылка</a>{% endif %}
+                <div class="userNav"><img class="img_nav" src="/static/img/avatar.png" alt="img"><p class="userName"></p></div>
+                <a class="btn" onclick="deleteAllCookies();"><img class="img_nav" src="/static/img/logout.png" alt="logout"></a>
+            </div>
+        </div>
+    </nav>
+    {% block under_nav_menu %}{% endblock %}
+<div style="height: 100px;"></div>
+
+    {% block content %}{% endblock %}
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+    <script>
+       // отмечает в меню активное окно зеленым цветом
+        $(function() {
+        var url = window.location.href;
+        $(".nav-links a").each(function() {
+            if (url == (this.href)) {
+                $(this).closest("a").addClass("active-link");
+            }
+            });
+        });  
+        // выход из аккаунта, через удаление куки
+        function deleteAllCookies() {
+            var cookies = document.cookie.split(";");
+            for (var i = 0; i < cookies.length; i++) {
+                document.cookie = cookies[i] + ";path=/;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+            }
+            window.location.reload(true);
+        }
+        //получение имени пользователя через куки
+        $(function() {
+            var cookies = document.cookie.split("; ");
+            var userName;
+            for (var i = 0; i < cookies.length; i++) {
+                let cks = cookies[i].split("=");
+                if (cks[0] == "username") { userName = cks[1] }
+                document.getElementsByClassName('userName')[0].innerHTML = userName;
+            };
+        });
+       
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<div class="popup-bg" style="z-index: 300;" id="popup-bg"> 
+    <div class="popup">
+        <div>
+          <form method="post" id="main_answer"> 
+            <div class="row" style="border: 0.1rem solid #63b6e7; border-radius: 0.5rem; padding: 0.5rem 0.3rem 0 0.3rem"><!-- ответ на вопрос -->
+                <div style="padding: 0.2rem 0.5rem 1rem 0.5rem;">
+                    <div class="row" style=" padding: 0 0 0.5rem 0">
+                        <p class="col-md-6" style="height: 0.5rem;">Ответ:</p>
+                        <div class="col-md-6 content-end">
+                            <a class="btn col-md-6 green-full-button content-center" style="font-size: 0.7rem; height: 1.5rem; width: 5rem" onclick="createMainAnswer('{{ques.id}}');">Сохранить</a>
+                            <a class="btn col-md-6 pink-full-button content-center" style="font-size: 0.7rem; height: 1.5rem; width: 5rem" onclick="cancel_popup();">Отмена</a>
+                        </div>
+                    </div>
+                    
+                    <input class="form-custom form-control" id="addAnswerMain" name="answer" style="font-size:1rem; width:100%;">
+                </div>    
+                <div>
+                    <div class="row"> 
+                        <div class="col content-center">    
+                            <p style="font-size:0.8rem;">intellect :</p>  <!-- значение интеллекта для ответа -->  
+                            <p><select name="intellect" required id="AAMintellect" style="border: 2px solid #63b6e7">
+                                <option selected disabled hidden></option>
+                                <option value="1">1</option>
+                                <option value="0.5">0.5</option>
+                                <option value="0">0</option>
+                               </select></p>
+                        </div>    
+                        <div class="col content-center">    
+                            <p style="font-size:0.8rem">physical :</p>   <!-- значение физ активность для ответа -->
+                            <p><select name="phys" required id="AAMphys" style="border: 2px solid #63b6e7">
+                                <option selected disabled hidden></option>
+                                <option value="1">1</option>
+                                <option value="0.5">0.5</option>
+                                <option value="0">0</option>
+                               </select></p>
+                        </div>         
+                        <div class="col content-center">    
+                            <p style="font-size:0.8rem">skill :</p>   <!-- значение навыков для ответа -->
+                            <p><select name="skill" required id="AAMskill" style="border: 2px solid #63b6e7">
+                                <option selected disabled hidden></option>
+                                <option value="1">1</option>
+                                <option value="0.5">0.5</option>
+                                <option value="0">0</option>
+                               </select></p>
+                        </div>  
+                        </div>
+                        <div style="padding: 0 0.5rem 0.8rem">
+                            <p style="height: 0.5rem;">Ответ на ответ:</p>
+                            <input id="addAnswerToAnswerMain" name="answer_to_answer" class="content-center form-custom form-control" style="font-size:1rem; width: 100%">
+                        </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>

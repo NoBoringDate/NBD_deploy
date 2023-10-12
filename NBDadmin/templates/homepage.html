@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+{% block title %}{{page_title}}{% endblock %}
+
+{% block content %} 
+
+        <div class="container">
+        <!-- блок статистики -->
+        <div>
+        <form id="allstat">    
+            <h3 class="text-center">Общая статистика</h3>
+            <div class="row" style="padding: 1rem;">
+                <div class="col-md-6 content-center">
+                    <label for="datetime1" style="width: 1.5rem;">от</label>
+                    <input type="datetime-local" name="datestart" id="datetime1">
+                </div>
+                <div class="col-md-6 content-center">
+                    <label for="datetime2" style="width: 1.5rem;">до</label>
+                    <input type="datetime-local" name="dateend" id="datetime2">
+                </div>
+            </div>
+        </form>
+            <div class="content-center">
+                <a class="btn green-button text-center download" onclick="allStat();">Создать отчёт</a>
+            </div>
+        </div>
+        <div class="offset-end"></div>
+        <!-- блок промоутеров -->
+        <div>
+        <form id="promostat">    
+            <h3 class="text-center">Статистика промоутеров</h3>
+            <div class="col" style="padding: 1rem;">
+                <div class="row-md-6 content-center"><label style="color: rgba(0, 0, 0, 0.7);" for="promo">Вставьте ссылку промоутера</label></div>
+                <div class="row-md-6 content-center placeholder-color"><input style="width: 100%;" type="text" name="reflink" id="promo" placeholder="https://t.me/Noboringdate_bot?start=78316c91538cf7923f1d"></div>
+            </div>
+            <div class="row" style="padding: 1rem;">
+                <div class="col-md-6 content-center">
+                    <label for="datetime1" style="width: 1.5rem;">от</label>
+                    <input type="datetime-local" name="datestart" id="datetime3">
+                </div>
+                <div class="col-md-6 content-center">
+                    <label for="datetime2" style="width: 1.5rem;">до</label>
+                    <input type="datetime-local" name="dateend" id="datetime4">
+                </div>
+            </div>
+        </form>
+            <div class="content-center">
+                <a class="btn green-button download" onclick="promoStat();">Создать отчёт</a>
+            </div>    
+        </div>
+        </div>
+        <div class="loading">
+            <div class="popup-bg" style="z-index: 300;">
+                <div class="spinner-border text-light" role="status">
+                    <span class="sr-only"></span>
+                </div>
+            </div>
+        </div>    
+
+<script>                  
+
+    $('.loading').hide();
+
+    function allStat() {
+        $('.loading').show();
+        let form = $('#allstat')
+        $.ajax({
+            url: '/allstatistic',
+            type: 'POST',
+            data: form.serialize(),
+            dataType: 'binary',
+            xhrFields: {
+                'responseType': 'blob'
+            },
+            success: function(data, status, xhr) {
+                var blob = new Blob([data], {type: xhr.getResponseHeader('Content-Type')});
+                var link = document.createElement('a');
+                link.href = window.URL.createObjectURL(blob);
+                link.download = 'all_statistic.xlsx';
+                link.click();
+                $('.loading').hide();
+            }        
+        })
+    }
+
+    function promoStat() {
+        $('.loading').show();
+        let form = $('#promostat')
+        $.ajax({
+            url: '/promostatistic',
+            type: 'POST',
+            data: form.serialize(),
+            dataType: 'binary',
+            xhrFields: {
+                'responseType': 'blob'
+            },
+            statusCode: {
+                200: 
+                    function(data, status, xhr) {
+                    var blob = new Blob([data], {type: xhr.getResponseHeader('Content-Type')});
+                    var link = document.createElement('a');
+                    link.href = window.URL.createObjectURL(blob);
+                    link.download = 'promo_statistic.xlsx';
+                    link.click();
+                    $('.loading').hide(); 
+                    },
+                404: 
+                    function(data, status, xhr) {
+                    $('.loading').hide();
+                    alert('Не корректная ссылка')
+                }
+            },
+        }) 
+    }
+
+    const today1 = new Date();
+
+    today1.setMinutes(today1.getMinutes());
+    today1.setHours(3, 0, 0, 0);
+    document.getElementById('datetime1').value = today1.toISOString().slice(0, -1);
+    document.getElementById('datetime3').value = today1.toISOString().slice(0, -1);
+
+    const today2 = new Date();
+
+    today2.setMinutes(today2.getMinutes());
+    today2.setHours(26, 59, 0, 0);
+    document.getElementById('datetime2').value = today2.toISOString().slice(0, -1);
+    document.getElementById('datetime4').value = today2.toISOString().slice(0, -1);
+
+</script>
+
+{% endblock %} 
+
+</html>

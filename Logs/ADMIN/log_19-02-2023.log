@@ -1,0 +1,2004 @@
+00:49:57 | INFO | GET http://localhost:7777/ab2g
+00:49:57 | INFO | Params: 
+00:49:57 | INFO | Headers:
+00:49:57 | INFO | 	host: localhost:7777
+00:49:57 | INFO | 	connection: close
+00:49:57 | INFO | 	user-agent: Mozilla/5.0 zgrab/0.x
+00:49:57 | INFO | 	accept: */*
+00:49:57 | INFO | 	accept-encoding: gzip
+00:49:57 | INFO | Request:
+00:49:57 | INFO | 	type : http
+00:49:57 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+00:49:57 | INFO | 	http_version : 1.0
+00:49:57 | INFO | 	server : ('192.168.64.2', 7777)
+00:49:57 | INFO | 	client : ('192.168.64.1', 33458)
+00:49:57 | INFO | 	scheme : http
+00:49:57 | INFO | 	method : GET
+00:49:57 | INFO | 	root_path : 
+00:49:57 | INFO | 	path : /ab2g
+00:49:57 | INFO | 	raw_path : b'/ab2g'
+00:49:57 | INFO | 	query_string : b''
+00:49:57 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+00:49:57 | INFO | Response Body=404
+00:49:57 | INFO | GET http://localhost:7777/ab2h
+00:49:57 | INFO | Params: 
+00:49:57 | INFO | Headers:
+00:49:57 | INFO | 	host: localhost:7777
+00:49:57 | INFO | 	connection: close
+00:49:57 | INFO | 	user-agent: Mozilla/5.0 zgrab/0.x
+00:49:57 | INFO | 	accept: */*
+00:49:57 | INFO | 	accept-encoding: gzip
+00:49:57 | INFO | Request:
+00:49:57 | INFO | 	type : http
+00:49:57 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+00:49:57 | INFO | 	http_version : 1.0
+00:49:57 | INFO | 	server : ('192.168.64.2', 7777)
+00:49:57 | INFO | 	client : ('192.168.64.1', 33472)
+00:49:57 | INFO | 	scheme : http
+00:49:57 | INFO | 	method : GET
+00:49:57 | INFO | 	root_path : 
+00:49:57 | INFO | 	path : /ab2h
+00:49:57 | INFO | 	raw_path : b'/ab2h'
+00:49:57 | INFO | 	query_string : b''
+00:49:57 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+00:49:57 | INFO | Response Body=404
+00:49:59 | INFO | GET http://localhost:7777/
+00:49:59 | INFO | Params: 
+00:49:59 | INFO | Headers:
+00:49:59 | INFO | 	host: localhost:7777
+00:49:59 | INFO | 	connection: close
+00:49:59 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+00:49:59 | INFO | 	accept: */*
+00:49:59 | INFO | 	accept-encoding: gzip
+00:49:59 | INFO | Request:
+00:49:59 | INFO | 	type : http
+00:49:59 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+00:49:59 | INFO | 	http_version : 1.0
+00:49:59 | INFO | 	server : ('192.168.64.2', 7777)
+00:49:59 | INFO | 	client : ('192.168.64.1', 33480)
+00:49:59 | INFO | 	scheme : http
+00:49:59 | INFO | 	method : GET
+00:49:59 | INFO | 	root_path : 
+00:49:59 | INFO | 	path : /
+00:49:59 | INFO | 	raw_path : b'/'
+00:49:59 | INFO | 	query_string : b''
+00:49:59 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+00:49:59 | INFO | Response Body=307
+00:49:59 | INFO | GET http://localhost:7777/t4
+00:49:59 | INFO | Params: 
+00:49:59 | INFO | Headers:
+00:49:59 | INFO | 	host: localhost:7777
+00:49:59 | INFO | 	connection: close
+00:49:59 | INFO | 	user-agent: Mozilla/5.0
+00:49:59 | INFO | 	accept: */*
+00:49:59 | INFO | 	accept-encoding: gzip
+00:49:59 | INFO | Request:
+00:49:59 | INFO | 	type : http
+00:49:59 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+00:49:59 | INFO | 	http_version : 1.0
+00:49:59 | INFO | 	server : ('192.168.64.2', 7777)
+00:49:59 | INFO | 	client : ('192.168.64.1', 33488)
+00:49:59 | INFO | 	scheme : http
+00:49:59 | INFO | 	method : GET
+00:49:59 | INFO | 	root_path : 
+00:49:59 | INFO | 	path : /t4
+00:49:59 | INFO | 	raw_path : b'/t4'
+00:49:59 | INFO | 	query_string : b''
+00:49:59 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+00:49:59 | INFO | Response Body=404
+00:52:35 | INFO | GET http://46.229.212.89:7777/
+00:52:35 | INFO | Params: 
+00:52:35 | INFO | Headers:
+00:52:35 | INFO | 	host: 46.229.212.89:7777
+00:52:35 | INFO | 	accept: */*
+00:52:35 | INFO | Request:
+00:52:35 | INFO | 	type : http
+00:52:35 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+00:52:35 | INFO | 	http_version : 1.1
+00:52:35 | INFO | 	server : ('192.168.64.2', 7777)
+00:52:35 | INFO | 	client : ('154.89.5.78', 27266)
+00:52:35 | INFO | 	scheme : http
+00:52:35 | INFO | 	method : GET
+00:52:35 | INFO | 	root_path : 
+00:52:35 | INFO | 	path : /
+00:52:35 | INFO | 	raw_path : b'/'
+00:52:35 | INFO | 	query_string : b''
+00:52:35 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+00:52:35 | INFO | Response Body=307
+01:12:08 | INFO | GET http://localhost:7777/cgi-bin/config.exp
+01:12:08 | INFO | Params: 
+01:12:08 | INFO | Headers:
+01:12:08 | INFO | 	host: localhost:7777
+01:12:08 | INFO | 	connection: close
+01:12:08 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+01:12:08 | INFO | 	accept: */*
+01:12:08 | INFO | 	accept-encoding: gzip
+01:12:08 | INFO | Request:
+01:12:08 | INFO | 	type : http
+01:12:08 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+01:12:08 | INFO | 	http_version : 1.0
+01:12:08 | INFO | 	server : ('192.168.64.2', 7777)
+01:12:08 | INFO | 	client : ('192.168.64.1', 51596)
+01:12:08 | INFO | 	scheme : http
+01:12:08 | INFO | 	method : GET
+01:12:08 | INFO | 	root_path : 
+01:12:08 | INFO | 	path : /cgi-bin/config.exp
+01:12:08 | INFO | 	raw_path : b'/cgi-bin/config.exp'
+01:12:08 | INFO | 	query_string : b''
+01:12:08 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+01:12:08 | INFO | Response Body=404
+01:38:26 | INFO | GET http://localhost:7777/actuator/gateway/routes
+01:38:26 | INFO | Params: 
+01:38:26 | INFO | Headers:
+01:38:26 | INFO | 	host: localhost:7777
+01:38:26 | INFO | 	connection: close
+01:38:26 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+01:38:26 | INFO | 	accept-encoding: gzip
+01:38:26 | INFO | Request:
+01:38:26 | INFO | 	type : http
+01:38:26 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+01:38:26 | INFO | 	http_version : 1.0
+01:38:26 | INFO | 	server : ('192.168.64.2', 7777)
+01:38:26 | INFO | 	client : ('192.168.64.1', 43282)
+01:38:26 | INFO | 	scheme : http
+01:38:26 | INFO | 	method : GET
+01:38:26 | INFO | 	root_path : 
+01:38:26 | INFO | 	path : /actuator/gateway/routes
+01:38:26 | INFO | 	raw_path : b'/actuator/gateway/routes'
+01:38:26 | INFO | 	query_string : b''
+01:38:26 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+01:38:26 | INFO | Response Body=404
+03:30:53 | INFO | GET http://localhost:7777/
+03:30:53 | INFO | Params: 
+03:30:53 | INFO | Headers:
+03:30:53 | INFO | 	host: localhost:7777
+03:30:53 | INFO | 	connection: close
+03:30:53 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0
+03:30:53 | INFO | 	accept-language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3
+03:30:53 | INFO | 	accept-charset: GBK,utf-8;q=0.7,*;q=0.3
+03:30:53 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+03:30:53 | INFO | Request:
+03:30:53 | INFO | 	type : http
+03:30:53 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+03:30:53 | INFO | 	http_version : 1.0
+03:30:53 | INFO | 	server : ('192.168.64.2', 7777)
+03:30:53 | INFO | 	client : ('192.168.64.1', 57638)
+03:30:53 | INFO | 	scheme : http
+03:30:53 | INFO | 	method : GET
+03:30:53 | INFO | 	root_path : 
+03:30:53 | INFO | 	path : /
+03:30:53 | INFO | 	raw_path : b'/'
+03:30:53 | INFO | 	query_string : b''
+03:30:53 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+03:30:53 | INFO | Response Body=307
+03:30:59 | INFO | GET http://localhost:7777/login
+03:30:59 | INFO | Params: 
+03:30:59 | INFO | Headers:
+03:30:59 | INFO | 	host: localhost:7777
+03:30:59 | INFO | 	connection: close
+03:30:59 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0
+03:30:59 | INFO | 	accept-language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3
+03:30:59 | INFO | 	accept-charset: GBK,utf-8;q=0.7,*;q=0.3
+03:30:59 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+03:30:59 | INFO | Request:
+03:30:59 | INFO | 	type : http
+03:30:59 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+03:30:59 | INFO | 	http_version : 1.0
+03:30:59 | INFO | 	server : ('192.168.64.2', 7777)
+03:30:59 | INFO | 	client : ('192.168.64.1', 57646)
+03:30:59 | INFO | 	scheme : http
+03:30:59 | INFO | 	method : GET
+03:30:59 | INFO | 	root_path : 
+03:30:59 | INFO | 	path : /login
+03:30:59 | INFO | 	raw_path : b'/login'
+03:30:59 | INFO | 	query_string : b''
+03:30:59 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+03:30:59 | INFO | Response Body=200
+03:31:06 | INFO | GET http://localhost:7777/favicon.ico
+03:31:06 | INFO | Params: 
+03:31:06 | INFO | Headers:
+03:31:06 | INFO | 	host: localhost:7777
+03:31:06 | INFO | 	connection: close
+03:31:06 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0
+03:31:06 | INFO | 	accept-language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3
+03:31:06 | INFO | 	accept-charset: GBK,utf-8;q=0.7,*;q=0.3
+03:31:06 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+03:31:06 | INFO | Request:
+03:31:06 | INFO | 	type : http
+03:31:06 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+03:31:06 | INFO | 	http_version : 1.0
+03:31:06 | INFO | 	server : ('192.168.64.2', 7777)
+03:31:06 | INFO | 	client : ('192.168.64.1', 59358)
+03:31:06 | INFO | 	scheme : http
+03:31:06 | INFO | 	method : GET
+03:31:06 | INFO | 	root_path : 
+03:31:06 | INFO | 	path : /favicon.ico
+03:31:06 | INFO | 	raw_path : b'/favicon.ico'
+03:31:06 | INFO | 	query_string : b''
+03:31:06 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+03:31:06 | INFO | Response Body=404
+04:51:09 | INFO | GET http://localhost:7777/.env
+04:51:09 | INFO | Params: 
+04:51:09 | INFO | Headers:
+04:51:09 | INFO | 	host: localhost:7777
+04:51:09 | INFO | 	connection: close
+04:51:09 | INFO | 	user-agent: Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; HM NOTE 1W Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.0.5.850 U3/0.8.0 Mobile Safari/534.30
+04:51:09 | INFO | 	accept-encoding: gzip, deflate
+04:51:09 | INFO | 	accept: */*
+04:51:09 | INFO | Request:
+04:51:09 | INFO | 	type : http
+04:51:09 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+04:51:09 | INFO | 	http_version : 1.0
+04:51:09 | INFO | 	server : ('192.168.64.2', 7777)
+04:51:09 | INFO | 	client : ('192.168.64.1', 52304)
+04:51:09 | INFO | 	scheme : http
+04:51:09 | INFO | 	method : GET
+04:51:09 | INFO | 	root_path : 
+04:51:09 | INFO | 	path : /.env
+04:51:09 | INFO | 	raw_path : b'/.env'
+04:51:09 | INFO | 	query_string : b''
+04:51:09 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+04:51:09 | INFO | Response Body=404
+04:51:09 | INFO | POST http://localhost:7777/
+04:51:09 | INFO | Params: 
+04:51:09 | INFO | Headers:
+04:51:09 | INFO | 	host: localhost:7777
+04:51:09 | INFO | 	connection: close
+04:51:09 | INFO | 	content-length: 20
+04:51:09 | INFO | 	user-agent: Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; HM NOTE 1W Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.0.5.850 U3/0.8.0 Mobile Safari/534.30
+04:51:09 | INFO | 	accept-encoding: gzip, deflate
+04:51:09 | INFO | 	accept: */*
+04:51:09 | INFO | 	content-type: application/x-www-form-urlencoded
+04:51:09 | INFO | Request:
+04:51:09 | INFO | 	type : http
+04:51:09 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+04:51:09 | INFO | 	http_version : 1.0
+04:51:09 | INFO | 	server : ('192.168.64.2', 7777)
+04:51:09 | INFO | 	client : ('192.168.64.1', 52318)
+04:51:09 | INFO | 	scheme : http
+04:51:09 | INFO | 	method : POST
+04:51:09 | INFO | 	root_path : 
+04:51:09 | INFO | 	path : /
+04:51:09 | INFO | 	raw_path : b'/'
+04:51:09 | INFO | 	query_string : b''
+04:51:09 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+04:51:09 | INFO | Response Body=405
+07:16:51 | INFO | GET http://localhost:7777/
+07:16:51 | INFO | Params: 
+07:16:51 | INFO | Headers:
+07:16:51 | INFO | 	host: localhost:7777
+07:16:51 | INFO | 	connection: close
+07:16:51 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 11; M2004J15SC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36
+07:16:51 | INFO | 	accept: */*
+07:16:51 | INFO | 	accept-encoding: gzip
+07:16:51 | INFO | Request:
+07:16:51 | INFO | 	type : http
+07:16:51 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+07:16:51 | INFO | 	http_version : 1.0
+07:16:51 | INFO | 	server : ('192.168.64.2', 7777)
+07:16:51 | INFO | 	client : ('192.168.64.1', 39390)
+07:16:51 | INFO | 	scheme : http
+07:16:51 | INFO | 	method : GET
+07:16:51 | INFO | 	root_path : 
+07:16:51 | INFO | 	path : /
+07:16:51 | INFO | 	raw_path : b'/'
+07:16:51 | INFO | 	query_string : b''
+07:16:51 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+07:16:51 | INFO | Response Body=307
+07:16:51 | INFO | GET http://localhost:7777/login
+07:16:51 | INFO | Params: 
+07:16:51 | INFO | Headers:
+07:16:51 | INFO | 	host: localhost:7777
+07:16:51 | INFO | 	connection: close
+07:16:51 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 11; M2004J15SC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36
+07:16:51 | INFO | 	accept: */*
+07:16:51 | INFO | 	referer: https://46.229.212.89/
+07:16:51 | INFO | 	accept-encoding: gzip
+07:16:51 | INFO | Request:
+07:16:51 | INFO | 	type : http
+07:16:51 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+07:16:51 | INFO | 	http_version : 1.0
+07:16:51 | INFO | 	server : ('192.168.64.2', 7777)
+07:16:51 | INFO | 	client : ('192.168.64.1', 39406)
+07:16:51 | INFO | 	scheme : http
+07:16:51 | INFO | 	method : GET
+07:16:51 | INFO | 	root_path : 
+07:16:51 | INFO | 	path : /login
+07:16:51 | INFO | 	raw_path : b'/login'
+07:16:51 | INFO | 	query_string : b''
+07:16:51 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+07:16:51 | INFO | Response Body=200
+07:16:53 | INFO | GET http://localhost:7777/Public/home/js/check.js
+07:16:53 | INFO | Params: 
+07:16:53 | INFO | Headers:
+07:16:53 | INFO | 	host: localhost:7777
+07:16:53 | INFO | 	connection: close
+07:16:53 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 11; M2004J15SC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36
+07:16:53 | INFO | 	accept: */*
+07:16:53 | INFO | 	accept-encoding: gzip
+07:16:53 | INFO | Request:
+07:16:53 | INFO | 	type : http
+07:16:53 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+07:16:53 | INFO | 	http_version : 1.0
+07:16:53 | INFO | 	server : ('192.168.64.2', 7777)
+07:16:53 | INFO | 	client : ('192.168.64.1', 39418)
+07:16:53 | INFO | 	scheme : http
+07:16:53 | INFO | 	method : GET
+07:16:53 | INFO | 	root_path : 
+07:16:53 | INFO | 	path : /Public/home/js/check.js
+07:16:53 | INFO | 	raw_path : b'/Public/home/js/check.js'
+07:16:53 | INFO | 	query_string : b''
+07:16:53 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+07:16:53 | INFO | Response Body=404
+07:16:54 | INFO | GET http://localhost:7777/static/admin/javascript/hetong.js
+07:16:54 | INFO | Params: 
+07:16:54 | INFO | Headers:
+07:16:54 | INFO | 	host: localhost:7777
+07:16:54 | INFO | 	connection: close
+07:16:54 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 11; M2004J15SC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Mobile Safari/537.36
+07:16:54 | INFO | 	accept: */*
+07:16:54 | INFO | 	accept-encoding: gzip
+07:16:54 | INFO | Request:
+07:16:54 | INFO | 	type : http
+07:16:54 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+07:16:54 | INFO | 	http_version : 1.0
+07:16:54 | INFO | 	server : ('192.168.64.2', 7777)
+07:16:54 | INFO | 	client : ('192.168.64.1', 39434)
+07:16:54 | INFO | 	scheme : http
+07:16:54 | INFO | 	method : GET
+07:16:54 | INFO | 	root_path : 
+07:16:54 | INFO | 	path : /static/admin/javascript/hetong.js
+07:16:54 | INFO | 	raw_path : b'/static/admin/javascript/hetong.js'
+07:16:54 | INFO | 	query_string : b''
+07:16:54 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+07:16:54 | INFO | Response Body=404
+08:14:53 | INFO | GET http://46.229.212.89:7777/login
+08:14:53 | INFO | Params: 
+08:14:53 | INFO | Headers:
+08:14:53 | INFO | 	host: 46.229.212.89:7777
+08:14:53 | INFO | 	user-agent: Mozilla/5.0 (Linux; U; Android 10; zh-Hans-CN; YAL-AL50 Build/HUAWEIYAL-AL50) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Quark/5.6.6.211 Mobile Safari/537.36
+08:14:53 | INFO | 	accept-charset: utf-8
+08:14:53 | INFO | 	accept-encoding: gzip
+08:14:53 | INFO | 	connection: close
+08:14:53 | INFO | Request:
+08:14:53 | INFO | 	type : http
+08:14:53 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+08:14:53 | INFO | 	http_version : 1.1
+08:14:53 | INFO | 	server : ('192.168.64.2', 7777)
+08:14:53 | INFO | 	client : ('45.56.108.128', 49966)
+08:14:53 | INFO | 	scheme : http
+08:14:53 | INFO | 	method : GET
+08:14:53 | INFO | 	root_path : 
+08:14:53 | INFO | 	path : /login
+08:14:53 | INFO | 	raw_path : b'/login'
+08:14:53 | INFO | 	query_string : b''
+08:14:53 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+08:14:53 | INFO | Response Body=200
+08:15:13 | INFO | GET http://localhost:7777/login
+08:15:13 | INFO | Params: 
+08:15:13 | INFO | Headers:
+08:15:13 | INFO | 	host: localhost:7777
+08:15:13 | INFO | 	connection: close
+08:15:13 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 8_4_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/8.0.57838 Mobile/12H321 Safari/600.1.4
+08:15:13 | INFO | 	accept-charset: utf-8
+08:15:13 | INFO | 	accept-encoding: gzip
+08:15:13 | INFO | Request:
+08:15:13 | INFO | 	type : http
+08:15:13 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+08:15:13 | INFO | 	http_version : 1.0
+08:15:13 | INFO | 	server : ('192.168.64.2', 7777)
+08:15:13 | INFO | 	client : ('192.168.64.1', 41030)
+08:15:13 | INFO | 	scheme : http
+08:15:13 | INFO | 	method : GET
+08:15:13 | INFO | 	root_path : 
+08:15:13 | INFO | 	path : /login
+08:15:13 | INFO | 	raw_path : b'/login'
+08:15:13 | INFO | 	query_string : b''
+08:15:13 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+08:15:13 | INFO | Response Body=200
+09:44:40 | INFO | GET http://localhost:7777/Electron/download/windows/\Program Files\3CX Phone System\Data\DB\base\16384\16393
+09:44:40 | INFO | Params: 
+09:44:40 | INFO | Headers:
+09:44:40 | INFO | 	host: localhost:7777
+09:44:40 | INFO | 	connection: close
+09:44:40 | INFO | 	user-agent: xfa1
+09:44:40 | INFO | 	accept: */*
+09:44:40 | INFO | 	accept-encoding: gzip
+09:44:40 | INFO | Request:
+09:44:40 | INFO | 	type : http
+09:44:40 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+09:44:40 | INFO | 	http_version : 1.0
+09:44:40 | INFO | 	server : ('192.168.64.2', 7777)
+09:44:40 | INFO | 	client : ('192.168.64.1', 38132)
+09:44:40 | INFO | 	scheme : http
+09:44:40 | INFO | 	method : GET
+09:44:40 | INFO | 	root_path : 
+09:44:40 | INFO | 	path : /Electron/download/windows/\Program Files\3CX Phone System\Data\DB\base\16384\16393
+09:44:40 | INFO | 	raw_path : b'/Electron/download/windows/%5CProgram%20Files%5C3CX%20Phone%20System%5CData%5CDB%5Cbase%5C16384%5C16393'
+09:44:40 | INFO | 	query_string : b''
+09:44:40 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+09:44:40 | INFO | Response Body=404
+10:51:28 | INFO | GET http://localhost:7777/actuator/health
+10:51:28 | INFO | Params: 
+10:51:28 | INFO | Headers:
+10:51:28 | INFO | 	host: localhost:7777
+10:51:28 | INFO | 	connection: close
+10:51:28 | INFO | 	user-agent: Mozilla/5.0 zgrab/0.x
+10:51:28 | INFO | 	accept: */*
+10:51:28 | INFO | 	accept-encoding: gzip
+10:51:28 | INFO | Request:
+10:51:28 | INFO | 	type : http
+10:51:28 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+10:51:28 | INFO | 	http_version : 1.0
+10:51:28 | INFO | 	server : ('192.168.64.2', 7777)
+10:51:28 | INFO | 	client : ('192.168.64.1', 44524)
+10:51:28 | INFO | 	scheme : http
+10:51:28 | INFO | 	method : GET
+10:51:28 | INFO | 	root_path : 
+10:51:28 | INFO | 	path : /actuator/health
+10:51:28 | INFO | 	raw_path : b'/actuator/health'
+10:51:28 | INFO | 	query_string : b''
+10:51:28 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+10:51:28 | INFO | Response Body=404
+11:29:39 | INFO | GET http://localhost:7777/.env
+11:29:39 | INFO | Params: 
+11:29:39 | INFO | Headers:
+11:29:39 | INFO | 	host: localhost:7777
+11:29:39 | INFO | 	connection: close
+11:29:39 | INFO | 	user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36
+11:29:39 | INFO | 	accept-encoding: gzip, deflate
+11:29:39 | INFO | 	accept: */*
+11:29:39 | INFO | Request:
+11:29:39 | INFO | 	type : http
+11:29:39 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+11:29:39 | INFO | 	http_version : 1.0
+11:29:39 | INFO | 	server : ('192.168.64.2', 7777)
+11:29:39 | INFO | 	client : ('192.168.64.1', 46918)
+11:29:39 | INFO | 	scheme : http
+11:29:39 | INFO | 	method : GET
+11:29:39 | INFO | 	root_path : 
+11:29:39 | INFO | 	path : /.env
+11:29:39 | INFO | 	raw_path : b'/.env'
+11:29:39 | INFO | 	query_string : b''
+11:29:39 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+11:29:39 | INFO | Response Body=404
+11:55:41 | INFO | GET http://localhost:7777/
+11:55:41 | INFO | Params: 
+11:55:41 | INFO | Headers:
+11:55:41 | INFO | 	host: localhost:7777
+11:55:41 | INFO | 	connection: close
+11:55:41 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+11:55:41 | INFO | 	sec-ch-ua-mobile: ?0
+11:55:41 | INFO | 	sec-ch-ua-platform: "Windows"
+11:55:41 | INFO | 	upgrade-insecure-requests: 1
+11:55:41 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+11:55:41 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+11:55:41 | INFO | 	purpose: prefetch
+11:55:41 | INFO | 	sec-fetch-site: none
+11:55:41 | INFO | 	sec-fetch-mode: navigate
+11:55:41 | INFO | 	sec-fetch-user: ?1
+11:55:41 | INFO | 	sec-fetch-dest: document
+11:55:41 | INFO | 	accept-encoding: gzip, deflate, br
+11:55:41 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+11:55:41 | INFO | Request:
+11:55:41 | INFO | 	type : http
+11:55:41 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+11:55:41 | INFO | 	http_version : 1.0
+11:55:41 | INFO | 	server : ('192.168.64.2', 7777)
+11:55:41 | INFO | 	client : ('192.168.64.1', 59624)
+11:55:41 | INFO | 	scheme : http
+11:55:41 | INFO | 	method : GET
+11:55:41 | INFO | 	root_path : 
+11:55:41 | INFO | 	path : /
+11:55:41 | INFO | 	raw_path : b'/'
+11:55:41 | INFO | 	query_string : b''
+11:55:41 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+11:55:41 | INFO | Response Body=307
+11:55:41 | INFO | GET http://localhost:7777/login
+11:55:41 | INFO | Params: 
+11:55:41 | INFO | Headers:
+11:55:41 | INFO | 	host: localhost:7777
+11:55:41 | INFO | 	connection: close
+11:55:41 | INFO | 	upgrade-insecure-requests: 1
+11:55:41 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+11:55:41 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+11:55:41 | INFO | 	purpose: prefetch
+11:55:41 | INFO | 	sec-fetch-site: none
+11:55:41 | INFO | 	sec-fetch-mode: navigate
+11:55:41 | INFO | 	sec-fetch-user: ?1
+11:55:41 | INFO | 	sec-fetch-dest: document
+11:55:41 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+11:55:41 | INFO | 	sec-ch-ua-mobile: ?0
+11:55:41 | INFO | 	sec-ch-ua-platform: "Windows"
+11:55:41 | INFO | 	accept-encoding: gzip, deflate, br
+11:55:41 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+11:55:41 | INFO | Request:
+11:55:41 | INFO | 	type : http
+11:55:41 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+11:55:41 | INFO | 	http_version : 1.0
+11:55:41 | INFO | 	server : ('192.168.64.2', 7777)
+11:55:41 | INFO | 	client : ('192.168.64.1', 59638)
+11:55:41 | INFO | 	scheme : http
+11:55:41 | INFO | 	method : GET
+11:55:41 | INFO | 	root_path : 
+11:55:41 | INFO | 	path : /login
+11:55:41 | INFO | 	raw_path : b'/login'
+11:55:41 | INFO | 	query_string : b''
+11:55:41 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+11:55:41 | INFO | Response Body=200
+11:55:41 | INFO | GET http://localhost:7777/static/css/bootstrap.css
+11:55:41 | INFO | Params: 
+11:55:41 | INFO | Headers:
+11:55:41 | INFO | 	host: localhost:7777
+11:55:41 | INFO | 	connection: close
+11:55:41 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+11:55:41 | INFO | 	sec-ch-ua-mobile: ?0
+11:55:41 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+11:55:41 | INFO | 	sec-ch-ua-platform: "Windows"
+11:55:41 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+11:55:41 | INFO | 	purpose: prefetch
+11:55:41 | INFO | 	sec-fetch-site: same-origin
+11:55:41 | INFO | 	sec-fetch-mode: no-cors
+11:55:41 | INFO | 	sec-fetch-dest: style
+11:55:41 | INFO | 	referer: https://admin.noboringdate.ru/login
+11:55:41 | INFO | 	accept-encoding: gzip, deflate, br
+11:55:41 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+11:55:41 | INFO | 	if-none-match: cef3f7c6e74df4621f277771b58048f8
+11:55:41 | INFO | 	if-modified-since: Fri, 10 Feb 2023 09:37:06 GMT
+11:55:41 | INFO | Request:
+11:55:41 | INFO | 	type : http
+11:55:41 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+11:55:41 | INFO | 	http_version : 1.0
+11:55:41 | INFO | 	server : ('192.168.64.2', 7777)
+11:55:41 | INFO | 	client : ('192.168.64.1', 59644)
+11:55:41 | INFO | 	scheme : http
+11:55:41 | INFO | 	method : GET
+11:55:41 | INFO | 	root_path : 
+11:55:41 | INFO | 	path : /static/css/bootstrap.css
+11:55:41 | INFO | 	raw_path : b'/static/css/bootstrap.css'
+11:55:41 | INFO | 	query_string : b''
+11:55:41 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+11:55:41 | INFO | Response Body=304
+11:55:41 | INFO | GET http://localhost:7777/static/mystyle.css
+11:55:41 | INFO | Params: 
+11:55:41 | INFO | Headers:
+11:55:41 | INFO | 	host: localhost:7777
+11:55:41 | INFO | 	connection: close
+11:55:41 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+11:55:41 | INFO | 	sec-ch-ua-mobile: ?0
+11:55:41 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+11:55:41 | INFO | 	sec-ch-ua-platform: "Windows"
+11:55:41 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+11:55:41 | INFO | 	purpose: prefetch
+11:55:41 | INFO | 	sec-fetch-site: same-origin
+11:55:41 | INFO | 	sec-fetch-mode: no-cors
+11:55:41 | INFO | 	sec-fetch-dest: style
+11:55:41 | INFO | 	referer: https://admin.noboringdate.ru/login
+11:55:41 | INFO | 	accept-encoding: gzip, deflate, br
+11:55:41 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+11:55:41 | INFO | 	if-none-match: 7bf4ca1274103441df939d8bb58e1b8f
+11:55:41 | INFO | 	if-modified-since: Fri, 10 Feb 2023 09:37:06 GMT
+11:55:41 | INFO | Request:
+11:55:41 | INFO | 	type : http
+11:55:41 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+11:55:41 | INFO | 	http_version : 1.0
+11:55:41 | INFO | 	server : ('192.168.64.2', 7777)
+11:55:41 | INFO | 	client : ('192.168.64.1', 59648)
+11:55:41 | INFO | 	scheme : http
+11:55:41 | INFO | 	method : GET
+11:55:41 | INFO | 	root_path : 
+11:55:41 | INFO | 	path : /static/mystyle.css
+11:55:41 | INFO | 	raw_path : b'/static/mystyle.css'
+11:55:41 | INFO | 	query_string : b''
+11:55:41 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+11:55:41 | INFO | Response Body=304
+11:55:41 | INFO | GET http://localhost:7777/static/js/jquery-3.6.1.min.js
+11:55:41 | INFO | Params: 
+11:55:41 | INFO | Headers:
+11:55:41 | INFO | 	host: localhost:7777
+11:55:41 | INFO | 	connection: close
+11:55:41 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+11:55:41 | INFO | 	sec-ch-ua-mobile: ?0
+11:55:41 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+11:55:41 | INFO | 	sec-ch-ua-platform: "Windows"
+11:55:41 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+11:55:41 | INFO | 	purpose: prefetch
+11:55:41 | INFO | 	sec-fetch-site: same-origin
+11:55:41 | INFO | 	sec-fetch-mode: no-cors
+11:55:41 | INFO | 	sec-fetch-dest: script
+11:55:41 | INFO | 	referer: https://admin.noboringdate.ru/login
+11:55:41 | INFO | 	accept-encoding: gzip, deflate, br
+11:55:41 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+11:55:41 | INFO | 	if-none-match: 1adc76dcd09bfa45453fea3f7c67dcce
+11:55:41 | INFO | 	if-modified-since: Fri, 10 Feb 2023 09:37:06 GMT
+11:55:41 | INFO | Request:
+11:55:41 | INFO | 	type : http
+11:55:41 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+11:55:41 | INFO | 	http_version : 1.0
+11:55:41 | INFO | 	server : ('192.168.64.2', 7777)
+11:55:41 | INFO | 	client : ('192.168.64.1', 59660)
+11:55:41 | INFO | 	scheme : http
+11:55:41 | INFO | 	method : GET
+11:55:41 | INFO | 	root_path : 
+11:55:41 | INFO | 	path : /static/js/jquery-3.6.1.min.js
+11:55:41 | INFO | 	raw_path : b'/static/js/jquery-3.6.1.min.js'
+11:55:41 | INFO | 	query_string : b''
+11:55:41 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+11:55:41 | INFO | GET http://localhost:7777/static/img/logo.png
+11:55:41 | INFO | Params: 
+11:55:41 | INFO | Headers:
+11:55:41 | INFO | 	host: localhost:7777
+11:55:41 | INFO | 	connection: close
+11:55:41 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+11:55:41 | INFO | 	sec-ch-ua-mobile: ?0
+11:55:41 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+11:55:41 | INFO | 	sec-ch-ua-platform: "Windows"
+11:55:41 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+11:55:41 | INFO | 	purpose: prefetch
+11:55:41 | INFO | 	sec-fetch-site: same-origin
+11:55:41 | INFO | 	sec-fetch-mode: no-cors
+11:55:41 | INFO | 	sec-fetch-dest: image
+11:55:41 | INFO | 	referer: https://admin.noboringdate.ru/login
+11:55:41 | INFO | 	accept-encoding: gzip, deflate, br
+11:55:41 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+11:55:41 | INFO | 	if-none-match: 14499c0a2ef082dc215e82cacf986a71
+11:55:41 | INFO | 	if-modified-since: Fri, 10 Feb 2023 09:37:06 GMT
+11:55:41 | INFO | Request:
+11:55:41 | INFO | 	type : http
+11:55:41 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+11:55:41 | INFO | 	http_version : 1.0
+11:55:41 | INFO | 	server : ('192.168.64.2', 7777)
+11:55:41 | INFO | 	client : ('192.168.64.1', 59662)
+11:55:41 | INFO | 	scheme : http
+11:55:41 | INFO | 	method : GET
+11:55:41 | INFO | 	root_path : 
+11:55:41 | INFO | 	path : /static/img/logo.png
+11:55:41 | INFO | 	raw_path : b'/static/img/logo.png'
+11:55:41 | INFO | 	query_string : b''
+11:55:41 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+11:55:41 | INFO | GET http://localhost:7777/static/img/avatar.png
+11:55:41 | INFO | Params: 
+11:55:41 | INFO | Headers:
+11:55:41 | INFO | 	host: localhost:7777
+11:55:41 | INFO | 	connection: close
+11:55:41 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+11:55:41 | INFO | 	sec-ch-ua-mobile: ?0
+11:55:41 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+11:55:41 | INFO | 	sec-ch-ua-platform: "Windows"
+11:55:41 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+11:55:41 | INFO | 	purpose: prefetch
+11:55:41 | INFO | 	sec-fetch-site: same-origin
+11:55:41 | INFO | 	sec-fetch-mode: no-cors
+11:55:41 | INFO | 	sec-fetch-dest: image
+11:55:41 | INFO | 	referer: https://admin.noboringdate.ru/login
+11:55:41 | INFO | 	accept-encoding: gzip, deflate, br
+11:55:41 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+11:55:41 | INFO | 	if-none-match: fb235adc33268942b470e01fccd8fdf6
+11:55:41 | INFO | 	if-modified-since: Fri, 10 Feb 2023 09:37:06 GMT
+11:55:41 | INFO | Request:
+11:55:41 | INFO | 	type : http
+11:55:41 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+11:55:41 | INFO | 	http_version : 1.0
+11:55:41 | INFO | 	server : ('192.168.64.2', 7777)
+11:55:41 | INFO | 	client : ('192.168.64.1', 59672)
+11:55:41 | INFO | 	scheme : http
+11:55:41 | INFO | 	method : GET
+11:55:41 | INFO | 	root_path : 
+11:55:41 | INFO | 	path : /static/img/avatar.png
+11:55:41 | INFO | 	raw_path : b'/static/img/avatar.png'
+11:55:41 | INFO | 	query_string : b''
+11:55:41 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+11:55:41 | INFO | Response Body=304
+11:55:41 | INFO | GET http://localhost:7777/static/js/bootstrap.min.js
+11:55:41 | INFO | Params: 
+11:55:41 | INFO | Headers:
+11:55:41 | INFO | 	host: localhost:7777
+11:55:41 | INFO | 	connection: close
+11:55:41 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+11:55:41 | INFO | 	sec-ch-ua-mobile: ?0
+11:55:41 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+11:55:41 | INFO | 	sec-ch-ua-platform: "Windows"
+11:55:41 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+11:55:41 | INFO | 	purpose: prefetch
+11:55:41 | INFO | 	sec-fetch-site: same-origin
+11:55:41 | INFO | 	sec-fetch-mode: no-cors
+11:55:41 | INFO | 	sec-fetch-dest: script
+11:55:41 | INFO | 	referer: https://admin.noboringdate.ru/login
+11:55:41 | INFO | 	accept-encoding: gzip, deflate, br
+11:55:41 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+11:55:41 | INFO | 	if-none-match: 57c99eadbb83aaf60e924f89b47b135e
+11:55:41 | INFO | 	if-modified-since: Fri, 10 Feb 2023 09:37:06 GMT
+11:55:41 | INFO | Request:
+11:55:41 | INFO | 	type : http
+11:55:41 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+11:55:41 | INFO | 	http_version : 1.0
+11:55:41 | INFO | 	server : ('192.168.64.2', 7777)
+11:55:41 | INFO | 	client : ('192.168.64.1', 59688)
+11:55:41 | INFO | 	scheme : http
+11:55:41 | INFO | 	method : GET
+11:55:41 | INFO | 	root_path : 
+11:55:41 | INFO | 	path : /static/js/bootstrap.min.js
+11:55:41 | INFO | 	raw_path : b'/static/js/bootstrap.min.js'
+11:55:41 | INFO | 	query_string : b''
+11:55:41 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+11:55:41 | INFO | GET http://localhost:7777/static/img/logout.png
+11:55:41 | INFO | Params: 
+11:55:41 | INFO | Headers:
+11:55:41 | INFO | 	host: localhost:7777
+11:55:41 | INFO | 	connection: close
+11:55:41 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+11:55:41 | INFO | 	sec-ch-ua-mobile: ?0
+11:55:41 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+11:55:41 | INFO | 	sec-ch-ua-platform: "Windows"
+11:55:41 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+11:55:41 | INFO | 	purpose: prefetch
+11:55:41 | INFO | 	sec-fetch-site: same-origin
+11:55:41 | INFO | 	sec-fetch-mode: no-cors
+11:55:41 | INFO | 	sec-fetch-dest: image
+11:55:41 | INFO | 	referer: https://admin.noboringdate.ru/login
+11:55:41 | INFO | 	accept-encoding: gzip, deflate, br
+11:55:41 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+11:55:41 | INFO | 	if-none-match: 64c50da1920a6d93c08fc773d49a68ba
+11:55:41 | INFO | 	if-modified-since: Fri, 10 Feb 2023 09:37:06 GMT
+11:55:41 | INFO | Request:
+11:55:41 | INFO | 	type : http
+11:55:41 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+11:55:41 | INFO | 	http_version : 1.0
+11:55:41 | INFO | 	server : ('192.168.64.2', 7777)
+11:55:41 | INFO | 	client : ('192.168.64.1', 59690)
+11:55:41 | INFO | 	scheme : http
+11:55:41 | INFO | 	method : GET
+11:55:41 | INFO | 	root_path : 
+11:55:41 | INFO | 	path : /static/img/logout.png
+11:55:41 | INFO | 	raw_path : b'/static/img/logout.png'
+11:55:41 | INFO | 	query_string : b''
+11:55:41 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+11:55:41 | INFO | Response Body=304
+11:55:41 | INFO | Response Body=304
+11:55:41 | INFO | GET http://localhost:7777/static/js/bootstrap.bundle.min.js
+11:55:41 | INFO | Params: 
+11:55:41 | INFO | Headers:
+11:55:41 | INFO | 	host: localhost:7777
+11:55:41 | INFO | 	connection: close
+11:55:41 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+11:55:41 | INFO | 	sec-ch-ua-mobile: ?0
+11:55:41 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+11:55:41 | INFO | 	sec-ch-ua-platform: "Windows"
+11:55:41 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+11:55:41 | INFO | 	purpose: prefetch
+11:55:41 | INFO | 	sec-fetch-site: same-origin
+11:55:41 | INFO | 	sec-fetch-mode: no-cors
+11:55:41 | INFO | 	sec-fetch-dest: script
+11:55:41 | INFO | 	referer: https://admin.noboringdate.ru/login
+11:55:41 | INFO | 	accept-encoding: gzip, deflate, br
+11:55:41 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+11:55:41 | INFO | 	if-none-match: e0ba2c9cb7bb7e8bbd0518b44289622d
+11:55:41 | INFO | 	if-modified-since: Fri, 10 Feb 2023 09:37:06 GMT
+11:55:41 | INFO | Request:
+11:55:41 | INFO | 	type : http
+11:55:41 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+11:55:41 | INFO | 	http_version : 1.0
+11:55:41 | INFO | 	server : ('192.168.64.2', 7777)
+11:55:41 | INFO | 	client : ('192.168.64.1', 59706)
+11:55:41 | INFO | 	scheme : http
+11:55:41 | INFO | 	method : GET
+11:55:41 | INFO | 	root_path : 
+11:55:41 | INFO | 	path : /static/js/bootstrap.bundle.min.js
+11:55:41 | INFO | 	raw_path : b'/static/js/bootstrap.bundle.min.js'
+11:55:41 | INFO | 	query_string : b''
+11:55:41 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+11:55:41 | INFO | Response Body=304
+11:55:41 | INFO | Response Body=304
+11:55:42 | INFO | Response Body=304
+11:55:43 | INFO | GET http://localhost:7777/favicon.ico
+11:55:43 | INFO | Params: 
+11:55:43 | INFO | Headers:
+11:55:43 | INFO | 	host: localhost:7777
+11:55:43 | INFO | 	connection: close
+11:55:43 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+11:55:43 | INFO | 	sec-ch-ua-mobile: ?0
+11:55:43 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+11:55:43 | INFO | 	sec-ch-ua-platform: "Windows"
+11:55:43 | INFO | 	accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+11:55:43 | INFO | 	sec-fetch-site: same-origin
+11:55:43 | INFO | 	sec-fetch-mode: no-cors
+11:55:43 | INFO | 	sec-fetch-dest: image
+11:55:43 | INFO | 	referer: https://admin.noboringdate.ru/login
+11:55:43 | INFO | 	accept-encoding: gzip, deflate, br
+11:55:43 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+11:55:43 | INFO | Request:
+11:55:43 | INFO | 	type : http
+11:55:43 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+11:55:43 | INFO | 	http_version : 1.0
+11:55:43 | INFO | 	server : ('192.168.64.2', 7777)
+11:55:43 | INFO | 	client : ('192.168.64.1', 59718)
+11:55:43 | INFO | 	scheme : http
+11:55:43 | INFO | 	method : GET
+11:55:43 | INFO | 	root_path : 
+11:55:43 | INFO | 	path : /favicon.ico
+11:55:43 | INFO | 	raw_path : b'/favicon.ico'
+11:55:43 | INFO | 	query_string : b''
+11:55:43 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+11:55:43 | INFO | Response Body=404
+12:04:23 | INFO | POST http://localhost:7777/login
+12:04:23 | INFO | Params: 
+12:04:23 | INFO | Headers:
+12:04:23 | INFO | 	host: localhost:7777
+12:04:23 | INFO | 	connection: close
+12:04:23 | INFO | 	content-length: 248
+12:04:23 | INFO | 	cache-control: max-age=0
+12:04:23 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+12:04:23 | INFO | 	sec-ch-ua-mobile: ?0
+12:04:23 | INFO | 	sec-ch-ua-platform: "Windows"
+12:04:23 | INFO | 	upgrade-insecure-requests: 1
+12:04:23 | INFO | 	origin: https://admin.noboringdate.ru
+12:04:23 | INFO | 	content-type: multipart/form-data; boundary=----WebKitFormBoundarytOTd4SDxLM0OX5er
+12:04:23 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+12:04:23 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+12:04:23 | INFO | 	sec-fetch-site: same-origin
+12:04:23 | INFO | 	sec-fetch-mode: navigate
+12:04:23 | INFO | 	sec-fetch-user: ?1
+12:04:23 | INFO | 	sec-fetch-dest: document
+12:04:23 | INFO | 	referer: https://admin.noboringdate.ru/login
+12:04:23 | INFO | 	accept-encoding: gzip, deflate, br
+12:04:23 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+12:04:23 | INFO | Request:
+12:04:23 | INFO | 	type : http
+12:04:23 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+12:04:23 | INFO | 	http_version : 1.0
+12:04:23 | INFO | 	server : ('192.168.64.2', 7777)
+12:04:23 | INFO | 	client : ('192.168.64.1', 45564)
+12:04:23 | INFO | 	scheme : http
+12:04:23 | INFO | 	method : POST
+12:04:23 | INFO | 	root_path : 
+12:04:23 | INFO | 	path : /login
+12:04:23 | INFO | 	raw_path : b'/login'
+12:04:23 | INFO | 	query_string : b''
+12:04:23 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+12:04:23 | INFO | Response Body=302
+12:04:23 | INFO | GET http://localhost:7777/
+12:04:23 | INFO | Params: 
+12:04:23 | INFO | Headers:
+12:04:23 | INFO | 	host: localhost:7777
+12:04:23 | INFO | 	connection: close
+12:04:23 | INFO | 	cache-control: max-age=0
+12:04:23 | INFO | 	upgrade-insecure-requests: 1
+12:04:23 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+12:04:23 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+12:04:23 | INFO | 	sec-fetch-site: same-origin
+12:04:23 | INFO | 	sec-fetch-mode: navigate
+12:04:23 | INFO | 	sec-fetch-user: ?1
+12:04:23 | INFO | 	sec-fetch-dest: document
+12:04:23 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+12:04:23 | INFO | 	sec-ch-ua-mobile: ?0
+12:04:23 | INFO | 	sec-ch-ua-platform: "Windows"
+12:04:23 | INFO | 	referer: https://admin.noboringdate.ru/login
+12:04:23 | INFO | 	accept-encoding: gzip, deflate, br
+12:04:23 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+12:04:23 | INFO | 	cookie: token=2d7bb0b03fb74481a73a39d2ed8de67b; username=erik
+12:04:23 | INFO | Request:
+12:04:23 | INFO | 	type : http
+12:04:23 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+12:04:23 | INFO | 	http_version : 1.0
+12:04:23 | INFO | 	server : ('192.168.64.2', 7777)
+12:04:23 | INFO | 	client : ('192.168.64.1', 45570)
+12:04:23 | INFO | 	scheme : http
+12:04:23 | INFO | 	method : GET
+12:04:23 | INFO | 	root_path : 
+12:04:23 | INFO | 	path : /
+12:04:23 | INFO | 	raw_path : b'/'
+12:04:23 | INFO | 	query_string : b''
+12:04:23 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+12:04:23 | INFO | Response Body=200
+12:04:25 | INFO | GET http://localhost:7777/suggestions
+12:04:25 | INFO | Params: 
+12:04:25 | INFO | Headers:
+12:04:25 | INFO | 	host: localhost:7777
+12:04:25 | INFO | 	connection: close
+12:04:25 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+12:04:25 | INFO | 	sec-ch-ua-mobile: ?0
+12:04:25 | INFO | 	sec-ch-ua-platform: "Windows"
+12:04:25 | INFO | 	upgrade-insecure-requests: 1
+12:04:25 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+12:04:25 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+12:04:25 | INFO | 	sec-fetch-site: same-origin
+12:04:25 | INFO | 	sec-fetch-mode: navigate
+12:04:25 | INFO | 	sec-fetch-user: ?1
+12:04:25 | INFO | 	sec-fetch-dest: document
+12:04:25 | INFO | 	referer: https://admin.noboringdate.ru/
+12:04:25 | INFO | 	accept-encoding: gzip, deflate, br
+12:04:25 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+12:04:25 | INFO | 	cookie: token=2d7bb0b03fb74481a73a39d2ed8de67b; username=erik
+12:04:25 | INFO | Request:
+12:04:25 | INFO | 	type : http
+12:04:25 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+12:04:25 | INFO | 	http_version : 1.0
+12:04:25 | INFO | 	server : ('192.168.64.2', 7777)
+12:04:25 | INFO | 	client : ('192.168.64.1', 45574)
+12:04:25 | INFO | 	scheme : http
+12:04:25 | INFO | 	method : GET
+12:04:25 | INFO | 	root_path : 
+12:04:25 | INFO | 	path : /suggestions
+12:04:25 | INFO | 	raw_path : b'/suggestions'
+12:04:25 | INFO | 	query_string : b''
+12:04:25 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+12:04:25 | INFO | Response Body=200
+12:04:25 | INFO | GET http://localhost:7777/static/img/eye.png
+12:04:25 | INFO | Params: 
+12:04:25 | INFO | Headers:
+12:04:25 | INFO | 	host: localhost:7777
+12:04:25 | INFO | 	connection: close
+12:04:25 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+12:04:25 | INFO | 	sec-ch-ua-mobile: ?0
+12:04:25 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+12:04:25 | INFO | 	sec-ch-ua-platform: "Windows"
+12:04:25 | INFO | 	accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+12:04:25 | INFO | 	sec-fetch-site: same-origin
+12:04:25 | INFO | 	sec-fetch-mode: no-cors
+12:04:25 | INFO | 	sec-fetch-dest: image
+12:04:25 | INFO | 	referer: https://admin.noboringdate.ru/suggestions
+12:04:25 | INFO | 	accept-encoding: gzip, deflate, br
+12:04:25 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+12:04:25 | INFO | 	cookie: token=2d7bb0b03fb74481a73a39d2ed8de67b; username=erik
+12:04:25 | INFO | 	if-none-match: 3cd472f4b92c87967b68e3e050c40457
+12:04:25 | INFO | 	if-modified-since: Mon, 13 Feb 2023 13:48:19 GMT
+12:04:25 | INFO | Request:
+12:04:25 | INFO | 	type : http
+12:04:25 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+12:04:25 | INFO | 	http_version : 1.0
+12:04:25 | INFO | 	server : ('192.168.64.2', 7777)
+12:04:25 | INFO | 	client : ('192.168.64.1', 45588)
+12:04:25 | INFO | 	scheme : http
+12:04:25 | INFO | 	method : GET
+12:04:25 | INFO | 	root_path : 
+12:04:25 | INFO | 	path : /static/img/eye.png
+12:04:25 | INFO | 	raw_path : b'/static/img/eye.png'
+12:04:25 | INFO | 	query_string : b''
+12:04:25 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+12:04:25 | INFO | Response Body=304
+12:04:25 | INFO | GET http://localhost:7777/static/img/accept.png
+12:04:25 | INFO | Params: 
+12:04:25 | INFO | Headers:
+12:04:25 | INFO | 	host: localhost:7777
+12:04:25 | INFO | 	connection: close
+12:04:25 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+12:04:25 | INFO | 	sec-ch-ua-mobile: ?0
+12:04:25 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+12:04:25 | INFO | 	sec-ch-ua-platform: "Windows"
+12:04:25 | INFO | 	accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+12:04:25 | INFO | 	sec-fetch-site: same-origin
+12:04:25 | INFO | 	sec-fetch-mode: no-cors
+12:04:25 | INFO | 	sec-fetch-dest: image
+12:04:25 | INFO | 	referer: https://admin.noboringdate.ru/suggestions
+12:04:25 | INFO | 	accept-encoding: gzip, deflate, br
+12:04:25 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+12:04:25 | INFO | 	cookie: token=2d7bb0b03fb74481a73a39d2ed8de67b; username=erik
+12:04:25 | INFO | 	if-none-match: 4d5dd264132355c69ff57b7a6ae7b372
+12:04:25 | INFO | 	if-modified-since: Fri, 10 Feb 2023 09:37:06 GMT
+12:04:25 | INFO | Request:
+12:04:25 | INFO | 	type : http
+12:04:25 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+12:04:25 | INFO | 	http_version : 1.0
+12:04:25 | INFO | 	server : ('192.168.64.2', 7777)
+12:04:25 | INFO | 	client : ('192.168.64.1', 45600)
+12:04:25 | INFO | 	scheme : http
+12:04:25 | INFO | 	method : GET
+12:04:25 | INFO | 	root_path : 
+12:04:25 | INFO | 	path : /static/img/accept.png
+12:04:25 | INFO | 	raw_path : b'/static/img/accept.png'
+12:04:25 | INFO | 	query_string : b''
+12:04:25 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+12:04:25 | INFO | Response Body=304
+12:04:25 | INFO | GET http://localhost:7777/static/img/star.png
+12:04:25 | INFO | Params: 
+12:04:25 | INFO | Headers:
+12:04:25 | INFO | 	host: localhost:7777
+12:04:25 | INFO | 	connection: close
+12:04:25 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+12:04:25 | INFO | 	sec-ch-ua-mobile: ?0
+12:04:25 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+12:04:25 | INFO | 	sec-ch-ua-platform: "Windows"
+12:04:25 | INFO | 	accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+12:04:25 | INFO | 	sec-fetch-site: same-origin
+12:04:25 | INFO | 	sec-fetch-mode: no-cors
+12:04:25 | INFO | 	sec-fetch-dest: image
+12:04:25 | INFO | 	referer: https://admin.noboringdate.ru/suggestions
+12:04:25 | INFO | 	accept-encoding: gzip, deflate, br
+12:04:25 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+12:04:25 | INFO | 	cookie: token=2d7bb0b03fb74481a73a39d2ed8de67b; username=erik
+12:04:25 | INFO | 	if-none-match: 7450abde1104290ae96ac5fe879b3e8a
+12:04:25 | INFO | 	if-modified-since: Fri, 10 Feb 2023 09:37:06 GMT
+12:04:25 | INFO | Request:
+12:04:25 | INFO | 	type : http
+12:04:25 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+12:04:25 | INFO | 	http_version : 1.0
+12:04:25 | INFO | 	server : ('192.168.64.2', 7777)
+12:04:25 | INFO | 	client : ('192.168.64.1', 45610)
+12:04:25 | INFO | 	scheme : http
+12:04:25 | INFO | 	method : GET
+12:04:25 | INFO | 	root_path : 
+12:04:25 | INFO | 	path : /static/img/star.png
+12:04:25 | INFO | 	raw_path : b'/static/img/star.png'
+12:04:25 | INFO | 	query_string : b''
+12:04:25 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+12:04:25 | INFO | Response Body=304
+12:04:43 | INFO | GET http://localhost:7777/suggestions/100
+12:04:43 | INFO | Params: 
+12:04:43 | INFO | Headers:
+12:04:43 | INFO | 	host: localhost:7777
+12:04:43 | INFO | 	connection: close
+12:04:43 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+12:04:43 | INFO | 	sec-ch-ua-mobile: ?0
+12:04:43 | INFO | 	sec-ch-ua-platform: "Windows"
+12:04:43 | INFO | 	upgrade-insecure-requests: 1
+12:04:43 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+12:04:43 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+12:04:43 | INFO | 	sec-fetch-site: same-origin
+12:04:43 | INFO | 	sec-fetch-mode: navigate
+12:04:43 | INFO | 	sec-fetch-user: ?1
+12:04:43 | INFO | 	sec-fetch-dest: document
+12:04:43 | INFO | 	referer: https://admin.noboringdate.ru/suggestions
+12:04:43 | INFO | 	accept-encoding: gzip, deflate, br
+12:04:43 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+12:04:43 | INFO | 	cookie: token=2d7bb0b03fb74481a73a39d2ed8de67b; username=erik
+12:04:43 | INFO | Request:
+12:04:43 | INFO | 	type : http
+12:04:43 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+12:04:43 | INFO | 	http_version : 1.0
+12:04:43 | INFO | 	server : ('192.168.64.2', 7777)
+12:04:43 | INFO | 	client : ('192.168.64.1', 41846)
+12:04:43 | INFO | 	scheme : http
+12:04:43 | INFO | 	method : GET
+12:04:43 | INFO | 	root_path : 
+12:04:43 | INFO | 	path : /suggestions/100
+12:04:43 | INFO | 	raw_path : b'/suggestions/100'
+12:04:43 | INFO | 	query_string : b''
+12:04:43 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+12:04:43 | INFO | Response Body=200
+12:04:43 | INFO | GET http://localhost:7777/static/img/copy.png
+12:04:43 | INFO | Params: 
+12:04:43 | INFO | Headers:
+12:04:43 | INFO | 	host: localhost:7777
+12:04:43 | INFO | 	connection: close
+12:04:43 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+12:04:43 | INFO | 	sec-ch-ua-mobile: ?0
+12:04:43 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+12:04:43 | INFO | 	sec-ch-ua-platform: "Windows"
+12:04:43 | INFO | 	accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+12:04:43 | INFO | 	sec-fetch-site: same-origin
+12:04:43 | INFO | 	sec-fetch-mode: no-cors
+12:04:43 | INFO | 	sec-fetch-dest: image
+12:04:43 | INFO | 	referer: https://admin.noboringdate.ru/suggestions/100
+12:04:43 | INFO | 	accept-encoding: gzip, deflate, br
+12:04:43 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+12:04:43 | INFO | 	cookie: token=2d7bb0b03fb74481a73a39d2ed8de67b; username=erik
+12:04:43 | INFO | 	if-none-match: 79455e5539feea108e3f7a89e665dc5b
+12:04:43 | INFO | 	if-modified-since: Fri, 10 Feb 2023 09:37:06 GMT
+12:04:43 | INFO | Request:
+12:04:43 | INFO | 	type : http
+12:04:43 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+12:04:43 | INFO | 	http_version : 1.0
+12:04:43 | INFO | 	server : ('192.168.64.2', 7777)
+12:04:43 | INFO | 	client : ('192.168.64.1', 41858)
+12:04:43 | INFO | 	scheme : http
+12:04:43 | INFO | 	method : GET
+12:04:43 | INFO | 	root_path : 
+12:04:43 | INFO | 	path : /static/img/copy.png
+12:04:43 | INFO | 	raw_path : b'/static/img/copy.png'
+12:04:43 | INFO | 	query_string : b''
+12:04:43 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+12:04:43 | INFO | Response Body=304
+12:04:59 | INFO | GET http://localhost:7777/
+12:04:59 | INFO | Params: 
+12:04:59 | INFO | Headers:
+12:04:59 | INFO | 	host: localhost:7777
+12:04:59 | INFO | 	connection: close
+12:04:59 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+12:04:59 | INFO | 	sec-ch-ua-mobile: ?0
+12:04:59 | INFO | 	sec-ch-ua-platform: "Windows"
+12:04:59 | INFO | 	upgrade-insecure-requests: 1
+12:04:59 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+12:04:59 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+12:04:59 | INFO | 	sec-fetch-site: same-origin
+12:04:59 | INFO | 	sec-fetch-mode: navigate
+12:04:59 | INFO | 	sec-fetch-user: ?1
+12:04:59 | INFO | 	sec-fetch-dest: document
+12:04:59 | INFO | 	referer: https://admin.noboringdate.ru/suggestions/100
+12:04:59 | INFO | 	accept-encoding: gzip, deflate, br
+12:04:59 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+12:04:59 | INFO | 	cookie: token=2d7bb0b03fb74481a73a39d2ed8de67b; username=erik
+12:04:59 | INFO | Request:
+12:04:59 | INFO | 	type : http
+12:04:59 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+12:04:59 | INFO | 	http_version : 1.0
+12:04:59 | INFO | 	server : ('192.168.64.2', 7777)
+12:04:59 | INFO | 	client : ('192.168.64.1', 56826)
+12:04:59 | INFO | 	scheme : http
+12:04:59 | INFO | 	method : GET
+12:04:59 | INFO | 	root_path : 
+12:04:59 | INFO | 	path : /
+12:04:59 | INFO | 	raw_path : b'/'
+12:04:59 | INFO | 	query_string : b''
+12:04:59 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+12:04:59 | INFO | Response Body=200
+12:27:05 | INFO | GET http://localhost:7777/.git/config
+12:27:05 | INFO | Params: 
+12:27:05 | INFO | Headers:
+12:27:05 | INFO | 	host: localhost:7777
+12:27:05 | INFO | 	connection: close
+12:27:05 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36 OPR/36.0.2130.46
+12:27:05 | INFO | 	accept-charset: utf-8
+12:27:05 | INFO | 	accept-encoding: gzip
+12:27:05 | INFO | Request:
+12:27:05 | INFO | 	type : http
+12:27:05 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+12:27:05 | INFO | 	http_version : 1.0
+12:27:05 | INFO | 	server : ('192.168.64.2', 7777)
+12:27:05 | INFO | 	client : ('192.168.64.1', 51366)
+12:27:05 | INFO | 	scheme : http
+12:27:05 | INFO | 	method : GET
+12:27:05 | INFO | 	root_path : 
+12:27:05 | INFO | 	path : /.git/config
+12:27:05 | INFO | 	raw_path : b'/.git/config'
+12:27:05 | INFO | 	query_string : b''
+12:27:05 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+12:27:05 | INFO | Response Body=404
+13:18:43 | INFO | GET http://localhost:7777/
+13:18:43 | INFO | Params: 
+13:18:43 | INFO | Headers:
+13:18:43 | INFO | 	host: localhost:7777
+13:18:43 | INFO | 	connection: close
+13:18:43 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+13:18:43 | INFO | 	accept: */*
+13:18:43 | INFO | 	accept-encoding: gzip
+13:18:43 | INFO | Request:
+13:18:43 | INFO | 	type : http
+13:18:43 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+13:18:43 | INFO | 	http_version : 1.0
+13:18:43 | INFO | 	server : ('192.168.64.2', 7777)
+13:18:43 | INFO | 	client : ('192.168.64.1', 49050)
+13:18:43 | INFO | 	scheme : http
+13:18:43 | INFO | 	method : GET
+13:18:43 | INFO | 	root_path : 
+13:18:43 | INFO | 	path : /
+13:18:43 | INFO | 	raw_path : b'/'
+13:18:43 | INFO | 	query_string : b''
+13:18:43 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+13:18:43 | INFO | Response Body=307
+13:27:38 | INFO | GET http://localhost:7777/favicon.ico
+13:27:38 | INFO | Params: 
+13:27:38 | INFO | Headers:
+13:27:38 | INFO | 	host: localhost:7777
+13:27:38 | INFO | 	connection: close
+13:27:38 | INFO | 	user-agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0
+13:27:38 | INFO | 	accept: */*
+13:27:38 | INFO | 	accept-encoding: gzip
+13:27:38 | INFO | Request:
+13:27:38 | INFO | 	type : http
+13:27:38 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+13:27:38 | INFO | 	http_version : 1.0
+13:27:38 | INFO | 	server : ('192.168.64.2', 7777)
+13:27:38 | INFO | 	client : ('192.168.64.1', 43952)
+13:27:38 | INFO | 	scheme : http
+13:27:38 | INFO | 	method : GET
+13:27:38 | INFO | 	root_path : 
+13:27:38 | INFO | 	path : /favicon.ico
+13:27:38 | INFO | 	raw_path : b'/favicon.ico'
+13:27:38 | INFO | 	query_string : b''
+13:27:38 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+13:27:38 | INFO | Response Body=404
+13:31:01 | INFO | GET http://localhost:7777/
+13:31:01 | INFO | Params: 
+13:31:01 | INFO | Headers:
+13:31:01 | INFO | 	host: localhost:7777
+13:31:01 | INFO | 	connection: close
+13:31:01 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+13:31:01 | INFO | 	accept: */*
+13:31:01 | INFO | 	accept-encoding: gzip
+13:31:01 | INFO | Request:
+13:31:01 | INFO | 	type : http
+13:31:01 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+13:31:01 | INFO | 	http_version : 1.0
+13:31:01 | INFO | 	server : ('192.168.64.2', 7777)
+13:31:01 | INFO | 	client : ('192.168.64.1', 44330)
+13:31:01 | INFO | 	scheme : http
+13:31:01 | INFO | 	method : GET
+13:31:01 | INFO | 	root_path : 
+13:31:01 | INFO | 	path : /
+13:31:01 | INFO | 	raw_path : b'/'
+13:31:01 | INFO | 	query_string : b''
+13:31:01 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+13:31:01 | INFO | Response Body=307
+13:32:02 | INFO | GET http://localhost:7777/
+13:32:02 | INFO | Params: 
+13:32:02 | INFO | Headers:
+13:32:02 | INFO | 	host: localhost:7777
+13:32:02 | INFO | 	connection: close
+13:32:02 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 OPR/90.0.4480.100
+13:32:02 | INFO | 	accept: */*
+13:32:02 | INFO | 	accept-encoding: gzip
+13:32:02 | INFO | Request:
+13:32:02 | INFO | 	type : http
+13:32:02 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+13:32:02 | INFO | 	http_version : 1.0
+13:32:02 | INFO | 	server : ('192.168.64.2', 7777)
+13:32:02 | INFO | 	client : ('192.168.64.1', 37664)
+13:32:02 | INFO | 	scheme : http
+13:32:02 | INFO | 	method : GET
+13:32:02 | INFO | 	root_path : 
+13:32:02 | INFO | 	path : /
+13:32:02 | INFO | 	raw_path : b'/'
+13:32:02 | INFO | 	query_string : b''
+13:32:02 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+13:32:02 | INFO | Response Body=307
+13:32:02 | INFO | GET http://localhost:7777/login
+13:32:02 | INFO | Params: 
+13:32:02 | INFO | Headers:
+13:32:02 | INFO | 	host: localhost:7777
+13:32:02 | INFO | 	connection: close
+13:32:02 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 OPR/90.0.4480.100
+13:32:02 | INFO | 	accept: */*
+13:32:02 | INFO | 	referer: https://46.229.212.89/
+13:32:02 | INFO | 	accept-encoding: gzip
+13:32:02 | INFO | Request:
+13:32:02 | INFO | 	type : http
+13:32:02 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+13:32:02 | INFO | 	http_version : 1.0
+13:32:02 | INFO | 	server : ('192.168.64.2', 7777)
+13:32:02 | INFO | 	client : ('192.168.64.1', 37668)
+13:32:02 | INFO | 	scheme : http
+13:32:02 | INFO | 	method : GET
+13:32:02 | INFO | 	root_path : 
+13:32:02 | INFO | 	path : /login
+13:32:02 | INFO | 	raw_path : b'/login'
+13:32:02 | INFO | 	query_string : b''
+13:32:02 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+13:32:02 | INFO | Response Body=200
+16:38:18 | INFO | GET http://localhost:7777/
+16:38:18 | INFO | Params: 
+16:38:18 | INFO | Headers:
+16:38:18 | INFO | 	host: localhost:7777
+16:38:18 | INFO | 	connection: close
+16:38:18 | INFO | 	user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0
+16:38:18 | INFO | 	accept: */*
+16:38:18 | INFO | Request:
+16:38:18 | INFO | 	type : http
+16:38:18 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+16:38:18 | INFO | 	http_version : 1.0
+16:38:18 | INFO | 	server : ('192.168.64.2', 7777)
+16:38:18 | INFO | 	client : ('192.168.64.1', 41410)
+16:38:18 | INFO | 	scheme : http
+16:38:18 | INFO | 	method : GET
+16:38:18 | INFO | 	root_path : 
+16:38:18 | INFO | 	path : /
+16:38:18 | INFO | 	raw_path : b'/'
+16:38:18 | INFO | 	query_string : b''
+16:38:18 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+16:38:18 | INFO | Response Body=307
+16:38:39 | INFO | GET http://localhost:7777/login
+16:38:39 | INFO | Params: 
+16:38:39 | INFO | Headers:
+16:38:39 | INFO | 	host: localhost:7777
+16:38:39 | INFO | 	connection: close
+16:38:39 | INFO | 	user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0
+16:38:39 | INFO | 	accept: */*
+16:38:39 | INFO | Request:
+16:38:39 | INFO | 	type : http
+16:38:39 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+16:38:39 | INFO | 	http_version : 1.0
+16:38:39 | INFO | 	server : ('192.168.64.2', 7777)
+16:38:39 | INFO | 	client : ('192.168.64.1', 46230)
+16:38:39 | INFO | 	scheme : http
+16:38:39 | INFO | 	method : GET
+16:38:39 | INFO | 	root_path : 
+16:38:39 | INFO | 	path : /login
+16:38:39 | INFO | 	raw_path : b'/login'
+16:38:39 | INFO | 	query_string : b''
+16:38:39 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+16:38:39 | INFO | Response Body=200
+16:44:31 | INFO | GET http://localhost:7777/
+16:44:31 | INFO | Params: 
+16:44:31 | INFO | Headers:
+16:44:31 | INFO | 	host: localhost:7777
+16:44:31 | INFO | 	connection: close
+16:44:31 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 QIHU 360SE
+16:44:31 | INFO | 	accept: */*
+16:44:31 | INFO | 	accept-encoding: gzip
+16:44:31 | INFO | Request:
+16:44:31 | INFO | 	type : http
+16:44:31 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+16:44:31 | INFO | 	http_version : 1.0
+16:44:31 | INFO | 	server : ('192.168.64.2', 7777)
+16:44:31 | INFO | 	client : ('192.168.64.1', 38674)
+16:44:31 | INFO | 	scheme : http
+16:44:31 | INFO | 	method : GET
+16:44:31 | INFO | 	root_path : 
+16:44:31 | INFO | 	path : /
+16:44:31 | INFO | 	raw_path : b'/'
+16:44:31 | INFO | 	query_string : b''
+16:44:31 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+16:44:31 | INFO | Response Body=307
+16:44:44 | INFO | GET http://localhost:7777/favicon.ico
+16:44:44 | INFO | Params: 
+16:44:44 | INFO | Headers:
+16:44:44 | INFO | 	host: localhost:7777
+16:44:44 | INFO | 	connection: close
+16:44:44 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 QIHU 360SE
+16:44:44 | INFO | 	accept: */*
+16:44:44 | INFO | 	accept-encoding: gzip
+16:44:44 | INFO | Request:
+16:44:44 | INFO | 	type : http
+16:44:44 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+16:44:44 | INFO | 	http_version : 1.0
+16:44:44 | INFO | 	server : ('192.168.64.2', 7777)
+16:44:44 | INFO | 	client : ('192.168.64.1', 35238)
+16:44:44 | INFO | 	scheme : http
+16:44:44 | INFO | 	method : GET
+16:44:44 | INFO | 	root_path : 
+16:44:44 | INFO | 	path : /favicon.ico
+16:44:44 | INFO | 	raw_path : b'/favicon.ico'
+16:44:44 | INFO | 	query_string : b''
+16:44:44 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+16:44:44 | INFO | Response Body=404
+16:44:45 | INFO | GET http://localhost:7777/robots.txt
+16:44:45 | INFO | Params: 
+16:44:45 | INFO | Headers:
+16:44:45 | INFO | 	host: localhost:7777
+16:44:45 | INFO | 	connection: close
+16:44:45 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 QIHU 360SE
+16:44:45 | INFO | 	accept: */*
+16:44:45 | INFO | 	accept-encoding: gzip
+16:44:45 | INFO | Request:
+16:44:45 | INFO | 	type : http
+16:44:45 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+16:44:45 | INFO | 	http_version : 1.0
+16:44:45 | INFO | 	server : ('192.168.64.2', 7777)
+16:44:45 | INFO | 	client : ('192.168.64.1', 35252)
+16:44:45 | INFO | 	scheme : http
+16:44:45 | INFO | 	method : GET
+16:44:45 | INFO | 	root_path : 
+16:44:45 | INFO | 	path : /robots.txt
+16:44:45 | INFO | 	raw_path : b'/robots.txt'
+16:44:45 | INFO | 	query_string : b''
+16:44:45 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+16:44:45 | INFO | Response Body=404
+16:44:47 | INFO | GET http://localhost:7777/static/js/jquery-3.6.1.min.js
+16:44:47 | INFO | Params: 
+16:44:47 | INFO | Headers:
+16:44:47 | INFO | 	host: localhost:7777
+16:44:47 | INFO | 	connection: close
+16:44:47 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 QIHU 360SE
+16:44:47 | INFO | 	accept: */*
+16:44:47 | INFO | 	accept-encoding: gzip
+16:44:47 | INFO | Request:
+16:44:47 | INFO | 	type : http
+16:44:47 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+16:44:47 | INFO | 	http_version : 1.0
+16:44:47 | INFO | 	server : ('192.168.64.2', 7777)
+16:44:47 | INFO | 	client : ('192.168.64.1', 35258)
+16:44:47 | INFO | 	scheme : http
+16:44:47 | INFO | 	method : GET
+16:44:47 | INFO | 	root_path : 
+16:44:47 | INFO | 	path : /static/js/jquery-3.6.1.min.js
+16:44:47 | INFO | 	raw_path : b'/static/js/jquery-3.6.1.min.js'
+16:44:47 | INFO | 	query_string : b''
+16:44:47 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+16:44:47 | INFO | Response Body=200
+16:45:10 | INFO | GET http://localhost:7777/static/js/bootstrap.min.js
+16:45:10 | INFO | Params: 
+16:45:10 | INFO | Headers:
+16:45:10 | INFO | 	host: localhost:7777
+16:45:10 | INFO | 	connection: close
+16:45:10 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 QIHU 360SE
+16:45:10 | INFO | 	accept: */*
+16:45:10 | INFO | 	accept-encoding: gzip
+16:45:10 | INFO | Request:
+16:45:10 | INFO | 	type : http
+16:45:10 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+16:45:10 | INFO | 	http_version : 1.0
+16:45:10 | INFO | 	server : ('192.168.64.2', 7777)
+16:45:10 | INFO | 	client : ('192.168.64.1', 49328)
+16:45:10 | INFO | 	scheme : http
+16:45:10 | INFO | 	method : GET
+16:45:10 | INFO | 	root_path : 
+16:45:10 | INFO | 	path : /static/js/bootstrap.min.js
+16:45:10 | INFO | 	raw_path : b'/static/js/bootstrap.min.js'
+16:45:10 | INFO | 	query_string : b''
+16:45:10 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+16:45:10 | INFO | Response Body=200
+16:45:27 | INFO | GET http://localhost:7777/static/js/bootstrap.bundle.min.js
+16:45:27 | INFO | Params: 
+16:45:27 | INFO | Headers:
+16:45:27 | INFO | 	host: localhost:7777
+16:45:27 | INFO | 	connection: close
+16:45:27 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 QIHU 360SE
+16:45:27 | INFO | 	accept: */*
+16:45:27 | INFO | 	accept-encoding: gzip
+16:45:27 | INFO | Request:
+16:45:27 | INFO | 	type : http
+16:45:27 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+16:45:27 | INFO | 	http_version : 1.0
+16:45:27 | INFO | 	server : ('192.168.64.2', 7777)
+16:45:27 | INFO | 	client : ('192.168.64.1', 47924)
+16:45:27 | INFO | 	scheme : http
+16:45:27 | INFO | 	method : GET
+16:45:27 | INFO | 	root_path : 
+16:45:27 | INFO | 	path : /static/js/bootstrap.bundle.min.js
+16:45:27 | INFO | 	raw_path : b'/static/js/bootstrap.bundle.min.js'
+16:45:27 | INFO | 	query_string : b''
+16:45:27 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+16:45:27 | INFO | Response Body=200
+17:02:12 | INFO | GET http://localhost:7777/
+17:02:12 | INFO | Params: 
+17:02:12 | INFO | Headers:
+17:02:12 | INFO | 	host: localhost:7777
+17:02:12 | INFO | 	connection: close
+17:02:12 | INFO | 	user-agent: Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)
+17:02:12 | INFO | 	accept: */*
+17:02:12 | INFO | 	accept-encoding: gzip
+17:02:12 | INFO | Request:
+17:02:12 | INFO | 	type : http
+17:02:12 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+17:02:12 | INFO | 	http_version : 1.0
+17:02:12 | INFO | 	server : ('192.168.64.2', 7777)
+17:02:12 | INFO | 	client : ('192.168.64.1', 38754)
+17:02:12 | INFO | 	scheme : http
+17:02:12 | INFO | 	method : GET
+17:02:12 | INFO | 	root_path : 
+17:02:12 | INFO | 	path : /
+17:02:12 | INFO | 	raw_path : b'/'
+17:02:12 | INFO | 	query_string : b''
+17:02:12 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+17:02:12 | INFO | Response Body=307
+18:51:12 | INFO | GET http://localhost:7777/owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f
+18:51:12 | INFO | Params: url=https%3A%2F%2F1%2Fecp%2F
+18:51:12 | INFO | Headers:
+18:51:12 | INFO | 	host: localhost:7777
+18:51:12 | INFO | 	connection: close
+18:51:12 | INFO | 	user-agent: Mozilla/5.0 zgrab/0.x
+18:51:12 | INFO | 	accept: */*
+18:51:12 | INFO | 	accept-encoding: gzip
+18:51:12 | INFO | Request:
+18:51:12 | INFO | 	type : http
+18:51:12 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+18:51:12 | INFO | 	http_version : 1.0
+18:51:12 | INFO | 	server : ('192.168.64.2', 7777)
+18:51:12 | INFO | 	client : ('192.168.64.1', 47558)
+18:51:12 | INFO | 	scheme : http
+18:51:12 | INFO | 	method : GET
+18:51:12 | INFO | 	root_path : 
+18:51:12 | INFO | 	path : /owa/auth/logon.aspx
+18:51:12 | INFO | 	raw_path : b'/owa/auth/logon.aspx'
+18:51:12 | INFO | 	query_string : b'url=https%3a%2f%2f1%2fecp%2f'
+18:51:12 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+18:51:12 | INFO | Response Body=404
+19:27:00 | INFO | GET http://localhost:7777/version
+19:27:00 | INFO | Params: 
+19:27:00 | INFO | Headers:
+19:27:00 | INFO | 	host: localhost:7777
+19:27:00 | INFO | 	connection: close
+19:27:00 | INFO | 	user-agent: Mozilla/5.0 zgrab/0.x
+19:27:00 | INFO | 	accept: */*
+19:27:00 | INFO | 	accept-encoding: gzip
+19:27:00 | INFO | Request:
+19:27:00 | INFO | 	type : http
+19:27:00 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+19:27:00 | INFO | 	http_version : 1.0
+19:27:00 | INFO | 	server : ('192.168.64.2', 7777)
+19:27:00 | INFO | 	client : ('192.168.64.1', 59172)
+19:27:00 | INFO | 	scheme : http
+19:27:00 | INFO | 	method : GET
+19:27:00 | INFO | 	root_path : 
+19:27:00 | INFO | 	path : /version
+19:27:00 | INFO | 	raw_path : b'/version'
+19:27:00 | INFO | 	query_string : b''
+19:27:00 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+19:27:00 | INFO | Response Body=404
+20:44:48 | INFO | PUT http://localhost:7777/api/v2/cmdb/system/admin/admin
+20:44:48 | INFO | Params: 
+20:44:48 | INFO | Headers:
+20:44:48 | INFO | 	host: localhost:7777
+20:44:48 | INFO | 	connection: close
+20:44:48 | INFO | 	content-length: 437
+20:44:48 | INFO | 	user-agent: Report Runner
+20:44:48 | INFO | 	accept-encoding: gzip, deflate
+20:44:48 | INFO | 	accept: */*
+20:44:48 | INFO | 	forwarded: for="[127.0.0.1]:8888";by="[127.0.0.1]:8888"
+20:44:48 | INFO | 	content-type: application/json
+20:44:48 | INFO | Request:
+20:44:48 | INFO | 	type : http
+20:44:48 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+20:44:48 | INFO | 	http_version : 1.0
+20:44:48 | INFO | 	server : ('192.168.64.2', 7777)
+20:44:48 | INFO | 	client : ('192.168.64.1', 35360)
+20:44:48 | INFO | 	scheme : http
+20:44:48 | INFO | 	method : PUT
+20:44:48 | INFO | 	root_path : 
+20:44:48 | INFO | 	path : /api/v2/cmdb/system/admin/admin
+20:44:48 | INFO | 	raw_path : b'/api/v2/cmdb/system/admin/admin'
+20:44:48 | INFO | 	query_string : b''
+20:44:48 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+20:44:48 | INFO | Response Body=404
+20:56:03 | INFO | GET http://localhost:7777/
+20:56:03 | INFO | Params: 
+20:56:03 | INFO | Headers:
+20:56:03 | INFO | 	host: localhost:7777
+20:56:03 | INFO | 	connection: close
+20:56:03 | INFO | Request:
+20:56:03 | INFO | 	type : http
+20:56:03 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+20:56:03 | INFO | 	http_version : 1.0
+20:56:03 | INFO | 	server : ('192.168.64.2', 7777)
+20:56:03 | INFO | 	client : ('192.168.64.1', 35676)
+20:56:03 | INFO | 	scheme : http
+20:56:03 | INFO | 	method : GET
+20:56:03 | INFO | 	root_path : 
+20:56:03 | INFO | 	path : /
+20:56:03 | INFO | 	raw_path : b'/'
+20:56:03 | INFO | 	query_string : b''
+20:56:03 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+20:56:03 | INFO | Response Body=307
+20:56:05 | INFO | GET http://localhost:7777/s/9383e2231323e2932323e26343/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties
+20:56:05 | INFO | Params: 
+20:56:05 | INFO | Headers:
+20:56:05 | INFO | 	host: localhost:7777
+20:56:05 | INFO | 	connection: close
+20:56:05 | INFO | 	user-agent: Go-http-client/1.1
+20:56:05 | INFO | 	accept-encoding: gzip
+20:56:05 | INFO | Request:
+20:56:05 | INFO | 	type : http
+20:56:05 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+20:56:05 | INFO | 	http_version : 1.0
+20:56:05 | INFO | 	server : ('192.168.64.2', 7777)
+20:56:05 | INFO | 	client : ('192.168.64.1', 35692)
+20:56:05 | INFO | 	scheme : http
+20:56:05 | INFO | 	method : GET
+20:56:05 | INFO | 	root_path : 
+20:56:05 | INFO | 	path : /s/9383e2231323e2932323e26343/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties
+20:56:05 | INFO | 	raw_path : b'/s/9383e2231323e2932323e26343/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties'
+20:56:05 | INFO | 	query_string : b''
+20:56:05 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+20:56:05 | INFO | Response Body=404
+20:56:05 | INFO | GET http://localhost:7777/telescope/requests
+20:56:05 | INFO | Params: 
+20:56:05 | INFO | Headers:
+20:56:05 | INFO | 	host: localhost:7777
+20:56:05 | INFO | 	connection: close
+20:56:05 | INFO | 	user-agent: Go-http-client/1.1
+20:56:05 | INFO | 	accept-encoding: gzip
+20:56:05 | INFO | Request:
+20:56:05 | INFO | 	type : http
+20:56:05 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+20:56:05 | INFO | 	http_version : 1.0
+20:56:05 | INFO | 	server : ('192.168.64.2', 7777)
+20:56:05 | INFO | 	client : ('192.168.64.1', 35696)
+20:56:05 | INFO | 	scheme : http
+20:56:05 | INFO | 	method : GET
+20:56:05 | INFO | 	root_path : 
+20:56:05 | INFO | 	path : /telescope/requests
+20:56:05 | INFO | 	raw_path : b'/telescope/requests'
+20:56:05 | INFO | 	query_string : b''
+20:56:05 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+20:56:05 | INFO | Response Body=404
+20:56:05 | INFO | GET http://localhost:7777/
+20:56:05 | INFO | Params: 
+20:56:05 | INFO | Headers:
+20:56:05 | INFO | 	host: localhost:7777
+20:56:05 | INFO | 	connection: close
+20:56:05 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 6.0; HTC One M9 Build/MRA17475) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.7868.98 Mobile Safari/537.3
+20:56:05 | INFO | Request:
+20:56:05 | INFO | 	type : http
+20:56:05 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+20:56:05 | INFO | 	http_version : 1.0
+20:56:05 | INFO | 	server : ('192.168.64.2', 7777)
+20:56:05 | INFO | 	client : ('192.168.64.1', 35704)
+20:56:05 | INFO | 	scheme : http
+20:56:05 | INFO | 	method : GET
+20:56:05 | INFO | 	root_path : 
+20:56:05 | INFO | 	path : /
+20:56:05 | INFO | 	raw_path : b'/'
+20:56:05 | INFO | 	query_string : b''
+20:56:05 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+20:56:05 | INFO | GET http://localhost:7777/?rest_route=/wp/v2/users/
+20:56:05 | INFO | Params: rest_route=%2Fwp%2Fv2%2Fusers%2F
+20:56:05 | INFO | Headers:
+20:56:05 | INFO | 	host: localhost:7777
+20:56:05 | INFO | 	connection: close
+20:56:05 | INFO | 	user-agent: Go-http-client/1.1
+20:56:05 | INFO | 	accept-encoding: gzip
+20:56:05 | INFO | Request:
+20:56:05 | INFO | 	type : http
+20:56:05 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+20:56:05 | INFO | 	http_version : 1.0
+20:56:05 | INFO | 	server : ('192.168.64.2', 7777)
+20:56:05 | INFO | 	client : ('192.168.64.1', 35710)
+20:56:05 | INFO | 	scheme : http
+20:56:05 | INFO | 	method : GET
+20:56:05 | INFO | 	root_path : 
+20:56:05 | INFO | 	path : /
+20:56:05 | INFO | 	raw_path : b'/'
+20:56:05 | INFO | 	query_string : b'rest_route=/wp/v2/users/'
+20:56:05 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+20:56:05 | INFO | GET http://localhost:7777/ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application
+20:56:05 | INFO | Params: 
+20:56:05 | INFO | Headers:
+20:56:05 | INFO | 	host: localhost:7777
+20:56:05 | INFO | 	connection: close
+20:56:05 | INFO | 	user-agent: Go-http-client/1.1
+20:56:05 | INFO | 	accept-encoding: gzip
+20:56:05 | INFO | Request:
+20:56:05 | INFO | 	type : http
+20:56:05 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+20:56:05 | INFO | 	http_version : 1.0
+20:56:05 | INFO | 	server : ('192.168.64.2', 7777)
+20:56:05 | INFO | 	client : ('192.168.64.1', 35724)
+20:56:05 | INFO | 	scheme : http
+20:56:05 | INFO | 	method : GET
+20:56:05 | INFO | 	root_path : 
+20:56:05 | INFO | 	path : /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application
+20:56:05 | INFO | 	raw_path : b'/ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application'
+20:56:05 | INFO | 	query_string : b''
+20:56:05 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+20:56:05 | INFO | GET http://localhost:7777/debug/default/view?panel=config
+20:56:05 | INFO | Params: panel=config
+20:56:05 | INFO | Headers:
+20:56:05 | INFO | 	host: localhost:7777
+20:56:05 | INFO | 	connection: close
+20:56:05 | INFO | 	user-agent: Go-http-client/1.1
+20:56:05 | INFO | 	accept-encoding: gzip
+20:56:05 | INFO | Request:
+20:56:05 | INFO | 	type : http
+20:56:05 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+20:56:05 | INFO | 	http_version : 1.0
+20:56:05 | INFO | 	server : ('192.168.64.2', 7777)
+20:56:05 | INFO | 	client : ('192.168.64.1', 35726)
+20:56:05 | INFO | 	scheme : http
+20:56:05 | INFO | 	method : GET
+20:56:05 | INFO | 	root_path : 
+20:56:05 | INFO | 	path : /debug/default/view
+20:56:05 | INFO | 	raw_path : b'/debug/default/view'
+20:56:05 | INFO | 	query_string : b'panel=config'
+20:56:05 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+20:56:05 | INFO | Response Body=404
+20:56:05 | INFO | Response Body=404
+20:56:05 | INFO | GET http://localhost:7777/.vscode/sftp.json
+20:56:05 | INFO | Params: 
+20:56:05 | INFO | Headers:
+20:56:05 | INFO | 	host: localhost:7777
+20:56:05 | INFO | 	connection: close
+20:56:05 | INFO | 	user-agent: Go-http-client/1.1
+20:56:05 | INFO | 	accept-encoding: gzip
+20:56:05 | INFO | Request:
+20:56:05 | INFO | 	type : http
+20:56:05 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+20:56:05 | INFO | 	http_version : 1.0
+20:56:05 | INFO | 	server : ('192.168.64.2', 7777)
+20:56:05 | INFO | 	client : ('192.168.64.1', 35736)
+20:56:05 | INFO | 	scheme : http
+20:56:05 | INFO | 	method : GET
+20:56:05 | INFO | 	root_path : 
+20:56:05 | INFO | 	path : /.vscode/sftp.json
+20:56:05 | INFO | 	raw_path : b'/.vscode/sftp.json'
+20:56:05 | INFO | 	query_string : b''
+20:56:05 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+20:56:05 | INFO | GET http://localhost:7777/.git/config
+20:56:05 | INFO | Params: 
+20:56:05 | INFO | Headers:
+20:56:05 | INFO | 	host: localhost:7777
+20:56:05 | INFO | 	connection: close
+20:56:05 | INFO | 	user-agent: Go-http-client/1.1
+20:56:05 | INFO | 	accept-encoding: gzip
+20:56:05 | INFO | Request:
+20:56:05 | INFO | 	type : http
+20:56:05 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+20:56:05 | INFO | 	http_version : 1.0
+20:56:05 | INFO | 	server : ('192.168.64.2', 7777)
+20:56:05 | INFO | 	client : ('192.168.64.1', 35742)
+20:56:05 | INFO | 	scheme : http
+20:56:05 | INFO | 	method : GET
+20:56:05 | INFO | 	root_path : 
+20:56:05 | INFO | 	path : /.git/config
+20:56:05 | INFO | 	raw_path : b'/.git/config'
+20:56:05 | INFO | 	query_string : b''
+20:56:05 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+20:56:05 | INFO | GET http://localhost:7777/.DS_Store
+20:56:05 | INFO | Params: 
+20:56:05 | INFO | Headers:
+20:56:05 | INFO | 	host: localhost:7777
+20:56:05 | INFO | 	connection: close
+20:56:05 | INFO | 	user-agent: Go-http-client/1.1
+20:56:05 | INFO | 	accept-encoding: gzip
+20:56:05 | INFO | Request:
+20:56:05 | INFO | 	type : http
+20:56:05 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+20:56:05 | INFO | 	http_version : 1.0
+20:56:05 | INFO | 	server : ('192.168.64.2', 7777)
+20:56:05 | INFO | 	client : ('192.168.64.1', 35752)
+20:56:05 | INFO | 	scheme : http
+20:56:05 | INFO | 	method : GET
+20:56:05 | INFO | 	root_path : 
+20:56:05 | INFO | 	path : /.DS_Store
+20:56:05 | INFO | 	raw_path : b'/.DS_Store'
+20:56:05 | INFO | 	query_string : b''
+20:56:05 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+20:56:05 | INFO | GET http://localhost:7777/info.php
+20:56:05 | INFO | Params: 
+20:56:05 | INFO | Headers:
+20:56:05 | INFO | 	host: localhost:7777
+20:56:05 | INFO | 	connection: close
+20:56:05 | INFO | 	user-agent: Go-http-client/1.1
+20:56:05 | INFO | 	accept-encoding: gzip
+20:56:05 | INFO | Request:
+20:56:05 | INFO | 	type : http
+20:56:05 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+20:56:05 | INFO | 	http_version : 1.0
+20:56:05 | INFO | 	server : ('192.168.64.2', 7777)
+20:56:05 | INFO | 	client : ('192.168.64.1', 35768)
+20:56:05 | INFO | 	scheme : http
+20:56:05 | INFO | 	method : GET
+20:56:05 | INFO | 	root_path : 
+20:56:05 | INFO | 	path : /info.php
+20:56:05 | INFO | 	raw_path : b'/info.php'
+20:56:05 | INFO | 	query_string : b''
+20:56:05 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+20:56:05 | INFO | GET http://localhost:7777/server-status
+20:56:05 | INFO | Params: 
+20:56:05 | INFO | Headers:
+20:56:05 | INFO | 	host: localhost:7777
+20:56:05 | INFO | 	connection: close
+20:56:05 | INFO | 	user-agent: Go-http-client/1.1
+20:56:05 | INFO | 	accept-encoding: gzip
+20:56:05 | INFO | Request:
+20:56:05 | INFO | 	type : http
+20:56:05 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+20:56:05 | INFO | 	http_version : 1.0
+20:56:05 | INFO | 	server : ('192.168.64.2', 7777)
+20:56:05 | INFO | 	client : ('192.168.64.1', 35774)
+20:56:05 | INFO | 	scheme : http
+20:56:05 | INFO | 	method : GET
+20:56:05 | INFO | 	root_path : 
+20:56:05 | INFO | 	path : /server-status
+20:56:05 | INFO | 	raw_path : b'/server-status'
+20:56:05 | INFO | 	query_string : b''
+20:56:05 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+20:56:05 | INFO | GET http://localhost:7777/.env
+20:56:05 | INFO | Params: 
+20:56:05 | INFO | Headers:
+20:56:05 | INFO | 	host: localhost:7777
+20:56:05 | INFO | 	connection: close
+20:56:06 | INFO | 	user-agent: Go-http-client/1.1
+20:56:06 | INFO | 	accept-encoding: gzip
+20:56:06 | INFO | Request:
+20:56:06 | INFO | 	type : http
+20:56:06 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+20:56:06 | INFO | 	http_version : 1.0
+20:56:06 | INFO | 	server : ('192.168.64.2', 7777)
+20:56:06 | INFO | 	client : ('192.168.64.1', 35780)
+20:56:06 | INFO | 	scheme : http
+20:56:06 | INFO | 	method : GET
+20:56:06 | INFO | 	root_path : 
+20:56:06 | INFO | 	path : /.env
+20:56:06 | INFO | 	raw_path : b'/.env'
+20:56:06 | INFO | 	query_string : b''
+20:56:06 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+20:56:06 | INFO | Response Body=404
+20:56:06 | INFO | Response Body=404
+20:56:06 | INFO | Response Body=404
+20:56:06 | INFO | Response Body=404
+20:56:06 | INFO | Response Body=404
+20:56:06 | INFO | Response Body=404
+20:56:06 | INFO | Response Body=307
+20:56:06 | INFO | Response Body=307
+20:56:06 | INFO | GET http://localhost:7777/about
+20:56:06 | INFO | Params: 
+20:56:06 | INFO | Headers:
+20:56:06 | INFO | 	host: localhost:7777
+20:56:06 | INFO | 	connection: close
+20:56:06 | INFO | 	user-agent: Go-http-client/1.1
+20:56:06 | INFO | 	accept-encoding: gzip
+20:56:06 | INFO | Request:
+20:56:06 | INFO | 	type : http
+20:56:06 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+20:56:06 | INFO | 	http_version : 1.0
+20:56:06 | INFO | 	server : ('192.168.64.2', 7777)
+20:56:06 | INFO | 	client : ('192.168.64.1', 35794)
+20:56:06 | INFO | 	scheme : http
+20:56:06 | INFO | 	method : GET
+20:56:06 | INFO | 	root_path : 
+20:56:06 | INFO | 	path : /about
+20:56:06 | INFO | 	raw_path : b'/about'
+20:56:06 | INFO | 	query_string : b''
+20:56:06 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+20:56:06 | INFO | GET http://localhost:7777/login.action
+20:56:06 | INFO | Params: 
+20:56:06 | INFO | Headers:
+20:56:06 | INFO | 	host: localhost:7777
+20:56:06 | INFO | 	connection: close
+20:56:06 | INFO | 	user-agent: Go-http-client/1.1
+20:56:06 | INFO | 	accept-encoding: gzip
+20:56:06 | INFO | Request:
+20:56:06 | INFO | 	type : http
+20:56:06 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+20:56:06 | INFO | 	http_version : 1.0
+20:56:06 | INFO | 	server : ('192.168.64.2', 7777)
+20:56:06 | INFO | 	client : ('192.168.64.1', 35806)
+20:56:06 | INFO | 	scheme : http
+20:56:06 | INFO | 	method : GET
+20:56:06 | INFO | 	root_path : 
+20:56:06 | INFO | 	path : /login.action
+20:56:06 | INFO | 	raw_path : b'/login.action'
+20:56:06 | INFO | 	query_string : b''
+20:56:06 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+20:56:06 | INFO | Response Body=404
+20:56:06 | INFO | Response Body=404
+20:56:06 | INFO | GET http://localhost:7777/v2/_catalog
+20:56:06 | INFO | Params: 
+20:56:06 | INFO | Headers:
+20:56:06 | INFO | 	host: localhost:7777
+20:56:06 | INFO | 	connection: close
+20:56:06 | INFO | 	user-agent: Go-http-client/1.1
+20:56:06 | INFO | 	accept: application/json
+20:56:06 | INFO | 	accept-encoding: gzip
+20:56:06 | INFO | Request:
+20:56:06 | INFO | 	type : http
+20:56:06 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+20:56:06 | INFO | 	http_version : 1.0
+20:56:06 | INFO | 	server : ('192.168.64.2', 7777)
+20:56:06 | INFO | 	client : ('192.168.64.1', 35820)
+20:56:06 | INFO | 	scheme : http
+20:56:06 | INFO | 	method : GET
+20:56:06 | INFO | 	root_path : 
+20:56:06 | INFO | 	path : /v2/_catalog
+20:56:06 | INFO | 	raw_path : b'/v2/_catalog'
+20:56:06 | INFO | 	query_string : b''
+20:56:06 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+20:56:06 | INFO | GET http://localhost:7777/api/search?folderIds=0
+20:56:06 | INFO | Params: folderIds=0
+20:56:06 | INFO | Headers:
+20:56:06 | INFO | 	host: localhost:7777
+20:56:06 | INFO | 	connection: close
+20:56:06 | INFO | 	user-agent: Go-http-client/1.1
+20:56:06 | INFO | 	accept: application/json
+20:56:06 | INFO | 	content-type: application/json
+20:56:06 | INFO | 	accept-encoding: gzip
+20:56:06 | INFO | Request:
+20:56:06 | INFO | 	type : http
+20:56:06 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+20:56:06 | INFO | 	http_version : 1.0
+20:56:06 | INFO | 	server : ('192.168.64.2', 7777)
+20:56:06 | INFO | 	client : ('192.168.64.1', 35832)
+20:56:06 | INFO | 	scheme : http
+20:56:06 | INFO | 	method : GET
+20:56:06 | INFO | 	root_path : 
+20:56:06 | INFO | 	path : /api/search
+20:56:06 | INFO | 	raw_path : b'/api/search'
+20:56:06 | INFO | 	query_string : b'folderIds=0'
+20:56:06 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+20:56:06 | INFO | GET http://localhost:7777/config.json
+20:56:06 | INFO | Params: 
+20:56:06 | INFO | Headers:
+20:56:06 | INFO | 	host: localhost:7777
+20:56:06 | INFO | 	connection: close
+20:56:06 | INFO | 	user-agent: Go-http-client/1.1
+20:56:06 | INFO | 	accept-encoding: gzip
+20:56:06 | INFO | Request:
+20:56:06 | INFO | 	type : http
+20:56:06 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+20:56:06 | INFO | 	http_version : 1.0
+20:56:06 | INFO | 	server : ('192.168.64.2', 7777)
+20:56:06 | INFO | 	client : ('192.168.64.1', 35838)
+20:56:06 | INFO | 	scheme : http
+20:56:06 | INFO | 	method : GET
+20:56:06 | INFO | 	root_path : 
+20:56:06 | INFO | 	path : /config.json
+20:56:06 | INFO | 	raw_path : b'/config.json'
+20:56:06 | INFO | 	query_string : b''
+20:56:06 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+20:56:06 | INFO | Response Body=404
+20:56:06 | INFO | Response Body=404
+20:56:06 | INFO | Response Body=404
+21:40:37 | INFO | GET http://46.229.212.89:7777/
+21:40:37 | INFO | Params: 
+21:40:37 | INFO | Headers:
+21:40:37 | INFO | 	host: 46.229.212.89:7777
+21:40:37 | INFO | 	user-agent: Mozilla/5.0 zgrab/0.x
+21:40:37 | INFO | 	accept: */*
+21:40:37 | INFO | 	accept-encoding: gzip
+21:40:37 | INFO | Request:
+21:40:37 | INFO | 	type : http
+21:40:37 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+21:40:37 | INFO | 	http_version : 1.1
+21:40:37 | INFO | 	server : ('192.168.64.2', 7777)
+21:40:37 | INFO | 	client : ('192.241.215.18', 47454)
+21:40:37 | INFO | 	scheme : http
+21:40:37 | INFO | 	method : GET
+21:40:37 | INFO | 	root_path : 
+21:40:37 | INFO | 	path : /
+21:40:37 | INFO | 	raw_path : b'/'
+21:40:37 | INFO | 	query_string : b''
+21:40:37 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+21:40:37 | INFO | Response Body=307
+23:38:06 | INFO | GET http://localhost:7777/
+23:38:06 | INFO | Params: 
+23:38:06 | INFO | Headers:
+23:38:06 | INFO | 	host: localhost:7777
+23:38:06 | INFO | 	connection: close
+23:38:06 | INFO | Request:
+23:38:06 | INFO | 	type : http
+23:38:06 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+23:38:06 | INFO | 	http_version : 1.0
+23:38:06 | INFO | 	server : ('192.168.64.2', 7777)
+23:38:06 | INFO | 	client : ('192.168.64.1', 37338)
+23:38:06 | INFO | 	scheme : http
+23:38:06 | INFO | 	method : GET
+23:38:06 | INFO | 	root_path : 
+23:38:06 | INFO | 	path : /
+23:38:06 | INFO | 	raw_path : b'/'
+23:38:06 | INFO | 	query_string : b''
+23:38:06 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+23:38:06 | INFO | Response Body=307
+23:38:06 | INFO | GET http://localhost:7777/
+23:38:06 | INFO | Params: 
+23:38:06 | INFO | Headers:
+23:38:06 | INFO | 	host: localhost:7777
+23:38:06 | INFO | 	connection: close
+23:38:06 | INFO | 	user-agent: Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)
+23:38:06 | INFO | 	accept: */*
+23:38:06 | INFO | 	accept-encoding: gzip
+23:38:06 | INFO | Request:
+23:38:06 | INFO | 	type : http
+23:38:06 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+23:38:06 | INFO | 	http_version : 1.0
+23:38:06 | INFO | 	server : ('192.168.64.2', 7777)
+23:38:06 | INFO | 	client : ('192.168.64.1', 37342)
+23:38:06 | INFO | 	scheme : http
+23:38:06 | INFO | 	method : GET
+23:38:06 | INFO | 	root_path : 
+23:38:06 | INFO | 	path : /
+23:38:06 | INFO | 	raw_path : b'/'
+23:38:06 | INFO | 	query_string : b''
+23:38:06 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+23:38:06 | INFO | Response Body=307
+23:38:07 | INFO | GET http://localhost:7777/login
+23:38:07 | INFO | Params: 
+23:38:07 | INFO | Headers:
+23:38:07 | INFO | 	host: localhost:7777
+23:38:07 | INFO | 	connection: close
+23:38:07 | INFO | 	user-agent: Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)
+23:38:07 | INFO | 	accept: */*
+23:38:07 | INFO | 	accept-encoding: gzip
+23:38:07 | INFO | Request:
+23:38:07 | INFO | 	type : http
+23:38:07 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+23:38:07 | INFO | 	http_version : 1.0
+23:38:07 | INFO | 	server : ('192.168.64.2', 7777)
+23:38:07 | INFO | 	client : ('192.168.64.1', 37344)
+23:38:07 | INFO | 	scheme : http
+23:38:07 | INFO | 	method : GET
+23:38:07 | INFO | 	root_path : 
+23:38:07 | INFO | 	path : /login
+23:38:07 | INFO | 	raw_path : b'/login'
+23:38:07 | INFO | 	query_string : b''
+23:38:07 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+23:38:07 | INFO | Response Body=200
+23:38:08 | INFO | GET http://localhost:7777/favicon.ico
+23:38:08 | INFO | Params: 
+23:38:08 | INFO | Headers:
+23:38:08 | INFO | 	host: localhost:7777
+23:38:08 | INFO | 	connection: close
+23:38:08 | INFO | 	user-agent: Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)
+23:38:08 | INFO | 	accept-encoding: gzip
+23:38:08 | INFO | Request:
+23:38:08 | INFO | 	type : http
+23:38:08 | INFO | 	asgi : {'version': '3.0', 'spec_version': '2.3'}
+23:38:08 | INFO | 	http_version : 1.0
+23:38:08 | INFO | 	server : ('192.168.64.2', 7777)
+23:38:08 | INFO | 	client : ('192.168.64.1', 37352)
+23:38:08 | INFO | 	scheme : http
+23:38:08 | INFO | 	method : GET
+23:38:08 | INFO | 	root_path : 
+23:38:08 | INFO | 	path : /favicon.ico
+23:38:08 | INFO | 	raw_path : b'/favicon.ico'
+23:38:08 | INFO | 	query_string : b''
+23:38:08 | INFO | 	app : <fastapi.applications.FastAPI object at 0x7f2c46c6a2f0>
+23:38:08 | INFO | Response Body=404

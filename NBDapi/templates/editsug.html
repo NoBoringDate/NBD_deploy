@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% block title %}{{page_title}}{% endblock %}
+{% block nav_button %}
+<div class="collapse navbar-collapse" id="navcol-3">
+    <ul class="navbar-nav mx-auto">
+        <a class="btn btn-success link-dark border rounded-pill border-dark" href="/suggestions" type="button"
+            style="margin-right: 10px;">Отмена</a>
+    </ul>
+
+</div>
+
+{%endblock%}
+{% block content %}
+<div class="container">
+
+    <form id="fr" method="post" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="input-group" style="padding-top: 10px;padding-bottom: 10px;"><span
+                        class="input-group-text">Заголовок</span><input class="form-control" name="title" type="text"
+                        value="{{sugs.get('title')}}"></div>
+                <div class="input-group" style="padding-top: 10px;padding-bottom: 10px;"><span
+                        class="input-group-text">Ссылка</span><input class="form-control" name="link" type="text"
+                        value="{{sugs.get('link')}}"></div>
+                <div class="input-group" style="padding-top: 10px;padding-bottom: 10px;"><span
+                        class="input-group-text">Адрес</span><input class="form-control" name="address" type="text"></div>
+                <div class="input-group" style="padding-top: 10px;padding-bottom: 10px;"><span
+                        class="input-group-text">т. номер</span><input class="form-control" type="text"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="input-group" style="padding-top: 5px;padding-bottom: 5px;"><span
+                        class="input-group-text">Описание</span><textarea class="form-control" id="message-3"
+                        name="long_desc" rows="6" placeholder="Message"></textarea></div>
+            </div>
+            <div class="col-md-4 align-content-center">
+                <div class="input-group" style="padding-top: 5px;padding-bottom: 5px;"><span
+                        class="input-group-text">Описание<br>тарифов</span><textarea class="form-control" id="message-4"
+                        name="message" rows="6" placeholder="Message"></textarea></div>
+            </div>
+        </div>
+        
+
+        <div class="row justify-content-center">
+            <div class="col-md-12 offset-0">
+                <div class="input-file-row">
+                    <label class="input-file">
+                        <input type="file" name="cover"  accept="image/*">
+                        <span>Выберите файл</span>
+                    </label>
+                    <div class="input-file-list"></div>
+                </div>
+                <div class="row justify-content-center" id="preview-area1">
+
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col-md-12 offset-0">
+                <div class="input-file-row">
+                    <label class="input-file">
+                        <input type="file" name="images" multiple accept="image/*">
+                        <span>Выберите файл</span>
+                    </label>
+                    <div class="input-file-list"></div>
+                </div>
+                <div class="row justify-content-center" id="preview-area2">
+
+                </div>
+            </div>
+        </div>
+        <script>
+            var dt = new DataTransfer();
+
+            $('.input-file input[type=file]').on('change', function () {
+                let $files_list = $(this).closest('.input-file').next();
+                $files_list.empty();
+
+                for (var i = 0; i < this.files.length; i++) {
+                    let file = this.files.item(i);
+                    dt.items.add(file);
+
+                    let reader = new FileReader();
+                    reader.readAsDataURL(file);
+                    reader.onloadend = function () {
+                        let new_file_input = '<div class="input-file-list-item">' +
+                            '<img class="input-file-list-img" src="' + reader.result + '">' +
+                            '<span class="input-file-list-name">' + file.name + '</span>' +
+                            '<a href="#" onclick="removeFilesItem(this); return false;" class="input-file-list-remove">x</a>' +
+                            '</div>';
+                        $files_list.append(new_file_input);
+                    }
+                };
+                this.files = dt.files;
+            });
+
+            function removeFilesItem(target) {
+                let name = $(target).prev().text();
+                let input = $(target).closest('.input-file-row').find('input[type=file]');
+                $(target).closest('.input-file-list-item').remove();
+                for (let i = 0; i < dt.items.length; i++) {
+                    if (name === dt.items[i].getAsFile().name) {
+                        dt.items.remove(i);
+                    }
+                }
+                input[0].files = dt.files;
+            }
+        </script>
+        <div class="row d-flex justify-content-center">
+            {% for el in combine %}
+            <div class="col-2"
+                style="padding-top: 5px;padding-bottom: 5px;padding-right: 20px;padding-left: 20px;border-radius: 1px;border-width: 1px;border-style: solid;">
+                <label class="form-label"><br>{{el.answer1}} // {{el.answer2}}
+                    <hr>
+                </label>
+                <div class="form-check"><input id="formCheck-3" class="form-check-input" type="radio" name="{{el.id}}"
+                        value="first" /><label class="form-check-label" for="formCheck-3">1 порядок</label></div>
+                <div class="form-check"><input id="formCheck-4" class="form-check-input" type="radio" name="{{el.id}}"
+                        value="second" /><label class="form-check-label" for="formCheck-4">2 порядок</label></div>
+                <div class="form-check"><input id="formCheck-4" class="form-check-input " type="radio" name="{{el.id}}"
+                        value="false" checked /><label class="form-check-label" for="formCheck-4">не подходит</label>
+                </div>
+
+            </div>
+            {% endfor %}
+        </div>
+        <div><button class="btn btn-primary d-block w-100" type="submit" style="margin-top: 18px;">Send </button></div>
+    </form>
+</div>
+{% endblock %}

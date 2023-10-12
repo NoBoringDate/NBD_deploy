@@ -1,0 +1,34 @@
+<div class="popup-bg-ques" style="z-index: 300;" id="popup-bg"> 
+    <div class="popup-ques">
+        <div style="height: 33rem; width: 100%">
+            <form id="answer">
+            <div id="answerFS">
+                <div class="row">
+                    <div class="col-md-6"><p class="text-center" style="height: auto; font-size: 1.5rem;">Ответы</p></div>
+                    <div class="col-md-3"><a class="btn green-full-button" onclick="saveFilterAnswer('{{ques.id}}');">Сохранить</a></div>
+                    <div class="col-md-3"><a class="btn pink-full-button" onclick="cancel_popup_ques();">Отменить</a></div>
+                </div>
+                
+    {% for answer in ques.answer %}
+        <div id="answer{{loop.index}}" class="row viewsug-text">
+            <div>
+            <div class="row" style="padding: 0 0 0.5rem 0">
+                <div class="content-end">
+                        <a class="btn pink-full-button" style="font-size: 0.7rem; height: 1.5rem; width: 5rem" onclick="deleteFilterAnswer('{{loop.index}}');">Удалить</a>
+                </div>
+            </div>
+            <div class="row">
+                <input id="EFA{{loop.index}}" required name="answer{{loop.index}}" class="content-center form-custom form-control" style="font-size:1rem; width: 100%" value="{{answer}}">   <!-- ответ на вопрос -->
+            </div> 
+            </div>     
+        </div>
+    {% endfor %}
+                </div>
+            </form>   
+            <div class="content-center">
+                <button class="blue-full-button text-center col-md-6" onclick="add_answer_f_s('{{counter}}');">Добавить ответ</button>
+            </div>
+            <div class="offset-title"></div>
+        </div>
+    </div>
+</div>

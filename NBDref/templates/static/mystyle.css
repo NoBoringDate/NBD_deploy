@@ -1,0 +1,463 @@
+html,
+body {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  color: rgb(33, 37, 41);
+  font-size: 20px;
+  /* задаем размер текста */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fixed-container {
+  margin: 0 auto;
+  /* отступы верх и низ 0, лево и право авто */
+  height: 100%;
+  /* заполняем элемент в высоту */
+}
+
+a {
+  color: rgb(33, 37, 41);
+  /* черный цвет текста */
+  margin-right: 30px;
+  /* делаем отступ между словами*/
+  text-decoration: none;
+  /* убираем подчеркивание текста */
+}
+
+button {
+  cursor: pointer;
+  border-radius: 10px;
+  /* закругление кнопки */
+  padding: 5px 10px 0;
+  /* увеличиваем размер кнопки задавая отступы от текста */
+}
+
+.transparent-button {
+  background-color: transparent;
+  /* фон кнопки внутри прозрачный */
+  border: 1px solid rgb(33, 37, 41);
+  /* делаем рамку тоньше и черного цвета */
+}
+
+.pink-full-button {
+  background-color: #de62a1;
+  border: 2px solid #de62a1;
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+}
+
+.pink-full-button:hover {
+  background-color: transparent;
+  color: rgb(33, 37, 41);
+}
+
+.green-full-button {
+  background-color: #5EBB9C;
+  border: 2px solid #5EBB9C;
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+}
+
+.green-full-button:hover {
+  background-color: transparent;
+  color: rgb(33, 37, 41);
+}
+
+.blue-full-button {
+  background-color: #63b6e7;
+  border: 2px solid #63b6e7;
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+}
+
+.blue-full-button:hover {
+  background-color: transparent;
+  color: rgb(33, 37, 41);
+}
+
+.pink-button {
+  background-color: white;
+  border: 2px solid #de62a1;
+  color: rgb(33, 37, 41);
+  border-radius: 30px;
+}
+
+.pink-button:hover {
+  background-color: #de62a1;
+  color: white;
+}
+
+.green-button {
+  background-color: white;
+  border: 2px solid #5EBB9C;
+  color: rgb(33, 37, 41);
+  border-radius: 30px;
+}
+
+.green-button:hover {
+  background-color: #5EBB9C;
+  color: white;
+}
+
+.blue-button {
+  background-color: white;
+  border: 2px solid #63b6e7;
+  color: rgb(33, 37, 41);
+  border-radius: 30px;
+}
+
+.blue-button:hover {
+  background-color: #63b6e7;
+  color: white;
+}
+
+.blue-button-radio {
+  background-color: #b6dbf1;
+  border: 2px solid #b6dbf1;
+  color: black;
+  border-radius: 10px;
+}
+
+.dark-button {
+  color: rgb(33, 37, 41);
+  background-color: #63b6e7;
+  /* фон кнопки внутри */
+  border: 1px solid #63b6e7;
+  /* делаем рамку тоньше и черного цвета */
+}
+
+.dark-button:hover {
+  background-color: rgb(33, 37, 41);
+  color: #63b6e7;
+  border: 1px solid c;
+}
+
+.light-text {
+  color: rgb(255, 255, 255);
+}
+
+.dark-text {
+  color: rgb(33, 37, 41);
+}
+
+.text:hover {
+  text-decoration: none;
+  color: rgb(33, 37, 41);
+}
+
+/* body {
+  background-image: url(img/background.jpeg);
+  background-size: cover;
+} */
+
+.form-custom {
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 2px solid #63b6e7;
+  border-radius: 0px;
+}
+
+.input-file-row {
+  display: inline-block;
+}
+
+.input-file {
+  position: relative;
+  display: inline-block;
+}
+
+.input-file span {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  font-size: 14px;
+  vertical-align: middle;
+  color: rgb(255 255 255);
+  text-align: center;
+  border-radius: 4px;
+  background-color: #63b6e7;
+  line-height: 22px;
+  height: 40px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  transition: background-color 0.2s;
+}
+
+.input-file input[type=file] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+.block {
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+
+/* Focus */
+.input-file input[type=file]:focus+span {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+/* Hover/active */
+.input-file:hover span {
+  background-color: #63b6e7;
+}
+
+.input-file:active span {
+  background-color: #63b6e7;
+}
+
+/* Disabled */
+.input-file input[type=file]:disabled+span {
+  background-color: #eee;
+}
+
+/* Список c превью */
+.input-file-list {
+  padding: 10px 0;
+}
+
+.input-file-list-item {
+  display: inline-block;
+  margin: 0 15px 15px;
+  width: 150px;
+  vertical-align: top;
+  position: relative;
+}
+
+.input-file-list-item img {
+  width: 150px;
+}
+
+.input-file-list-name {
+  text-align: center;
+  display: block;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.input-file-list-remove {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 5px;
+  right: 5px;
+  background: #de62a1;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  line-height: 16px;
+  border-radius: 50%;
+}
+
+.form_radio_btn {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.form_radio_btn input[type=radio] {
+  display: none;
+}
+
+.form_radio_btn label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0px 15px;
+  line-height: 34px;
+  border: 1px solid #999;
+  border-radius: 6px;
+  user-select: none;
+}
+
+.card-sug {
+  width: 280px;
+  height: 280px;
+}
+
+.offset-title {
+  height: 1.5rem;
+}
+
+.offset-end {
+  height: 3rem;
+}
+
+.viewsug-text {
+  background-color: white;
+  border: 0.1rem solid #63b6e7;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.radio-position {
+  position: relative;
+  top: 100%;
+}
+
+.popup-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  background: white ;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+}
+
+.content-center {
+  display: flex;	
+  justify-content: center;	
+}
+
+.content-end {
+  display: flex;	
+  justify-content: end;	
+}
+
+.triple {
+  width: auto;
+}
+
+.pink-nav-button {
+  background-color: #de62a1;
+  border: 2px solid transparent;
+  color: rgb(33, 37, 41);
+  border-radius: 30px;
+}
+
+.pink-nav-button:hover {
+  background-color: transparent;
+  border: 2px solid #de62a1;
+  color: #de62a1;
+}
+
+.green-nav-button {
+  background-color: #5EBB9C;
+  border: 2px solid transparent;
+  color: rgb(33, 37, 41);
+  border-radius: 30px;
+}
+
+.green-nav-button:hover {
+  background-color: transparent;
+  border: 2px solid #5EBB9C;
+  color: #5EBB9C;
+}
+
+.blue-nav-button {
+  background-color: #63b6e7;
+  border: 2px solid transparent;
+  color: rgb(33, 37, 41);
+  border-radius: 30px;
+}
+
+.blue-nav-button:hover {
+  background-color: transparent;
+  border: 2px solid #63b6e7;
+  color: #63b6e7;
+}
+
+/* центровка картинок в suggestions */
+.outer:before {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  content: "";
+}
+
+.inner {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.crop {
+  overflow: hidden;
+}
+
+.box_main {
+  margin: 0 auto;
+  height: 7rem;
+  overflow: hidden;
+  transition: all 0.5s;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+}
+.box_f {
+  margin: 0 auto;
+  height: 7rem;
+  overflow: hidden;
+  transition: all 0.5s;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+}
+.box_s {
+  margin: 0 auto;
+  height: 7rem;
+  overflow: hidden;
+  transition: all 0.5s;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.box:after {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+}
+
+.box-activ {
+  height: 100%;
+}
+
+.green-button-ques {
+  background-color: white;
+  border: 2px solid #5EBB9C;
+  color: rgb(33, 37, 41);
+  border-radius: 30px;
+}
+
+.green-button-ques:hover {
+  background-color: #5ebb9c23;
+  color: rgb(33, 37, 41);
+  border: 2px solid #5EBB9C;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+
+@media (max-width: 1600px) {
+  .cards {
+    justify-content: center;
+  }
+}
+

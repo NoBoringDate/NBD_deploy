@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% block title %}{{page_title}}{% endblock %}
+
+{% block nav_button %}
+<div class="viewsug-nav">
+  {% if role != "marketer"%}<button class="btn green-nav-button" onclick="window.location.href = '/suggestions/edit/{{sug.id}}'" type="reset">Изменить</button>{% endif %}
+  {% if role != "marketer"%}<button class="btn pink-nav-button" onclick="alertDelete()">Удалить</button>{% endif %}
+</div>
+{% endblock %}
+
+{% block content %} 
+<div>
+    <div class="sug_title">
+        <h4>{{sug.title}}</h4>
+        {%if sug.verif%}<img id="verification{{sug.verif}}" height="30px" src="/static/img/accept.png" alt="verification">{%endif%}
+        {%if sug.active%}<img id="active{{sug.active}}" height="30px" src="/static/img/eye.png" alt="active">{%endif%}
+        {%if sug.advance%}
+        <img id="advance{{sug.advance}}" height="30px" src="/static/img/star.png" alt="advance">
+      </div>
+      <div class="text-center">
+        <p>Даты продвижения</p>
+        <p>C {{sug.advance_date_start}}</p>
+        <p>До {{sug.advance_date_end}}</p>
+      </div>
+        {%else%}
+        </div>
+        {%endif%}
+    
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6" style="padding: 0 2rem 0 0">
+            <div class="text-wrap">
+              <h4 style="text-align: center;">Описание</h4>
+              <p class="viewsug-text">{{sug.description}}</p>
+            </div>
+            <div class="text-wrap">
+              <h4 style="text-align: center;">Краткое описание</h4>
+              <p class="viewsug-text">{{sug.short_desc}}</p>
+            </div>
+            <div class="text-wrap">
+              <h4 style="text-align: center;">Тарифный план</h4>
+              <p class="viewsug-text">{{sug.price}}</p>
+            </div>
+            <div class="text-wrap">
+              <div>
+                <h4 style="text-align: center;">Контакт</h4>
+                <img onclick="contactCopy();" src="/static/img/copy.png" alt="copy">
+              </div>
+              <p class="viewsug-text" id="contact">{{sug.contact}}</p>
+            </div>
+            <div class="text-wrap">
+              <h4 style="text-align: center;">Адрес</h4>
+              <p class="viewsug-text">{{sug.address}}</p>
+            </div>
+            <div class="text-wrap">
+              <h4 style="text-align: center;">Тэг</h4>
+              <p class="viewsug-text">{{sug.tag}}</p>
+            </div>
+            <div class="text-wrap">
+              <h4 style="text-align: center;">Фильрационные параметры</h4>
+              <p class="viewsug-text">{{sug.filter_param | join(", ")}}</p>
+            </div>
+            <div class="text-wrap">
+              <h4 style="text-align: center;">Связанные предложения</h4>
+              <p class="viewsug-text">{{similar | join(", ")}}</p>
+            </div>
+          </div>
+
+          <div class="col-md-6" style="padding: 0 0 0 2rem">
+            <section class="gallery row">
+              <div class="gallery__item col-md-4">
+                <input type="radio" id="img-0" checked name="gallery" class="gallery__selector"/>
+                <img class="gallery__img" src={{sug.cover}} alt=""/>
+                <label for="img-0" class="gallery__thumb"><img style=" width: 150px;" src={{sug.cover}} alt=""/></label>
+              </div>
+              {% for el in sug.images %}
+              <div class="gallery__item col-md-4">
+                <input type="radio" id="img-{{loop.index}}" name="gallery" class="gallery__selector"/>
+                <img class="gallery__img" src={{el}} alt=""/>
+                <label for="img-{{loop.index}}" class="gallery__thumb"><img style="width: 150px;" src={{el}} alt=""/></label>
+              </div>
+              {%endfor%}
+            </section>
+          </div> 
+          </div>
+
+          <div class="offset-end"></div>
+
+          <script>
+
+            function alertDelete () {
+            var del = confirm("Вы уверены, что хотите удалить?");
+            if (del) {
+              $.ajax({
+                url:"/suggestions/delete/{{sug.id}}",
+                context: document.body,
+                success: function () {
+                  window.location = "/suggestions";
+                }
+            });
+            } else {
+            }
+            }
+            
+            $('#verificationFalse').attr('hidden', 'true')
+
+//копирование поля контакт в буфер обмена
+            function contactCopy() {
+              const str = document.getElementById('contact').innerText;
+              const el = document.createElement('textarea');
+              el.value = str;
+              el.setAttribute('readonly', '');
+              el.style.position = 'absolute';
+              el.style.left = '-9999px';
+              document.body.appendChild(el);
+              el.select();
+              document.execCommand('copy');
+              document.body.removeChild(el);
+            }
+          </script>
+
+    </div>
+</div>
+
+
+{% endblock %}

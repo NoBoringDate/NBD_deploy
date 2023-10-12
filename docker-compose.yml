@@ -1,0 +1,77 @@
+version: "3.3"
+
+services:
+
+  nbdadmin:
+    build:
+        context: ./NBDadmin/
+    environment:
+            APP_PORT: 7777
+            LINK_TEMPLATE: "https://noboringdate.ru/ref/"
+            LINK_TEMPLATE_SUG: "https://noboringdate.ru/ref/"
+            DB_NAME: default_db
+            DB_URL: 89.223.71.152
+            DB_PORT: 5432
+            DB_USER: gen_user
+            DB_PASS: sif0yatup6
+    container_name: "NBDadmin"
+    ports:
+      - "7777:7777"
+    restart: always
+    volumes:
+      - ./Logs/ADMIN:/app/logs
+
+    command: python3 ./app.py
+
+  nbdapi:
+    build:
+        context: ./NBDapi/
+    environment:
+          APP_PORT: 8888
+          LINK_TEMPLATE: "https://t.me/Noboringdate_bot?start="
+          LINK_TEMPLATE_SUG: "https://noboringdate.ru?ref="
+          BOT_TOKEN: "5616255719:AAEH23UKyoVgWkXdmesl2qksQ4FVW96UmrI"
+          DB_NAME: "default_db"
+          DB_URL: "89.223.71.152"
+          DB_PORT: "5432"
+          DB_USER: "gen_user"
+          DB_PASS: "sif0yatup6"
+    container_name: "NBDapi"
+    ports:
+      - "7592:8888"
+    restart: always
+    volumes:
+      - ./Logs/API:/app/logs
+    command: python3 /app/app.py
+
+  nbdbot:
+    build:
+        context: ./NBDbot/
+    environment:
+            API_URL: "http://46.229.212.89:7592"
+    container_name: "NBDbot"
+    restart: always
+    depends_on:
+      - nbdapi
+    volumes:
+      - ./Logs/BOT:/app/logs
+    command: python3 ./start.py
+
+  nbdref:
+    build:
+        context: ./NBDref/
+    environment:
+            APP_PORT: 5555
+            DB_NAME: default_db
+            DB_URL: 89.223.71.152
+            DB_PORT: 5432
+            DB_USER: gen_user
+            DB_PASS: sif0yatup6
+            PROMO_TG_LINK: "https://t.me/Noboringdate_bot?start="
+    container_name: "NBDref"
+    restart: always
+    ports:
+      - "5656:5555"
+    volumes:
+      - ./Logs/REF:/app/logs
+    command: python3 /app/app.py

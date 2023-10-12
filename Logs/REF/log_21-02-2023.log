@@ -1,0 +1,913 @@
+02:16:03 | INFO | GET http://localhost:5656/
+02:16:03 | INFO | Request Body: 
+02:16:03 | INFO | Headers:
+02:16:03 | INFO | 	host: localhost:5656
+02:16:03 | INFO | 	connection: close
+02:16:03 | INFO | 	cache-control: no-cache
+02:16:03 | INFO | 	pragma: no-cache
+02:16:03 | INFO | 	accept: */*
+02:16:03 | INFO | 	accept-encoding: gzip, deflate
+02:16:03 | INFO | 	from: bingbot(at)microsoft.com
+02:16:03 | INFO | 	user-agent: Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/103.0.5060.134 Safari/537.36
+08:24:19 | INFO | GET http://localhost:5656/
+08:24:19 | INFO | Request Body: 
+08:24:19 | INFO | Headers:
+08:24:19 | INFO | 	host: localhost:5656
+08:24:19 | INFO | 	connection: close
+08:24:19 | INFO | 	cache-control: no-cache
+08:24:19 | INFO | 	pragma: no-cache
+08:24:19 | INFO | 	accept: */*
+08:24:19 | INFO | 	accept-encoding: gzip, deflate
+08:24:19 | INFO | 	from: bingbot(at)microsoft.com
+08:24:19 | INFO | 	user-agent: Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/103.0.5060.134 Safari/537.36
+10:48:42 | INFO | GET http://localhost:5656/?ref=OhJV8c4RfFof9vIlZfjZIg&id=199219327&session=10753
+10:48:42 | INFO | Request Body: ref=OhJV8c4RfFof9vIlZfjZIg&id=199219327&session=10753
+10:48:42 | INFO | Headers:
+10:48:42 | INFO | 	host: localhost:5656
+10:48:42 | INFO | 	connection: close
+10:48:42 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+10:48:42 | INFO | 	sec-ch-ua-mobile: ?0
+10:48:42 | INFO | 	sec-ch-ua-platform: "Windows"
+10:48:42 | INFO | 	upgrade-insecure-requests: 1
+10:48:42 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+10:48:42 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+10:48:42 | INFO | 	sec-fetch-site: none
+10:48:42 | INFO | 	sec-fetch-mode: navigate
+10:48:42 | INFO | 	sec-fetch-user: ?1
+10:48:42 | INFO | 	sec-fetch-dest: document
+10:48:42 | INFO | 	accept-encoding: gzip, deflate, br
+10:48:42 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+12:48:49 | INFO | GET http://localhost:5656/
+12:48:49 | INFO | Request Body: 
+12:48:49 | INFO | Headers:
+12:48:49 | INFO | 	host: localhost:5656
+12:48:49 | INFO | 	connection: close
+12:48:49 | INFO | 	upgrade-insecure-requests: 1
+12:48:49 | INFO | 	user-agent: Mozilla/5.0 (compatible; YandexMetrika/2.0; +http://yandex.com/bots)
+12:48:49 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+12:48:49 | INFO | 	sec-fetch-site: none
+12:48:49 | INFO | 	sec-fetch-mode: navigate
+12:48:49 | INFO | 	sec-fetch-user: ?1
+12:48:49 | INFO | 	sec-fetch-dest: document
+12:48:49 | INFO | 	accept-encoding: gzip, deflate, br
+12:48:49 | INFO | 	accept-language: en-US
+13:16:12 | INFO | GET http://localhost:5656/?ref=dgP9SRLkkbZPBlMxhHbJTA&id=76867900&session=10766
+13:16:12 | INFO | Request Body: ref=dgP9SRLkkbZPBlMxhHbJTA&id=76867900&session=10766
+13:16:12 | INFO | Headers:
+13:16:12 | INFO | 	host: localhost:5656
+13:16:12 | INFO | 	connection: close
+13:16:12 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+13:16:12 | INFO | 	sec-ch-ua-mobile: ?0
+13:16:12 | INFO | 	sec-ch-ua-platform: "Windows"
+13:16:12 | INFO | 	upgrade-insecure-requests: 1
+13:16:12 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+13:16:12 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+13:16:12 | INFO | 	sec-fetch-site: none
+13:16:12 | INFO | 	sec-fetch-mode: navigate
+13:16:12 | INFO | 	sec-fetch-user: ?1
+13:16:12 | INFO | 	sec-fetch-dest: document
+13:16:12 | INFO | 	accept-encoding: gzip, deflate, br
+13:16:12 | INFO | 	accept-language: ru,en-US;q=0.9,en;q=0.8
+14:03:36 | INFO | GET http://localhost:5656/?ref=eJaJXhvuguAZ3mPoqz0Q7A&id=801254365&session=10798
+14:03:36 | INFO | Request Body: ref=eJaJXhvuguAZ3mPoqz0Q7A&id=801254365&session=10798
+14:03:36 | INFO | Headers:
+14:03:36 | INFO | 	host: localhost:5656
+14:03:36 | INFO | 	connection: close
+14:03:36 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:03:36 | INFO | 	accept-language: ru
+14:03:36 | INFO | 	accept-encoding: gzip, deflate, br
+14:03:36 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1
+14:03:46 | INFO | GET http://localhost:5656/?ref=CkG04yTmaaRcN-ZG9QObiw&id=1286409297&session=10818
+14:03:46 | INFO | Request Body: ref=CkG04yTmaaRcN-ZG9QObiw&id=1286409297&session=10818
+14:03:46 | INFO | Headers:
+14:03:46 | INFO | 	host: localhost:5656
+14:03:46 | INFO | 	connection: close
+14:03:46 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:03:46 | INFO | 	accept-language: ru
+14:03:46 | INFO | 	accept-encoding: gzip, deflate, br
+14:03:46 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/604.1
+14:04:05 | INFO | GET http://localhost:5656/?ref=WzXlC_0CA4izkVpbDDaLdw&id=101053694&session=10815
+14:04:05 | INFO | Request Body: ref=WzXlC_0CA4izkVpbDDaLdw&id=101053694&session=10815
+14:04:05 | INFO | Headers:
+14:04:05 | INFO | 	host: localhost:5656
+14:04:05 | INFO | 	connection: close
+14:04:05 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:04:05 | INFO | 	accept-language: ru
+14:04:05 | INFO | 	accept-encoding: gzip, deflate, br
+14:04:05 | INFO | 	user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Safari/605.1.15
+14:04:20 | INFO | GET http://localhost:5656/?ref=_GATVGwcTdnVlpDZLNyYrA&id=626240576&session=10809
+14:04:20 | INFO | Request Body: ref=_GATVGwcTdnVlpDZLNyYrA&id=626240576&session=10809
+14:04:20 | INFO | Headers:
+14:04:20 | INFO | 	host: localhost:5656
+14:04:20 | INFO | 	connection: close
+14:04:20 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:04:20 | INFO | 	accept-language: ru
+14:04:20 | INFO | 	accept-encoding: gzip, deflate, br
+14:04:20 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 15_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Mobile/15E148 Safari/604.1
+14:05:26 | INFO | GET http://localhost:5656/?ref=dgP9SRLkkbZPBlMxhHbJTA&id=801254365&session=10798
+14:05:26 | INFO | Request Body: ref=dgP9SRLkkbZPBlMxhHbJTA&id=801254365&session=10798
+14:05:26 | INFO | Headers:
+14:05:26 | INFO | 	host: localhost:5656
+14:05:26 | INFO | 	connection: close
+14:05:26 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:05:26 | INFO | 	accept-language: ru
+14:05:26 | INFO | 	accept-encoding: gzip, deflate, br
+14:05:26 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1
+14:06:07 | INFO | GET http://localhost:5656/?ref=WzXlC_0CA4izkVpbDDaLdw&id=1286409297&session=10818
+14:06:07 | INFO | Request Body: ref=WzXlC_0CA4izkVpbDDaLdw&id=1286409297&session=10818
+14:06:07 | INFO | Headers:
+14:06:07 | INFO | 	host: localhost:5656
+14:06:07 | INFO | 	connection: close
+14:06:07 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:06:07 | INFO | 	accept-language: ru
+14:06:07 | INFO | 	accept-encoding: gzip, deflate, br
+14:06:07 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/604.1
+14:06:19 | INFO | GET http://localhost:5656/?ref=WzXlC_0CA4izkVpbDDaLdw&id=487107996&session=10871
+14:06:19 | INFO | Request Body: ref=WzXlC_0CA4izkVpbDDaLdw&id=487107996&session=10871
+14:06:19 | INFO | Headers:
+14:06:19 | INFO | 	host: localhost:5656
+14:06:19 | INFO | 	connection: close
+14:06:19 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:06:19 | INFO | 	accept-language: ru
+14:06:19 | INFO | 	accept-encoding: gzip, deflate, br
+14:06:19 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1
+14:06:30 | INFO | GET http://localhost:5656/?ref=CkG04yTmaaRcN-ZG9QObiw&id=801254365&session=10798
+14:06:30 | INFO | Request Body: ref=CkG04yTmaaRcN-ZG9QObiw&id=801254365&session=10798
+14:06:30 | INFO | Headers:
+14:06:30 | INFO | 	host: localhost:5656
+14:06:30 | INFO | 	connection: close
+14:06:30 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:06:30 | INFO | 	accept-language: ru
+14:06:30 | INFO | 	accept-encoding: gzip, deflate, br
+14:06:30 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1
+14:06:42 | INFO | GET http://localhost:5656/?ref=ygdCX-EK2fuPEgrZZQdV4g&id=1485978200&session=10888
+14:06:42 | INFO | Request Body: ref=ygdCX-EK2fuPEgrZZQdV4g&id=1485978200&session=10888
+14:06:42 | INFO | Headers:
+14:06:42 | INFO | 	host: localhost:5656
+14:06:42 | INFO | 	connection: close
+14:06:42 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:06:42 | INFO | 	accept-language: ru
+14:06:42 | INFO | 	accept-encoding: gzip, deflate, br
+14:06:42 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/604.1
+14:06:49 | INFO | GET http://localhost:5656/?ref=5gerZ8OuH2eky6CbBwRvmA&id=812526207&session=10885
+14:06:49 | INFO | Request Body: ref=5gerZ8OuH2eky6CbBwRvmA&id=812526207&session=10885
+14:06:49 | INFO | Headers:
+14:06:49 | INFO | 	host: localhost:5656
+14:06:49 | INFO | 	connection: close
+14:06:49 | INFO | 	accept-language: ru-RU,ru,en-US,en
+14:06:49 | INFO | 	dnt: 1
+14:06:49 | INFO | 	upgrade-insecure-requests: 1
+14:06:49 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 13; SAMSUNG SM-G780G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/20.0 Chrome/106.0.5249.126 Mobile Safari/537.36
+14:06:49 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+14:06:49 | INFO | 	sec-fetch-site: none
+14:06:49 | INFO | 	sec-fetch-mode: navigate
+14:06:49 | INFO | 	sec-fetch-dest: document
+14:06:49 | INFO | 	accept-encoding: gzip, deflate, br
+14:08:36 | INFO | GET http://localhost:5656/?ref=JxNs2jWx0Nob9gCa42yE8A&id=812526207&session=10885
+14:08:36 | INFO | Request Body: ref=JxNs2jWx0Nob9gCa42yE8A&id=812526207&session=10885
+14:08:36 | INFO | Headers:
+14:08:36 | INFO | 	host: localhost:5656
+14:08:36 | INFO | 	connection: close
+14:08:36 | INFO | 	accept-language: ru-RU,ru,en-US,en
+14:08:36 | INFO | 	dnt: 1
+14:08:36 | INFO | 	upgrade-insecure-requests: 1
+14:08:36 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 13; SAMSUNG SM-G780G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/20.0 Chrome/106.0.5249.126 Mobile Safari/537.36
+14:08:36 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+14:08:36 | INFO | 	sec-fetch-site: none
+14:08:36 | INFO | 	sec-fetch-mode: navigate
+14:08:36 | INFO | 	sec-fetch-dest: document
+14:08:36 | INFO | 	accept-encoding: gzip, deflate, br
+14:09:36 | INFO | GET http://localhost:5656/?ref=dgP9SRLkkbZPBlMxhHbJTA&id=1022451590&session=10900
+14:09:36 | INFO | Request Body: ref=dgP9SRLkkbZPBlMxhHbJTA&id=1022451590&session=10900
+14:09:36 | INFO | Headers:
+14:09:36 | INFO | 	host: localhost:5656
+14:09:36 | INFO | 	connection: close
+14:09:36 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:09:36 | INFO | 	accept-language: ru
+14:09:36 | INFO | 	accept-encoding: gzip, deflate, br
+14:09:36 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1
+14:10:09 | INFO | GET http://localhost:5656/?ref=57cOYvgGSFUgGg2CpD9dGg&id=1814096027&session=10911
+14:10:09 | INFO | Request Body: ref=57cOYvgGSFUgGg2CpD9dGg&id=1814096027&session=10911
+14:10:09 | INFO | Headers:
+14:10:09 | INFO | 	host: localhost:5656
+14:10:09 | INFO | 	connection: close
+14:10:09 | INFO | 	upgrade-insecure-requests: 1
+14:10:09 | INFO | 	user-agent: Mozilla/5.0 (Linux; U; Android 10; ru-ru; Redmi 9C NFC Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.141 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.4.1-g
+14:10:09 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+14:10:09 | INFO | 	x-miorigin: app
+14:10:09 | INFO | 	accept-encoding: gzip, deflate
+14:10:09 | INFO | 	accept-language: ru-RU,en-US;q=0.9
+14:11:07 | INFO | GET http://localhost:5656/?ref=WzXlC_0CA4izkVpbDDaLdw&id=1121927108&session=11053
+14:11:07 | INFO | Request Body: ref=WzXlC_0CA4izkVpbDDaLdw&id=1121927108&session=11053
+14:11:07 | INFO | Headers:
+14:11:07 | INFO | 	host: localhost:5656
+14:11:07 | INFO | 	connection: close
+14:11:07 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:11:07 | INFO | 	accept-language: ru
+14:11:07 | INFO | 	accept-encoding: gzip, deflate, br
+14:11:07 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/604.1
+14:11:53 | INFO | GET http://localhost:5656/?ref=WzXlC_0CA4izkVpbDDaLdw&id=468961599&session=11024
+14:11:53 | INFO | Request Body: ref=WzXlC_0CA4izkVpbDDaLdw&id=468961599&session=11024
+14:11:53 | INFO | Headers:
+14:11:53 | INFO | 	host: localhost:5656
+14:11:53 | INFO | 	connection: close
+14:11:53 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+14:11:53 | INFO | 	sec-ch-ua-mobile: ?1
+14:11:53 | INFO | 	sec-ch-ua-platform: "Android"
+14:11:53 | INFO | 	upgrade-insecure-requests: 1
+14:11:53 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 13; Pixel 6a) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+14:11:53 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+14:11:53 | INFO | 	sec-fetch-site: cross-site
+14:11:53 | INFO | 	sec-fetch-mode: navigate
+14:11:53 | INFO | 	sec-fetch-dest: document
+14:11:53 | INFO | 	accept-encoding: gzip, deflate, br
+14:11:53 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+14:12:10 | INFO | GET http://localhost:5656/?ref=WzXlC_0CA4izkVpbDDaLdw&id=893164729&session=10924
+14:12:10 | INFO | Request Body: ref=WzXlC_0CA4izkVpbDDaLdw&id=893164729&session=10924
+14:12:10 | INFO | Headers:
+14:12:10 | INFO | 	host: localhost:5656
+14:12:10 | INFO | 	connection: close
+14:12:10 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:12:10 | INFO | 	accept-language: ru
+14:12:10 | INFO | 	accept-encoding: gzip, deflate, br
+14:12:10 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1
+14:12:16 | INFO | GET http://localhost:5656/?ref=CkG04yTmaaRcN-ZG9QObiw&id=936637012&session=11114
+14:12:16 | INFO | Request Body: ref=CkG04yTmaaRcN-ZG9QObiw&id=936637012&session=11114
+14:12:16 | INFO | Headers:
+14:12:16 | INFO | 	host: localhost:5656
+14:12:16 | INFO | 	connection: close
+14:12:16 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+14:12:16 | INFO | 	sec-ch-ua-mobile: ?1
+14:12:16 | INFO | 	sec-ch-ua-platform: "Android"
+14:12:16 | INFO | 	upgrade-insecure-requests: 1
+14:12:16 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 13; RMX3472) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+14:12:16 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+14:12:16 | INFO | 	sec-fetch-site: cross-site
+14:12:16 | INFO | 	sec-fetch-mode: navigate
+14:12:16 | INFO | 	sec-fetch-dest: document
+14:12:16 | INFO | 	accept-encoding: gzip, deflate, br
+14:12:16 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+14:12:17 | INFO | GET http://localhost:5656/?ref=JxNs2jWx0Nob9gCa42yE8A&id=812526207&session=10885
+14:12:17 | INFO | Request Body: ref=JxNs2jWx0Nob9gCa42yE8A&id=812526207&session=10885
+14:12:17 | INFO | Headers:
+14:12:17 | INFO | 	host: localhost:5656
+14:12:17 | INFO | 	connection: close
+14:12:17 | INFO | 	accept-language: ru-RU,ru,en-US,en
+14:12:17 | INFO | 	dnt: 1
+14:12:17 | INFO | 	upgrade-insecure-requests: 1
+14:12:17 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 13; SAMSUNG SM-G780G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/20.0 Chrome/106.0.5249.126 Mobile Safari/537.36
+14:12:17 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+14:12:17 | INFO | 	sec-fetch-site: none
+14:12:17 | INFO | 	sec-fetch-mode: navigate
+14:12:17 | INFO | 	sec-fetch-dest: document
+14:12:17 | INFO | 	accept-encoding: gzip, deflate, br
+14:13:32 | INFO | GET http://localhost:5656/?ref=WzXlC_0CA4izkVpbDDaLdw&id=1124910197&session=11141
+14:13:32 | INFO | Request Body: ref=WzXlC_0CA4izkVpbDDaLdw&id=1124910197&session=11141
+14:13:32 | INFO | Headers:
+14:13:32 | INFO | 	host: localhost:5656
+14:13:32 | INFO | 	connection: close
+14:13:32 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:13:32 | INFO | 	accept-language: ru
+14:13:32 | INFO | 	accept-encoding: gzip, deflate, br
+14:13:32 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1
+14:13:54 | INFO | GET http://localhost:5656/?ref=57cOYvgGSFUgGg2CpD9dGg&id=5391855035&session=11086
+14:13:54 | INFO | Request Body: ref=57cOYvgGSFUgGg2CpD9dGg&id=5391855035&session=11086
+14:13:54 | INFO | Headers:
+14:13:54 | INFO | 	host: localhost:5656
+14:13:54 | INFO | 	connection: close
+14:13:54 | INFO | 	sec-ch-ua: "Chromium";v="94", "Google Chrome";v="94", ";Not A Brand";v="99"
+14:13:54 | INFO | 	sec-ch-ua-mobile: ?1
+14:13:54 | INFO | 	sec-ch-ua-platform: "Android"
+14:13:54 | INFO | 	upgrade-insecure-requests: 1
+14:13:54 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 11; M2003J15SC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36
+14:13:54 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+14:13:54 | INFO | 	sec-fetch-site: none
+14:13:54 | INFO | 	sec-fetch-mode: navigate
+14:13:54 | INFO | 	sec-fetch-user: ?1
+14:13:54 | INFO | 	sec-fetch-dest: document
+14:13:54 | INFO | 	accept-encoding: gzip, deflate, br
+14:13:54 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,tg;q=0.5
+14:14:10 | INFO | GET http://localhost:5656/?ref=_GATVGwcTdnVlpDZLNyYrA&id=585603385&session=11105
+14:14:10 | INFO | Request Body: ref=_GATVGwcTdnVlpDZLNyYrA&id=585603385&session=11105
+14:14:10 | INFO | Headers:
+14:14:10 | INFO | 	host: localhost:5656
+14:14:10 | INFO | 	connection: close
+14:14:10 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:14:10 | INFO | 	accept-language: ru
+14:14:10 | INFO | 	accept-encoding: gzip, deflate, br
+14:14:10 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1
+14:14:18 | INFO | GET http://localhost:5656/?ref=g-M21oV5W9q3-Z6_0fLipQ&id=887208796&session=11155
+14:14:18 | INFO | Request Body: ref=g-M21oV5W9q3-Z6_0fLipQ&id=887208796&session=11155
+14:14:18 | INFO | Headers:
+14:14:18 | INFO | 	host: localhost:5656
+14:14:18 | INFO | 	connection: close
+14:14:18 | INFO | 	accept-language: ru-RU,ru,en-US,en
+14:14:18 | INFO | 	dnt: 1
+14:14:18 | INFO | 	upgrade-insecure-requests: 1
+14:14:18 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 13; SAMSUNG SM-G996B) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/20.0 Chrome/106.0.5249.126 Mobile Safari/537.36
+14:14:18 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+14:14:18 | INFO | 	sec-fetch-site: none
+14:14:18 | INFO | 	sec-fetch-mode: navigate
+14:14:18 | INFO | 	sec-fetch-dest: document
+14:14:18 | INFO | 	accept-encoding: gzip, deflate, br
+14:14:19 | INFO | GET http://localhost:5656/?ref=dgP9SRLkkbZPBlMxhHbJTA&id=936637012&session=11114
+14:14:19 | INFO | Request Body: ref=dgP9SRLkkbZPBlMxhHbJTA&id=936637012&session=11114
+14:14:19 | INFO | Headers:
+14:14:19 | INFO | 	host: localhost:5656
+14:14:19 | INFO | 	connection: close
+14:14:19 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+14:14:19 | INFO | 	sec-ch-ua-mobile: ?1
+14:14:19 | INFO | 	sec-ch-ua-platform: "Android"
+14:14:19 | INFO | 	upgrade-insecure-requests: 1
+14:14:19 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 13; RMX3472) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+14:14:19 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+14:14:19 | INFO | 	sec-fetch-site: cross-site
+14:14:19 | INFO | 	sec-fetch-mode: navigate
+14:14:19 | INFO | 	sec-fetch-dest: document
+14:14:19 | INFO | 	accept-encoding: gzip, deflate, br
+14:14:19 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+14:14:20 | INFO | GET http://localhost:5656/?ref=57cOYvgGSFUgGg2CpD9dGg&id=5391855035&session=11086
+14:14:20 | INFO | Request Body: ref=57cOYvgGSFUgGg2CpD9dGg&id=5391855035&session=11086
+14:14:20 | INFO | Headers:
+14:14:20 | INFO | 	host: localhost:5656
+14:14:20 | INFO | 	connection: close
+14:14:20 | INFO | 	sec-ch-ua: "Chromium";v="94", "Google Chrome";v="94", ";Not A Brand";v="99"
+14:14:20 | INFO | 	sec-ch-ua-mobile: ?1
+14:14:20 | INFO | 	sec-ch-ua-platform: "Android"
+14:14:20 | INFO | 	upgrade-insecure-requests: 1
+14:14:20 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 11; M2003J15SC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36
+14:14:20 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+14:14:20 | INFO | 	sec-fetch-site: none
+14:14:20 | INFO | 	sec-fetch-mode: navigate
+14:14:20 | INFO | 	sec-fetch-user: ?1
+14:14:20 | INFO | 	sec-fetch-dest: document
+14:14:20 | INFO | 	accept-encoding: gzip, deflate, br
+14:14:20 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,tg;q=0.5
+14:14:30 | INFO | GET http://localhost:5656/?ref=_GATVGwcTdnVlpDZLNyYrA&id=585603385&session=11105
+14:14:30 | INFO | Request Body: ref=_GATVGwcTdnVlpDZLNyYrA&id=585603385&session=11105
+14:14:30 | INFO | Headers:
+14:14:30 | INFO | 	host: localhost:5656
+14:14:30 | INFO | 	connection: close
+14:14:30 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:14:30 | INFO | 	accept-language: ru
+14:14:30 | INFO | 	accept-encoding: gzip, deflate, br
+14:14:30 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1
+14:14:35 | INFO | GET http://localhost:5656/?ref=_GATVGwcTdnVlpDZLNyYrA&id=585603385&session=11105
+14:14:35 | INFO | Request Body: ref=_GATVGwcTdnVlpDZLNyYrA&id=585603385&session=11105
+14:14:35 | INFO | Headers:
+14:14:35 | INFO | 	host: localhost:5656
+14:14:35 | INFO | 	connection: close
+14:14:35 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:14:35 | INFO | 	accept-language: ru
+14:14:35 | INFO | 	accept-encoding: gzip, deflate, br
+14:14:35 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1
+14:14:42 | INFO | GET http://localhost:5656/?ref=eJaJXhvuguAZ3mPoqz0Q7A&id=936637012&session=11114
+14:14:42 | INFO | Request Body: ref=eJaJXhvuguAZ3mPoqz0Q7A&id=936637012&session=11114
+14:14:42 | INFO | Headers:
+14:14:42 | INFO | 	host: localhost:5656
+14:14:42 | INFO | 	connection: close
+14:14:42 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+14:14:42 | INFO | 	sec-ch-ua-mobile: ?1
+14:14:42 | INFO | 	sec-ch-ua-platform: "Android"
+14:14:42 | INFO | 	upgrade-insecure-requests: 1
+14:14:42 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 13; RMX3472) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+14:14:42 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+14:14:42 | INFO | 	sec-fetch-site: cross-site
+14:14:42 | INFO | 	sec-fetch-mode: navigate
+14:14:42 | INFO | 	sec-fetch-dest: document
+14:14:42 | INFO | 	accept-encoding: gzip, deflate, br
+14:14:42 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+14:15:04 | INFO | GET http://localhost:5656/?ref=_GATVGwcTdnVlpDZLNyYrA&id=1121927108&session=11053
+14:15:04 | INFO | Request Body: ref=_GATVGwcTdnVlpDZLNyYrA&id=1121927108&session=11053
+14:15:04 | INFO | Headers:
+14:15:04 | INFO | 	host: localhost:5656
+14:15:04 | INFO | 	connection: close
+14:15:04 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:15:04 | INFO | 	accept-language: ru
+14:15:04 | INFO | 	accept-encoding: gzip, deflate, br
+14:15:04 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/604.1
+14:15:19 | INFO | GET http://localhost:5656/?ref=WzXlC_0CA4izkVpbDDaLdw&id=468961599&session=11024
+14:15:19 | INFO | Request Body: ref=WzXlC_0CA4izkVpbDDaLdw&id=468961599&session=11024
+14:15:19 | INFO | Headers:
+14:15:19 | INFO | 	host: localhost:5656
+14:15:19 | INFO | 	connection: close
+14:15:19 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+14:15:19 | INFO | 	sec-ch-ua-mobile: ?1
+14:15:19 | INFO | 	sec-ch-ua-platform: "Android"
+14:15:19 | INFO | 	upgrade-insecure-requests: 1
+14:15:19 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 13; Pixel 6a) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+14:15:19 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+14:15:19 | INFO | 	sec-fetch-site: cross-site
+14:15:19 | INFO | 	sec-fetch-mode: navigate
+14:15:19 | INFO | 	sec-fetch-dest: document
+14:15:19 | INFO | 	accept-encoding: gzip, deflate, br
+14:15:19 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+14:15:41 | INFO | GET http://localhost:5656/?ref=j5HUWB-PiwhsymNVF5GI9Q&id=936637012&session=11187
+14:15:41 | INFO | Request Body: ref=j5HUWB-PiwhsymNVF5GI9Q&id=936637012&session=11187
+14:15:41 | INFO | Headers:
+14:15:41 | INFO | 	host: localhost:5656
+14:15:41 | INFO | 	connection: close
+14:15:41 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+14:15:41 | INFO | 	sec-ch-ua-mobile: ?1
+14:15:41 | INFO | 	sec-ch-ua-platform: "Android"
+14:15:41 | INFO | 	upgrade-insecure-requests: 1
+14:15:41 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 13; RMX3472) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+14:15:41 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+14:15:41 | INFO | 	sec-fetch-site: cross-site
+14:15:41 | INFO | 	sec-fetch-mode: navigate
+14:15:41 | INFO | 	sec-fetch-dest: document
+14:15:41 | INFO | 	accept-encoding: gzip, deflate, br
+14:15:41 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+14:16:10 | INFO | GET http://localhost:5656/?ref=W06KFbpbjD8sWCUNS8i9rQ&id=887208796&session=11155
+14:16:10 | INFO | Request Body: ref=W06KFbpbjD8sWCUNS8i9rQ&id=887208796&session=11155
+14:16:10 | INFO | Headers:
+14:16:10 | INFO | 	host: localhost:5656
+14:16:10 | INFO | 	connection: close
+14:16:10 | INFO | 	accept-language: ru-RU,ru,en-US,en
+14:16:10 | INFO | 	dnt: 1
+14:16:10 | INFO | 	upgrade-insecure-requests: 1
+14:16:10 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 13; SAMSUNG SM-G996B) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/20.0 Chrome/106.0.5249.126 Mobile Safari/537.36
+14:16:10 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+14:16:10 | INFO | 	sec-fetch-site: none
+14:16:10 | INFO | 	sec-fetch-mode: navigate
+14:16:10 | INFO | 	sec-fetch-dest: document
+14:16:10 | INFO | 	accept-encoding: gzip, deflate, br
+14:20:50 | INFO | GET http://localhost:5656/?ref=U0fLWeiQgbkaw3-lwLkkQg&id=887208796&session=11261
+14:20:50 | INFO | Request Body: ref=U0fLWeiQgbkaw3-lwLkkQg&id=887208796&session=11261
+14:20:50 | INFO | Headers:
+14:20:50 | INFO | 	host: localhost:5656
+14:20:50 | INFO | 	connection: close
+14:20:50 | INFO | 	accept-language: ru-RU,ru,en-US,en
+14:20:50 | INFO | 	dnt: 1
+14:20:50 | INFO | 	upgrade-insecure-requests: 1
+14:20:50 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 13; SAMSUNG SM-G996B) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/20.0 Chrome/106.0.5249.126 Mobile Safari/537.36
+14:20:50 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+14:20:50 | INFO | 	sec-fetch-site: none
+14:20:50 | INFO | 	sec-fetch-mode: navigate
+14:20:50 | INFO | 	sec-fetch-dest: document
+14:20:50 | INFO | 	accept-encoding: gzip, deflate, br
+14:20:54 | INFO | GET http://localhost:5656/?ref=eJaJXhvuguAZ3mPoqz0Q7A&id=1652176062&session=11215
+14:20:54 | INFO | Request Body: ref=eJaJXhvuguAZ3mPoqz0Q7A&id=1652176062&session=11215
+14:20:54 | INFO | Headers:
+14:20:54 | INFO | 	host: localhost:5656
+14:20:54 | INFO | 	connection: close
+14:20:54 | INFO | 	accept-language: ru-RU,ru,en-US,en
+14:20:54 | INFO | 	dnt: 1
+14:20:54 | INFO | 	upgrade-insecure-requests: 1
+14:20:54 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-M315F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/19.0 Chrome/102.0.5005.125 Mobile Safari/537.36
+14:20:54 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+14:20:54 | INFO | 	sec-fetch-site: none
+14:20:54 | INFO | 	sec-fetch-mode: navigate
+14:20:54 | INFO | 	sec-fetch-dest: document
+14:20:54 | INFO | 	accept-encoding: gzip, deflate, br
+14:28:55 | INFO | GET http://localhost:5656/?ref=WzXlC_0CA4izkVpbDDaLdw&id=1982571841&session=11361
+14:28:55 | INFO | Request Body: ref=WzXlC_0CA4izkVpbDDaLdw&id=1982571841&session=11361
+14:28:55 | INFO | Headers:
+14:28:55 | INFO | 	host: localhost:5656
+14:28:55 | INFO | 	connection: close
+14:28:55 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:28:55 | INFO | 	accept-language: ru
+14:28:55 | INFO | 	accept-encoding: gzip, deflate, br
+14:28:55 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Mobile/15E148 Safari/604.1
+14:28:55 | INFO | GET http://localhost:5656/?ref=WzXlC_0CA4izkVpbDDaLdw&id=1982571841&session=11361
+14:28:55 | INFO | Request Body: ref=WzXlC_0CA4izkVpbDDaLdw&id=1982571841&session=11361
+14:28:55 | INFO | Headers:
+14:28:55 | INFO | 	host: localhost:5656
+14:28:55 | INFO | 	connection: close
+14:28:55 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:28:55 | INFO | 	accept-language: ru
+14:28:55 | INFO | 	accept-encoding: gzip, deflate, br
+14:28:55 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Mobile/15E148 Safari/604.1
+14:30:24 | INFO | GET http://localhost:5656/?ref=_GATVGwcTdnVlpDZLNyYrA&id=1274952753&session=11349
+14:30:24 | INFO | Request Body: ref=_GATVGwcTdnVlpDZLNyYrA&id=1274952753&session=11349
+14:30:24 | INFO | Headers:
+14:30:24 | INFO | 	host: localhost:5656
+14:30:24 | INFO | 	connection: close
+14:30:24 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:30:24 | INFO | 	accept-language: ru
+14:30:24 | INFO | 	accept-encoding: gzip, deflate, br
+14:30:24 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Mobile/15E148 Safari/604.1
+14:30:41 | INFO | GET http://localhost:5656/?ref=_GATVGwcTdnVlpDZLNyYrA&id=1274952753&session=11349
+14:30:41 | INFO | Request Body: ref=_GATVGwcTdnVlpDZLNyYrA&id=1274952753&session=11349
+14:30:41 | INFO | Headers:
+14:30:41 | INFO | 	host: localhost:5656
+14:30:41 | INFO | 	connection: close
+14:30:41 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:30:41 | INFO | 	accept-language: ru
+14:30:41 | INFO | 	accept-encoding: gzip, deflate, br
+14:30:41 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Mobile/15E148 Safari/604.1
+14:32:37 | INFO | GET http://localhost:5656/?ref=_GATVGwcTdnVlpDZLNyYrA&id=1982571841&session=11361
+14:32:37 | INFO | Request Body: ref=_GATVGwcTdnVlpDZLNyYrA&id=1982571841&session=11361
+14:32:37 | INFO | Headers:
+14:32:37 | INFO | 	host: localhost:5656
+14:32:37 | INFO | 	connection: close
+14:32:37 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:32:37 | INFO | 	accept-language: ru
+14:32:37 | INFO | 	accept-encoding: gzip, deflate, br
+14:32:37 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Mobile/15E148 Safari/604.1
+14:33:10 | INFO | GET http://localhost:5656/?ref=WzXlC_0CA4izkVpbDDaLdw&id=763686389&session=11381
+14:33:10 | INFO | Request Body: ref=WzXlC_0CA4izkVpbDDaLdw&id=763686389&session=11381
+14:33:10 | INFO | Headers:
+14:33:10 | INFO | 	host: localhost:5656
+14:33:10 | INFO | 	connection: close
+14:33:10 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+14:33:10 | INFO | 	sec-ch-ua-mobile: ?1
+14:33:10 | INFO | 	sec-ch-ua-platform: "Android"
+14:33:10 | INFO | 	upgrade-insecure-requests: 1
+14:33:10 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 13; SM-A325F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+14:33:10 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+14:33:10 | INFO | 	sec-fetch-site: cross-site
+14:33:10 | INFO | 	sec-fetch-mode: navigate
+14:33:10 | INFO | 	sec-fetch-dest: document
+14:33:10 | INFO | 	accept-encoding: gzip, deflate, br
+14:33:10 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+14:33:47 | INFO | GET http://localhost:5656/?ref=CkG04yTmaaRcN-ZG9QObiw&id=646802510&session=10971
+14:33:47 | INFO | Request Body: ref=CkG04yTmaaRcN-ZG9QObiw&id=646802510&session=10971
+14:33:47 | INFO | Headers:
+14:33:47 | INFO | 	host: localhost:5656
+14:33:47 | INFO | 	connection: close
+14:33:47 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:33:47 | INFO | 	accept-language: ru
+14:33:47 | INFO | 	accept-encoding: gzip, deflate, br
+14:33:47 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1
+14:38:58 | INFO | GET http://localhost:5656/?ref=dgP9SRLkkbZPBlMxhHbJTA&id=529847314&session=11418
+14:38:58 | INFO | Request Body: ref=dgP9SRLkkbZPBlMxhHbJTA&id=529847314&session=11418
+14:38:58 | INFO | Headers:
+14:38:58 | INFO | 	host: localhost:5656
+14:38:58 | INFO | 	connection: close
+14:38:58 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:38:58 | INFO | 	accept-language: ru
+14:38:58 | INFO | 	accept-encoding: gzip, deflate, br
+14:38:58 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/604.1
+14:40:19 | INFO | GET http://localhost:5656/?ref=_GATVGwcTdnVlpDZLNyYrA&id=942086702&session=11434
+14:40:19 | INFO | Request Body: ref=_GATVGwcTdnVlpDZLNyYrA&id=942086702&session=11434
+14:40:19 | INFO | Headers:
+14:40:19 | INFO | 	host: localhost:5656
+14:40:19 | INFO | 	connection: close
+14:40:19 | INFO | 	sec-ch-ua: "Not?A_Brand";v="8", "Chromium";v="108", "Yandex";v="23"
+14:40:19 | INFO | 	sec-ch-ua-mobile: ?0
+14:40:19 | INFO | 	sec-ch-ua-platform: "Windows"
+14:40:19 | INFO | 	upgrade-insecure-requests: 1
+14:40:19 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 YaBrowser/23.1.2.987 Yowser/2.5 Safari/537.36
+14:40:19 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+14:40:19 | INFO | 	sec-fetch-site: cross-site
+14:40:19 | INFO | 	sec-fetch-mode: navigate
+14:40:19 | INFO | 	sec-fetch-user: ?1
+14:40:19 | INFO | 	sec-fetch-dest: document
+14:40:19 | INFO | 	accept-encoding: gzip, deflate, br
+14:40:19 | INFO | 	accept-language: ru,en;q=0.9
+14:42:53 | INFO | GET http://localhost:5656/
+14:42:53 | INFO | Request Body: 
+14:42:53 | INFO | Headers:
+14:42:53 | INFO | 	host: localhost:5656
+14:42:53 | INFO | 	connection: close
+14:42:53 | INFO | 	accept: */*
+14:42:53 | INFO | 	accept-encoding: gzip,deflate
+14:42:53 | INFO | 	user-agent: Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.268
+14:42:53 | INFO | 	from: support@search.yandex.ru
+14:43:51 | INFO | GET http://localhost:5656/?ref=rqnPBh2N7ZhHZaWH1vL1oA&id=1921257707&session=11443
+14:43:51 | INFO | Request Body: ref=rqnPBh2N7ZhHZaWH1vL1oA&id=1921257707&session=11443
+14:43:51 | INFO | Headers:
+14:43:51 | INFO | 	host: localhost:5656
+14:43:51 | INFO | 	connection: close
+14:43:51 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+14:43:51 | INFO | 	sec-ch-ua-mobile: ?1
+14:43:51 | INFO | 	sec-ch-ua-platform: "Android"
+14:43:51 | INFO | 	upgrade-insecure-requests: 1
+14:43:51 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 11; 2201117PG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+14:43:51 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+14:43:51 | INFO | 	sec-fetch-site: cross-site
+14:43:51 | INFO | 	sec-fetch-mode: navigate
+14:43:51 | INFO | 	sec-fetch-dest: document
+14:43:51 | INFO | 	accept-encoding: gzip, deflate, br
+14:43:51 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+14:48:27 | INFO | GET http://localhost:5656/?ref=_GATVGwcTdnVlpDZLNyYrA&id=1426856917&session=11446
+14:48:27 | INFO | Request Body: ref=_GATVGwcTdnVlpDZLNyYrA&id=1426856917&session=11446
+14:48:27 | INFO | Headers:
+14:48:27 | INFO | 	host: localhost:5656
+14:48:27 | INFO | 	connection: close
+14:48:27 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+14:48:27 | INFO | 	accept-language: ru
+14:48:27 | INFO | 	accept-encoding: gzip, deflate, br
+14:48:27 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1
+14:51:47 | INFO | GET http://localhost:5656/?ref=_GATVGwcTdnVlpDZLNyYrA&id=744669462&session=11472
+14:51:47 | INFO | Request Body: ref=_GATVGwcTdnVlpDZLNyYrA&id=744669462&session=11472
+14:51:47 | INFO | Headers:
+14:51:47 | INFO | 	host: localhost:5656
+14:51:47 | INFO | 	connection: close
+14:51:47 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+14:51:47 | INFO | 	sec-ch-ua-mobile: ?1
+14:51:47 | INFO | 	sec-ch-ua-platform: "Android"
+14:51:47 | INFO | 	upgrade-insecure-requests: 1
+14:51:47 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 12; RMX3363) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+14:51:47 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+14:51:47 | INFO | 	sec-fetch-site: cross-site
+14:51:47 | INFO | 	sec-fetch-mode: navigate
+14:51:47 | INFO | 	sec-fetch-dest: document
+14:51:47 | INFO | 	accept-encoding: gzip, deflate, br
+14:51:47 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+15:33:55 | INFO | GET http://localhost:5656/?ref=dgP9SRLkkbZPBlMxhHbJTA&id=137448233&session=11573
+15:33:55 | INFO | Request Body: ref=dgP9SRLkkbZPBlMxhHbJTA&id=137448233&session=11573
+15:33:55 | INFO | Headers:
+15:33:55 | INFO | 	host: localhost:5656
+15:33:55 | INFO | 	connection: close
+15:33:55 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+15:33:55 | INFO | 	accept-language: ru
+15:33:55 | INFO | 	accept-encoding: gzip, deflate, br
+15:33:55 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/604.1
+15:55:51 | INFO | GET http://localhost:5656/?ref=W06KFbpbjD8sWCUNS8i9rQ&id=1254025592&session=11583
+15:55:51 | INFO | Request Body: ref=W06KFbpbjD8sWCUNS8i9rQ&id=1254025592&session=11583
+15:55:51 | INFO | Headers:
+15:55:51 | INFO | 	host: localhost:5656
+15:55:51 | INFO | 	connection: close
+15:55:51 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+15:55:51 | INFO | 	accept-language: ru
+15:55:51 | INFO | 	accept-encoding: gzip, deflate, br
+15:55:51 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Mobile/15E148 Safari/604.1
+15:59:20 | INFO | GET http://localhost:5656/?ref=wXQ3uj3pDkqGgtYj34og7A&id=1254025592&session=11583
+15:59:20 | INFO | Request Body: ref=wXQ3uj3pDkqGgtYj34og7A&id=1254025592&session=11583
+15:59:20 | INFO | Headers:
+15:59:20 | INFO | 	host: localhost:5656
+15:59:20 | INFO | 	connection: close
+15:59:20 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+15:59:20 | INFO | 	accept-language: ru
+15:59:20 | INFO | 	accept-encoding: gzip, deflate, br
+15:59:20 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Mobile/15E148 Safari/604.1
+16:15:24 | INFO | GET http://localhost:5656/?ref=_GATVGwcTdnVlpDZLNyYrA&id=1003116845&session=11630
+16:15:24 | INFO | Request Body: ref=_GATVGwcTdnVlpDZLNyYrA&id=1003116845&session=11630
+16:15:24 | INFO | Headers:
+16:15:24 | INFO | 	host: localhost:5656
+16:15:24 | INFO | 	connection: close
+16:15:24 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+16:15:24 | INFO | 	accept-language: ru
+16:15:24 | INFO | 	accept-encoding: gzip, deflate, br
+16:15:24 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1
+17:24:56 | INFO | GET http://localhost:5656/?ref=ygdCX-EK2fuPEgrZZQdV4g&id=771995807&session=11691
+17:24:56 | INFO | Request Body: ref=ygdCX-EK2fuPEgrZZQdV4g&id=771995807&session=11691
+17:24:56 | INFO | Headers:
+17:24:56 | INFO | 	host: localhost:5656
+17:24:56 | INFO | 	connection: close
+17:24:56 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+17:24:56 | INFO | 	accept-language: ru
+17:24:56 | INFO | 	accept-encoding: gzip, deflate, br
+17:24:56 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6.1 Mobile/15E148 Safari/604.1
+17:25:28 | INFO | GET http://localhost:5656/
+17:25:28 | INFO | Request Body: 
+17:25:28 | INFO | Headers:
+17:25:28 | INFO | 	host: localhost:5656
+17:25:28 | INFO | 	connection: close
+17:25:28 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36
+17:25:28 | INFO | 	cache-control: no-cache
+17:25:28 | INFO | 	accept-encoding: gzip
+17:44:05 | INFO | GET http://localhost:5656/?ref=57cOYvgGSFUgGg2CpD9dGg&id=1042665324&session=11697
+17:44:05 | INFO | Request Body: ref=57cOYvgGSFUgGg2CpD9dGg&id=1042665324&session=11697
+17:44:05 | INFO | Headers:
+17:44:05 | INFO | 	host: localhost:5656
+17:44:05 | INFO | 	connection: close
+17:44:05 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+17:44:05 | INFO | 	accept-language: ru
+17:44:05 | INFO | 	accept-encoding: gzip, deflate, br
+17:44:05 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/604.1
+17:45:14 | INFO | GET http://localhost:5656/?ref=WzXlC_0CA4izkVpbDDaLdw&id=1042665324&session=11697
+17:45:14 | INFO | Request Body: ref=WzXlC_0CA4izkVpbDDaLdw&id=1042665324&session=11697
+17:45:14 | INFO | Headers:
+17:45:14 | INFO | 	host: localhost:5656
+17:45:14 | INFO | 	connection: close
+17:45:14 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+17:45:14 | INFO | 	accept-language: ru
+17:45:14 | INFO | 	accept-encoding: gzip, deflate, br
+17:45:14 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/604.1
+17:45:47 | INFO | GET http://localhost:5656/?ref=CkG04yTmaaRcN-ZG9QObiw&id=1042665324&session=11697
+17:45:47 | INFO | Request Body: ref=CkG04yTmaaRcN-ZG9QObiw&id=1042665324&session=11697
+17:45:47 | INFO | Headers:
+17:45:47 | INFO | 	host: localhost:5656
+17:45:47 | INFO | 	connection: close
+17:45:47 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+17:45:47 | INFO | 	accept-language: ru
+17:45:47 | INFO | 	accept-encoding: gzip, deflate, br
+17:45:47 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/604.1
+17:47:12 | INFO | GET http://localhost:5656/?ref=_GATVGwcTdnVlpDZLNyYrA&id=1042665324&session=11697
+17:47:12 | INFO | Request Body: ref=_GATVGwcTdnVlpDZLNyYrA&id=1042665324&session=11697
+17:47:12 | INFO | Headers:
+17:47:12 | INFO | 	host: localhost:5656
+17:47:12 | INFO | 	connection: close
+17:47:12 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+17:47:12 | INFO | 	accept-language: ru
+17:47:12 | INFO | 	accept-encoding: gzip, deflate, br
+17:47:12 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/604.1
+17:47:48 | INFO | GET http://localhost:5656/?ref=0eEHNFxZDWbEFoZADp5UmA&id=980882356&session=11698
+17:47:48 | INFO | Request Body: ref=0eEHNFxZDWbEFoZADp5UmA&id=980882356&session=11698
+17:47:48 | INFO | Headers:
+17:47:48 | INFO | 	host: localhost:5656
+17:47:48 | INFO | 	connection: close
+17:47:48 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+17:47:48 | INFO | 	accept-language: ru
+17:47:48 | INFO | 	accept-encoding: gzip, deflate, br
+17:47:48 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 15_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Mobile/15E148 Safari/604.1
+17:51:59 | INFO | GET http://localhost:5656/?ref=F6FBs4VxYNW0um9IsZTC9A&id=980882356&session=11700
+17:51:59 | INFO | Request Body: ref=F6FBs4VxYNW0um9IsZTC9A&id=980882356&session=11700
+17:51:59 | INFO | Headers:
+17:51:59 | INFO | 	host: localhost:5656
+17:51:59 | INFO | 	connection: close
+17:51:59 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+17:51:59 | INFO | 	accept-language: ru
+17:51:59 | INFO | 	accept-encoding: gzip, deflate, br
+17:51:59 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 15_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Mobile/15E148 Safari/604.1
+17:53:46 | INFO | GET http://localhost:5656/?ref=_GATVGwcTdnVlpDZLNyYrA&id=980882356&session=11700
+17:53:46 | INFO | Request Body: ref=_GATVGwcTdnVlpDZLNyYrA&id=980882356&session=11700
+17:53:46 | INFO | Headers:
+17:53:46 | INFO | 	host: localhost:5656
+17:53:46 | INFO | 	connection: close
+17:53:46 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+17:53:46 | INFO | 	accept-language: ru
+17:53:46 | INFO | 	accept-encoding: gzip, deflate, br
+17:53:46 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 15_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Mobile/15E148 Safari/604.1
+18:18:06 | INFO | GET http://localhost:5656/?ref=CkG04yTmaaRcN-ZG9QObiw&id=771109615&session=11717
+18:18:06 | INFO | Request Body: ref=CkG04yTmaaRcN-ZG9QObiw&id=771109615&session=11717
+18:18:06 | INFO | Headers:
+18:18:06 | INFO | 	host: localhost:5656
+18:18:06 | INFO | 	connection: close
+18:18:06 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+18:18:06 | INFO | 	accept-language: ru
+18:18:06 | INFO | 	accept-encoding: gzip, deflate, br
+18:18:06 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1
+19:00:59 | INFO | GET http://localhost:5656/?ref=RhnCe8FHYca3LAfUBivBzg&id=95909697&session=11755
+19:00:59 | INFO | Request Body: ref=RhnCe8FHYca3LAfUBivBzg&id=95909697&session=11755
+19:00:59 | INFO | Headers:
+19:00:59 | INFO | 	host: localhost:5656
+19:00:59 | INFO | 	connection: close
+19:00:59 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+19:00:59 | INFO | 	sec-ch-ua-mobile: ?1
+19:00:59 | INFO | 	sec-ch-ua-platform: "Android"
+19:00:59 | INFO | 	upgrade-insecure-requests: 1
+19:00:59 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 12; 22071212AG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+19:00:59 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+19:00:59 | INFO | 	sec-fetch-site: cross-site
+19:00:59 | INFO | 	sec-fetch-mode: navigate
+19:00:59 | INFO | 	sec-fetch-dest: document
+19:00:59 | INFO | 	accept-encoding: gzip, deflate, br
+19:00:59 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+19:02:55 | INFO | GET http://localhost:5656/?ref=NcgrPeSUKW4jnT1V1gtIeQ&id=95909697&session=11757
+19:02:55 | INFO | Request Body: ref=NcgrPeSUKW4jnT1V1gtIeQ&id=95909697&session=11757
+19:02:55 | INFO | Headers:
+19:02:55 | INFO | 	host: localhost:5656
+19:02:55 | INFO | 	connection: close
+19:02:55 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+19:02:55 | INFO | 	sec-ch-ua-mobile: ?1
+19:02:55 | INFO | 	sec-ch-ua-platform: "Android"
+19:02:55 | INFO | 	upgrade-insecure-requests: 1
+19:02:55 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 12; 22071212AG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+19:02:55 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+19:02:55 | INFO | 	sec-fetch-site: cross-site
+19:02:55 | INFO | 	sec-fetch-mode: navigate
+19:02:55 | INFO | 	sec-fetch-dest: document
+19:02:55 | INFO | 	accept-encoding: gzip, deflate, br
+19:02:55 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+19:31:29 | INFO | GET http://localhost:5656/?ref=CkG04yTmaaRcN-ZG9QObiw&id=389472305&session=11780
+19:31:29 | INFO | Request Body: ref=CkG04yTmaaRcN-ZG9QObiw&id=389472305&session=11780
+19:31:29 | INFO | Headers:
+19:31:29 | INFO | 	host: localhost:5656
+19:31:29 | INFO | 	connection: close
+19:31:29 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+19:31:29 | INFO | 	accept-language: ru
+19:31:29 | INFO | 	accept-encoding: gzip, deflate, br
+19:31:29 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_0_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1
+19:32:46 | INFO | GET http://localhost:5656/?ref=CkG04yTmaaRcN-ZG9QObiw&id=389472305&session=11780
+19:32:46 | INFO | Request Body: ref=CkG04yTmaaRcN-ZG9QObiw&id=389472305&session=11780
+19:32:46 | INFO | Headers:
+19:32:46 | INFO | 	host: localhost:5656
+19:32:46 | INFO | 	connection: close
+19:32:46 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+19:32:46 | INFO | 	accept-language: ru
+19:32:46 | INFO | 	accept-encoding: gzip, deflate, br
+19:32:46 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_0_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1
+19:33:17 | INFO | GET http://localhost:5656/?ref=eJaJXhvuguAZ3mPoqz0Q7A&id=389472305&session=11780
+19:33:17 | INFO | Request Body: ref=eJaJXhvuguAZ3mPoqz0Q7A&id=389472305&session=11780
+19:33:17 | INFO | Headers:
+19:33:17 | INFO | 	host: localhost:5656
+19:33:17 | INFO | 	connection: close
+19:33:17 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+19:33:17 | INFO | 	accept-language: ru
+19:33:17 | INFO | 	accept-encoding: gzip, deflate, br
+19:33:17 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_0_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1
+19:33:49 | INFO | GET http://localhost:5656/?ref=57cOYvgGSFUgGg2CpD9dGg&id=1814096027&session=10911
+19:33:49 | INFO | Request Body: ref=57cOYvgGSFUgGg2CpD9dGg&id=1814096027&session=10911
+19:33:49 | INFO | Headers:
+19:33:49 | INFO | 	host: localhost:5656
+19:33:49 | INFO | 	connection: close
+19:33:49 | INFO | 	upgrade-insecure-requests: 1
+19:33:49 | INFO | 	user-agent: Mozilla/5.0 (Linux; U; Android 10; ru-ru; Redmi 9C NFC Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.141 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.4.1-g
+19:33:49 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+19:33:49 | INFO | 	accept-encoding: gzip, deflate
+19:33:49 | INFO | 	accept-language: ru-RU,en-US;q=0.9
+20:05:13 | INFO | GET http://localhost:5656/?ref=5sMOs5ipVtFGxZ5fqK8xzg&id=1119778191&session=11797
+20:05:13 | INFO | Request Body: ref=5sMOs5ipVtFGxZ5fqK8xzg&id=1119778191&session=11797
+20:05:13 | INFO | Headers:
+20:05:13 | INFO | 	host: localhost:5656
+20:05:13 | INFO | 	connection: close
+20:05:13 | INFO | 	sec-ch-ua: "Not?A_Brand";v="8", "Chromium";v="108", "Yandex";v="23"
+20:05:13 | INFO | 	sec-ch-ua-mobile: ?1
+20:05:13 | INFO | 	sec-ch-ua-platform: "Android"
+20:05:13 | INFO | 	upgrade-insecure-requests: 1
+20:05:13 | INFO | 	user-agent: Mozilla/5.0 (Linux; arm_64; Android 10; HRY-LX1T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 YaBrowser/23.1.2.92.00 SA/3 Mobile Safari/537.36
+20:05:13 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+20:05:13 | INFO | 	sec-fetch-site: none
+20:05:13 | INFO | 	sec-fetch-mode: navigate
+20:05:13 | INFO | 	sec-fetch-user: ?1
+20:05:13 | INFO | 	sec-fetch-dest: document
+20:05:13 | INFO | 	accept-encoding: gzip, deflate, br, sdch
+20:05:13 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+20:07:20 | INFO | GET http://localhost:5656/?ref=dYZVPnVXSkxf-0ATuRozSg&id=1123833525&session=11796
+20:07:20 | INFO | Request Body: ref=dYZVPnVXSkxf-0ATuRozSg&id=1123833525&session=11796
+20:07:20 | INFO | Headers:
+20:07:20 | INFO | 	host: localhost:5656
+20:07:20 | INFO | 	connection: close
+20:07:20 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+20:07:20 | INFO | 	accept-language: ru
+20:07:20 | INFO | 	accept-encoding: gzip, deflate, br
+20:07:20 | INFO | 	user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Mobile/15E148 Safari/604.1
+20:22:23 | INFO | GET http://localhost:5656/?ref=_GATVGwcTdnVlpDZLNyYrA&id=2103094091&session=11803
+20:22:23 | INFO | Request Body: ref=_GATVGwcTdnVlpDZLNyYrA&id=2103094091&session=11803
+20:22:23 | INFO | Headers:
+20:22:23 | INFO | 	host: localhost:5656
+20:22:23 | INFO | 	connection: close
+20:22:23 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+20:22:23 | INFO | 	sec-ch-ua-mobile: ?1
+20:22:23 | INFO | 	sec-ch-ua-platform: "Android"
+20:22:23 | INFO | 	upgrade-insecure-requests: 1
+20:22:23 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 11; NTN-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+20:22:23 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+20:22:23 | INFO | 	sec-fetch-site: cross-site
+20:22:23 | INFO | 	sec-fetch-mode: navigate
+20:22:23 | INFO | 	sec-fetch-dest: document
+20:22:23 | INFO | 	accept-encoding: gzip, deflate, br
+20:22:23 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+21:15:18 | INFO | GET http://localhost:5656/?ref=WzXlC_0CA4izkVpbDDaLdw&id=711376325&session=11815
+21:15:18 | INFO | Request Body: ref=WzXlC_0CA4izkVpbDDaLdw&id=711376325&session=11815
+21:15:18 | INFO | Headers:
+21:15:18 | INFO | 	host: localhost:5656
+21:15:18 | INFO | 	connection: close
+21:15:18 | INFO | 	sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+21:15:18 | INFO | 	sec-ch-ua-mobile: ?1
+21:15:18 | INFO | 	sec-ch-ua-platform: "Android"
+21:15:18 | INFO | 	upgrade-insecure-requests: 1
+21:15:18 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 12; M2010J19SY) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36
+21:15:18 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+21:15:18 | INFO | 	sec-fetch-site: cross-site
+21:15:18 | INFO | 	sec-fetch-mode: navigate
+21:15:18 | INFO | 	sec-fetch-dest: document
+21:15:18 | INFO | 	accept-encoding: gzip, deflate, br
+21:15:18 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+21:23:04 | INFO | GET http://localhost:5656/
+21:23:04 | INFO | Request Body: 
+21:23:04 | INFO | Headers:
+21:23:04 | INFO | 	host: localhost:5656
+21:23:04 | INFO | 	connection: close
+21:23:04 | INFO | 	user-agent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+21:25:13 | INFO | GET http://localhost:5656/?ref=eJaJXhvuguAZ3mPoqz0Q7A&id=5571734594&session=11337
+21:25:13 | INFO | Request Body: ref=eJaJXhvuguAZ3mPoqz0Q7A&id=5571734594&session=11337
+21:25:13 | INFO | Headers:
+21:25:13 | INFO | 	host: localhost:5656
+21:25:13 | INFO | 	connection: close
+21:25:13 | INFO | 	sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"
+21:25:13 | INFO | 	sec-ch-ua-mobile: ?1
+21:25:13 | INFO | 	sec-ch-ua-platform: "Android"
+21:25:13 | INFO | 	upgrade-insecure-requests: 1
+21:25:13 | INFO | 	user-agent: Mozilla/5.0 (Linux; Android 10; STK-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36
+21:25:13 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+21:25:13 | INFO | 	sec-fetch-site: cross-site
+21:25:13 | INFO | 	sec-fetch-mode: navigate
+21:25:13 | INFO | 	sec-fetch-dest: document
+21:25:13 | INFO | 	accept-encoding: gzip, deflate, br
+21:25:13 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+21:48:03 | INFO | GET http://localhost:5656/
+21:48:03 | INFO | Request Body: 
+21:48:03 | INFO | Headers:
+21:48:03 | INFO | 	host: localhost:5656
+21:48:03 | INFO | 	connection: close
+21:48:03 | INFO | 	accept: */*
+21:48:03 | INFO | 	accept-encoding: gzip,deflate
+21:48:03 | INFO | 	user-agent: Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+21:48:03 | INFO | 	from: support@search.yandex.ru
+22:56:07 | INFO | GET http://localhost:5656/
+22:56:07 | INFO | Request Body: 
+22:56:07 | INFO | Headers:
+22:56:07 | INFO | 	host: localhost:5656
+22:56:07 | INFO | 	connection: close
+22:56:07 | INFO | 	cache-control: no-cache
+22:56:07 | INFO | 	pragma: no-cache
+22:56:07 | INFO | 	accept: */*
+22:56:07 | INFO | 	accept-encoding: gzip, deflate
+22:56:07 | INFO | 	from: bingbot(at)microsoft.com
+22:56:07 | INFO | 	user-agent: Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/103.0.5060.134 Safari/537.36
+23:03:30 | INFO | GET http://localhost:5656/
+23:03:30 | INFO | Request Body: 
+23:03:30 | INFO | Headers:
+23:03:30 | INFO | 	host: localhost:5656
+23:03:30 | INFO | 	connection: close
+23:03:30 | INFO | 	referer: NOBORINGDATE.RU
+23:03:30 | INFO | 	cache-control: no-cache, must-revalidate
+23:03:30 | INFO | 	pragma: no-cache
+23:03:30 | INFO | 	user-agent: Mozilla/5.0 (compatible; BackupLand/1.0; https://go.backupland.com/; Domain check for viruses;)
+23:03:30 | INFO | 	accept: */*
+23:03:30 | INFO | 	accept-encoding: gzip

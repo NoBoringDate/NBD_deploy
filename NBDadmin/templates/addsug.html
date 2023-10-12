@@ -1,0 +1,271 @@
+{% extends "base.html" %}
+{% block title %}{{page_title}}{% endblock %}
+
+{% block content %} 
+<form method="post" enctype="multipart/form-data">
+
+<!-- основной код -->
+    <h4 style="text-align:center;">Новое предложение</h4>
+    <div class="content-center">
+        <div style="width: 500px; display:flex; justify-content:space-around; margin: 15px 0">
+            <button class="btn green-nav-button" id="submit" onclick="inputCheck();" type="submit">Сохранить</button>
+            <button class="btn pink-nav-button" onclick="window.location.href = '/suggestions'" type="reset">Отмена</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <label for="premForm">Даты продвижения</label>
+            <div class="row form-custom" style="padding: 1rem;" id="premForm">
+                <div class="col-md-6 content-center">
+                    <label for="datetime1" style="width: 1.5rem;">от</label>
+                    <input type="date" name="datestart" id="datetime1">
+                </div>
+                <div class="col-md-6 content-center">
+                    <label for="datetime2" style="width: 1.5rem;">до</label>
+                    <input type="date" name="dateend" id="datetime2">
+                </div>
+            <div class="mb-3">
+                <label for="premstart" class="form-label">Начать продвижение</label>
+                <input name="premstart" id="premstart" type="checkbox" value="True" class="form-check-input">
+            </div>
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Название</label>
+                <input required name="title" type="text" class="form-custom form-control" id="formGroupExampleInput" placeholder="Антикафе 'Луна'">
+            </div>
+            <div>
+                <label for="floatingTextarea3">Описание</label>
+                <textarea required name="description" class="form-custom form-control" id="floatingTextarea3" placeholder="Классная, уютная зона отдыха для вас и ваших друзей"></textarea>
+              </div><br>
+              <div>
+                <label for="floatingTextarea4">Краткое описание</label>
+                <textarea name="short_desc" class="form-custom form-control" id="floatingTextarea4" placeholder="Классная, уютная зона отдыха для вас и ..."></textarea>
+              </div><br>
+              <div>
+                <label for="floatingTextarea2">Тарифный план</label>
+                <textarea required name="price" class="form-custom form-control" placeholder="Будни 700р, выходные 1000р" id="floatingTextarea2" style="height: 100px"></textarea>
+              </div><br>
+            <div class="mb-3">
+            <p class="text-center" style="color:skyblue">Введите ссылку ИЛИ номер телефона</p>
+                <div class="row">
+                    <div class="col">
+                        <label for="contactUrl" class="form-label">Ссылка</label>
+                        <input required type="text" class="form-custom form-control url" id="contactUrl" placeholder="https://nbd.com">
+                    </div>
+                    <div class="col">
+                        <label for="contactTel" class="form-label">Номер телефона</label>
+                        <input required type="text" class="form-custom form-control phone" id="contactTel" minlength="12" maxlength="12" placeholder="+7(***)***-****" value="+7">
+                    </div>
+                </div>
+            </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Адрес</label>
+                <input required name="address" type="text" class="form-custom form-control" id="formGroupExampleInput2" placeholder="г. Казань, ул.Пушкина 1а">
+              </div>
+            <div class="row">
+                <div class="col">
+                    <p>Тэг</p>
+                    <p><select required name="tag" class="sugSelect form-custom">
+                        <option selected disabled hidden></option>
+                        {% for tag in tags %}
+                        <option value="{{tag}}">{{tag}}</option>
+                        {% endfor %}
+                    </select></p>
+                </div>
+                <div class="col" id="similar">
+                    <p>Связанные предложения</p>
+                    <p class="beforeTag">Сначала укажите тэг</p>
+                </div>
+            </div>
+            {% for filter_tag in filter_tags %}
+                <div class="col">
+                    <p>{{filter_tag.question}}</p>
+                    <div class="filterTag form-custom">
+                    {% for answer in filter_tag.answer %}
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="filter_tag{{loop.index}}" value="{{answer}}" name="filter_tag{{loop.index}}">
+                        <label class="form-check-label" for="filter_tag{{loop.index}}" class="form-label">{{answer}}</label>
+                    </div>
+                    {% endfor %}
+                    </div>
+                </div>
+                {%endfor%}
+            <div class="offset-title"></div>
+
+          </div>
+          <div class="col"><br><br>
+            <div class="row justify-content-center" style="text-align:center">
+                <div class="col-md-12 offset-0">
+                    <div class="input-file-row">
+                        <label class="input-file" >
+                            <input required type="file" name="cover" id="cover" accept="image/*">
+                            <span>Выберите обложку</span>
+                        </label>
+                        <div class="input-file-list"></div>
+                    </div>
+                    <div class="row justify-content-center" id="preview-area1">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center" style="text-align:center">
+                <div class="col-md-12 offset-0">
+                    <div class="input-file-row">
+                        <label class="input-file" >
+                            <input class="fileinput" required type="file" name="images" id="images" accept="image/*" multiple>
+                            <span>Выберите картинки</span>
+                        </label>
+                        <div class="input-file-list"></div>
+                    </div>
+                    <div class="row justify-content-center" id="preview-area1">
+                    </div>
+                </div>
+            </div>
+            </div>
+
+          </div>
+          
+            <div class="popup-bg" style="z-index: 300;"> 
+                <div class="popup">
+                    <p class="text-center">Ожидайте, идёт сохранение предложения...</p>    
+                </div>
+            </div>
+
+        </form>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+<script> 
+
+let inputUrl = document.getElementById('contactUrl');
+let inputTel = document.getElementById('contactTel');
+
+inputUrl.addEventListener("input", function(){
+   inputTel.disabled = (this.value != '');
+   inputTel.required = (this.value === '');
+})
+
+inputTel.addEventListener("input", function(){
+    inputUrl.disabled = (this.value != '');
+    inputUrl.required = (this.value === '');
+  })
+
+
+$(".sugSelect").change(function(){
+    var tag = $(this).val();
+    $.ajax({
+        url:"get_similar_sug",
+        type: "POST",
+        data: {'tag':`${tag}`},
+        success(data){
+            let sim = $("#similar")
+            sim.replaceWith(data)
+        }
+    })
+})
+
+
+function inputCheck() {
+    if (document.getElementById('contactUrl').value !== '') { $('#contactUrl').attr("name", "contact"); }
+    else { $('#contactTel').attr("name", "contact"); }
+}
+
+            let chb = $('[id ^= "filter_tag"]')
+            $(document).ready(function(){
+                $('form').on('submit', function(e){
+                    var checker = false;
+                    chb.each(function(){
+                        if ($(this).prop('checked') == true) {
+                            checker = true;
+                        }
+                    })
+                    if (checker == false) {
+                        e.preventDefault();
+                        return false
+                    }
+                    $(this).find('input[type=submit], button[type=submit]').prop('disabled', true);
+                    $('.popup-bg').fadeIn(600);
+                });
+            });
+
+            var dt = new DataTransfer();
+            var dt2 = new DataTransfer();
+            var count
+
+            $('#cover').on('change', function () {
+                let $files_list = $(this).closest('.input-file').next();
+                $files_list.empty();
+
+                for (var i = 0; i < this.files.length; i++) {
+                    let file = this.files.item(i);
+                    dt.items.add(file);
+
+                    let reader = new FileReader();
+                    reader.readAsDataURL(file);
+                    reader.onloadend = function () {
+                        let new_file_input = '<div class="input-file-list-item">' +
+                            '<img class="input-file-list-img" src="' + reader.result + '">' +
+                            '<span class="input-file-list-name">' + file.name + '</span>' +
+                            '<a href="#" onclick="removeFilesItem(this); return false;" class="input-file-list-remove">X</a>' +
+                            '</div>';
+                        $files_list.append(new_file_input);
+                    };
+                };
+                this.files = dt.files;
+            });
+
+            var count = 8
+            $('#images').on('change', function () {
+                let $files_list = $(this).closest('.input-file').next();
+                
+                
+                for (var i = 0; i < this.files.length && count > 0; i++) {
+                    let file = this.files.item(i);
+                    dt2.items.add(file);
+
+                    let reader = new FileReader();
+                    reader.readAsDataURL(file);
+                    reader.onloadend = function () {
+                        let new_file_input = '<div class="input-file-list-item">' +
+                            '<img class="input-file-list-img" src="' + reader.result + '">' +
+                            '<span class="input-file-list-name">' + file.name + '</span>' +
+                            '<a href="#" onclick="removeFilesItem2(this); return false;" class="input-file-list-remove">X</a>' +
+                            '</div>';
+                        $files_list.append(new_file_input);
+                    };
+                    count--
+                };
+                this.files = dt2.files;
+            });
+
+            function removeFilesItem(target) {
+                let name = $(target).prev().text();
+                let input = $(target).closest('.input-file-row').find('input[type=file]');
+                $(target).closest('.input-file-list-item').remove();
+                for (let i = 0; i < dt.items.length; i++) {
+                    if (name === dt.items[i].getAsFile().name) {
+                        dt.items.remove(i);
+                    };
+                };
+                input[0].files = dt.files;
+            };
+
+            function removeFilesItem2(target) {
+                count++
+                let name = $(target).prev().text();
+                let input = $(target).closest('.input-file-row').find('input[type=file]');
+                $(target).closest('.input-file-list-item').remove();
+                for (let i = 0; i < dt2.items.length; i++) {
+                    if (name === dt2.items[i].getAsFile().name) {
+                        dt2.items.remove(i);
+                        
+                    };
+                };
+                input[0].files = dt2.files;
+            };
+</script>
+
+    </div>
+
+</div>
+
+{% endblock %}

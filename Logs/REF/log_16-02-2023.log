@@ -1,0 +1,89 @@
+01:52:26 | INFO | GET http://46.229.212.89:5656/
+01:52:26 | INFO | Request Body: 
+01:52:26 | INFO | Headers:
+01:52:26 | INFO | 	host: 46.229.212.89:5656
+01:52:26 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36
+01:52:26 | INFO | 	accept: */*
+01:52:26 | INFO | 	accept-encoding: gzip
+03:27:43 | INFO | GET http://localhost:5656/
+03:27:43 | INFO | Request Body: 
+03:27:43 | INFO | Headers:
+03:27:43 | INFO | 	host: localhost:5656
+03:27:43 | INFO | 	connection: close
+03:27:43 | INFO | 	user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:70.0) Gecko/20100101 Firefox/70.0
+03:27:43 | INFO | 	accept: */*
+03:27:43 | INFO | 	referer: http://noboringdate.ru/
+04:17:16 | INFO | GET http://localhost:5656/
+04:17:16 | INFO | Request Body: 
+04:17:16 | INFO | Headers:
+04:17:16 | INFO | 	host: localhost:5656
+04:17:16 | INFO | 	connection: close
+04:17:16 | INFO | 	cache-control: no-cache
+04:17:16 | INFO | 	pragma: no-cache
+04:17:16 | INFO | 	accept: */*
+04:17:16 | INFO | 	accept-encoding: gzip, deflate
+04:17:16 | INFO | 	from: bingbot(at)microsoft.com
+04:17:16 | INFO | 	user-agent: Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/103.0.5060.134 Safari/537.36
+14:00:21 | INFO | GET http://localhost:5656/
+14:00:21 | INFO | Request Body: 
+14:00:21 | INFO | Headers:
+14:00:21 | INFO | 	host: localhost:5656
+14:00:21 | INFO | 	connection: close
+14:00:21 | INFO | 	accept-encoding: gzip, deflate
+14:00:21 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+14:00:21 | INFO | 	accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+14:00:21 | INFO | 	cache-control: no-cache
+14:00:21 | INFO | 	pragma: no-cache
+14:00:21 | INFO | 	sec-fetch-mode: navigate
+14:00:21 | INFO | 	sec-fetch-site: none
+14:00:21 | INFO | 	sec-fetch-user: ?1
+14:00:21 | INFO | 	upgrade-insecure-requests: 1
+14:00:21 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36
+14:00:21 | INFO | 	cookie: 41c5191ff4288be6993e6aeaa900693c=8db2acd2164f86f948f6ebc7f08a8814;  system=PW;  caf_ipaddr=79.137.151.84;  country=RU;  city="";  traffic_target=gd;  null=null;  PHPSESSID=f7a9d796fbda8262ed5c50b211898f29;  welcomebutik=aaaa;  laravel_session=eyJpdiI6IiswSkxNbW9kaHdqblZ3RFRqUkRSZWc9PSIsInZhbHVlIjoiNDZydXF6ZWw0Yk1aa2l2VEtDcnB0SUNCRnJWYldTMFJyMzlWVWFsaDN0VUVxT1B4SUJab05aWGlOR1FxY3RsNCIsIm1hYyI6Ijg3MWFmM2Q0NjczMzk2YmQxMTczZWQ1MWM0ZjZmZDQ2MmU2ZjIwZjYzYzA1NDU2MDg3ODQ0NzIxZjU3N2Y1YjAifQ%3D%3D;  BITRIX_SM_GUEST_ID=383130;  BITRIX_SM_LAST_VISIT=16.02.2023%2017%3A34%3A14;  upread=0;  ep=cCwTlzC93z3zaz1lQjTrJ2D%2BWWva4vd9xOHPjRH9CVJlWCDjkPsFddXBeovruqWO9wmjk%2FIe4piJ5SkpOAe7s4iJW1G9v5Jbe2sUrjfr9mCzZs5jNgVoV62lau37JAeH8WlYgfyL3vjtcwUsqz6%2Bp273tFQZW5wH;  _ym_vizorc_bd7a4cf7c69571d5b660c35fac7cc3c78417788=adf6a040028082b931521e73bfe495fa;  device_view=full;  ASPRO_MAX_USE_MODIFIER=Y;  evontbwqk=c10fd3f1ef54da937fbc19fc571a905a;  ASP.NET_SessionId=plzhklnnsdmzqrim05qiifrz;  cookiesession1=678A3F09E7EA0A4CC0DE335FB5B18DCF;  spid=1676554427578_bde5c49de108d5f6b9932ecd981cdf59_i7u1s6d3c87kmgkx;  visitor-id=2ba19a01-c9a6-42cc-be11-19671c7f8ae0;  Page-Variant=eyIvbGFiZWxpbmciOiJwMTA2Njk1NiJ9;  show_preloader=show;  JSESSIONID=7D2694218746D168A18297609CE84556;  COOKIE_SUPPORT=true;  GUEST_LANGUAGE_ID=ru_RU;  default=25d34d1a0ee5d4e5bfeecfdcab4fbb08;  pll_language=ru;  uid=0.072590001676554918;  421b01aa755e1012a4992ad1efa4dcba=82b767e4b11dd88c2e4e65351d890972;  guest=c15debaa5ee6d6b16e401366af80eca4;  BITRIX_SM_kernel=-crpt-kernel_0;  BITRIX_SM_kernel_0=MqyMI_svj5CGmrNb5p0haQcnbYYOzvzBgikwg1Mp98UHRtu2Fwh1E2YuOqx6gvbUd6f_RJEPuNKq4naeR-wbqQu3bvcCTxVOS8wTjcQ-9hScuUCPWcM-hJTS8BpUStvRHPD4s619uTOM95z19qoEz6pWPWYfr8LnaXnzLqM_i2azueGOOQYxRKsbBGLDRumCHL5Pe7ZYt1XQJ-sC5ceol4GjE8mQ5Wmok4gsV6nn3xU_v94q3yuNdWyY5zswGHqQNC8URS22PwHWbZnYeXOmsXuNo8nOid7BXrdGTENg65rFf8c3mpHxrRnrP_0-5KOpc3SinKPz2AK4ur8BKVBTAU33AhMVuCkH_qXmXgxeM6iKi9W_A32d_yr6wjDrYBVvhgAP7tS7gpaOVA7STQuMDlY5TrPDHtrxwKHxYrurSHKn80PwACwS9ClyLmdQ3tyT9kJtiXaPIb5v5_fbkrhIWEcxBHBosRuC9xFTu-Z7oSWrna7OZo4dY68FlzUzlsX9aI8M6Vt8TWk0ZB8zz6_vQW22AUN2cDZ4R6StW2DiRVZzPUu3ClWaHMAuGgJCjGKTw6MjC4Xl8cOK1OFdyObn5npz6dFIzwhRP8_cUmrRw_sMpLJEvQoBG3zlassy2M2OYc-522mATMqDcyi4h2vAYKC9M2wwK0-0ubbZCyCU-Lz0exiYIT6L047b5zZ0u6wgw9FbA8gbsmFIr_vETuICYWc_;  USER_LANG=ru;  __lhash_=d5ef4b404ab6980b951b751ed32582bc;  ins_bagtravel=a1tr-df31e63f6db89f290b082170d4c66199;  region=moscow;  WMF-Last-Access=16-Feb-2023;  WMF-DP=af7;  mobile_detect=eyJpdiI6ImJWNmtocUZkQVBkWVZDWjBJZnNxd3c9PSIsInZhbHVlIjoiSXNuTU5vbVNqVDFOTjFCVVNPQ2tkaGN5TTBuZkFEbFZ5b3NkQTM1U3NUeUk4aTEyRnk4dlNCaDhYWi9ObjkyWVJtUTMwWVdwQmcweUFmeFF0M3plc2dZMVZGZFVDYXF5SHhGSjJwaEk0bjVacU5SRWlNOXBERDFtQmJxbVovb0RLWWZjQktBdlVOWW95NlVHUG03QlJMaEJGZ1NzbExaYWFPdEQzVlNPSmRaTVBnRUd2RjF0Uy9hN1JUMkhuTisvaFJROTBIVkUvZm1XclROdGE2dzBRNGtQblkrRjFOSjU3RHFINVhDTzQ4UGlEN3Jtem96THRSZjdNM0ZCWk5SYjRRS1JJZTJNZEVpU3pNOUVGZy9PcUE9PSIsIm1hYyI6ImRlYzI2NTc4ODNmNTE5MWEzNmEzYTM4M2E1ZWU5NTZjNGQ2MzM0ZDAzNGFlMzZjMjA5MjJlODdjM2FkZmM2ZjUiLCJ0YWciOiIifQ%3D%3D;  eda169dfb0489e80690eb808ec14cb26=3160ab63dc0812d33f1f65ce1cb92b24;  sid=ce49630ffd34180d3bcb08d3f2807410;  fabrikant=920c023c0a76c63c03fd5fdf914f4c33;  _zendesk_shared_session=-dVRlcUZnTzZrWTNKcHJXa2hRVHh1VnFlWFBuZG9UbDkyNCtUSmxHOFJWVTNLa01VVXNuU3huTTc5N0w4ZHhJdnE2OXdjQllPY1dzSTFHdVhRNlkySmtZNkN5eHJHRkxOQUJpY3BmWS9TWUZGVEZRV0tjaWdLSzdYQmhjOUM1TkduWU5oU2NOU2VIMFFzZ3FudG1XUmp3PT0tLTNGM2QyUmFoWXN5MWp3NE5NTXNtOXc9PQ%3D%3D--b3523d254219bd91955a33f60b498712e31e8973;  _zendesk_session=dnVRQWNRWFh4YUFTRFBoZFpFSmhrM1N0SzU2RmVoYndFeUdHQk9HcDhLZnpyV3VicTVrcXNDblhBSmozbTVaS1JiejJnRDUrSzhMWkRxUzZQN21HZ3c1YUJ3WE5udVhldXFkR04ySitVaThMbXNiWSt2WEpuR3F0TWZTRFNiUUM5WTFrY3NER3ZaeFBoZGxuWTh2YTkvcHlaTVIrQkc3cWVhL3FiMnNkZVptU01EeTVEb0pINWhlVnVFRmcvbllEZTFlbjNuRHRnUEJBdnkzeGNPOUJHcG1EVDJKOUN6YVdWRWFuK3pieUdTZHVlNkJTckgrYzVzZ3M5d1VXYlFLNy0tQ0h6bFVaY2JMTFJIM0pGTUhoYk5BZz09--a95dec1a1374f7ab8611c30d36273c189980fcae;  __wpdm_client=c0ad90409e31417f471dfa1218218321;  f281d503168b7d135ae0ebd689ee045f=o9l89207hgfsdgd3t62mgidlv4;  c8b2c7f88603bdd2d35817633924eb43=en-GB;  session-cookie=17445290ad9cdd93d28f894fbeb261f51fd54d9a7e658b62b37938b7f60c23236ea3c39b2e61248cb060188ee99842ca;  TCPCS=c7eacdfe47d2755ff19e5c389733c5fd;  Path=/
+14:00:24 | INFO | GET http://localhost:5656/
+14:00:24 | INFO | Request Body: 
+14:00:24 | INFO | Headers:
+14:00:24 | INFO | 	host: localhost:5656
+14:00:24 | INFO | 	connection: close
+14:00:24 | INFO | 	upgrade-insecure-requests: 1
+14:00:24 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+14:00:24 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+14:00:24 | INFO | 	sec-fetch-site: none
+14:00:24 | INFO | 	sec-fetch-mode: navigate
+14:00:24 | INFO | 	sec-fetch-user: ?1
+14:00:24 | INFO | 	sec-fetch-dest: document
+14:00:24 | INFO | 	accept-encoding: gzip, deflate, br
+14:00:24 | INFO | 	accept-language: ru
+16:35:05 | INFO | GET http://localhost:5656/
+16:35:05 | INFO | Request Body: 
+16:35:05 | INFO | Headers:
+16:35:05 | INFO | 	host: localhost:5656
+16:35:05 | INFO | 	connection: close
+16:35:05 | INFO | 	user-agent: Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)
+16:35:05 | INFO | 	accept: */*
+16:35:05 | INFO | 	accept-encoding: gzip
+17:14:32 | INFO | GET http://localhost:5656/
+17:14:32 | INFO | Request Body: 
+17:14:32 | INFO | Headers:
+17:14:32 | INFO | 	host: localhost:5656
+17:14:32 | INFO | 	connection: close
+17:14:32 | INFO | 	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+17:14:32 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36
+17:14:32 | INFO | 	referer: https://noboringdate.ru/
+18:50:58 | INFO | GET http://localhost:5656/
+18:50:58 | INFO | Request Body: 
+18:50:58 | INFO | Headers:
+18:50:58 | INFO | 	host: localhost:5656
+18:50:58 | INFO | 	connection: close
+18:50:58 | INFO | 	cache-control: no-cache
+18:50:58 | INFO | 	pragma: no-cache
+18:50:58 | INFO | 	accept: */*
+18:50:58 | INFO | 	accept-encoding: gzip, deflate
+18:50:58 | INFO | 	from: bingbot(at)microsoft.com
+18:50:58 | INFO | 	user-agent: Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/103.0.5060.134 Safari/537.36
+22:46:09 | INFO | GET http://localhost:5656/
+22:46:09 | INFO | Request Body: 
+22:46:09 | INFO | Headers:
+22:46:09 | INFO | 	host: localhost:5656
+22:46:09 | INFO | 	connection: close
+22:46:09 | INFO | 	accept-encoding: identity

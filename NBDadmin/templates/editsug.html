@@ -1,0 +1,341 @@
+{% extends "base.html" %}
+{% block title %}{{page_title}}{% endblock %}
+
+{% block content %} 
+
+
+<form method="post" enctype="multipart/form-data">
+
+<!-- основа страницы -->
+<h4 style="text-align:center;">Редактирование предложения</h4>
+<div class="content-center">
+    <div style="width: 500px; display:flex; justify-content:space-around; margin: 15px 0">
+        <button onclick="inputCheck();" class="btn green-nav-button col-md-6" id="submit" type="submit">Сохранить</button>
+        <button class="btn pink-nav-button col-md-5" onclick="window.location.href = '/suggestions/{{sugs.id}}'" type="reset">Отмена</button>        
+    </div>
+</div>
+<div class="checkbox">
+    <label for="verif" class="form-label">Состояние проверки</label>
+    <input type="checkbox" id="verif" value="{{sugs.verif}}" name="verif"> 
+</div>
+<div class="checkbox">
+    <label for="active" class="form-label">Состояние активности</label>
+    <input type="checkbox" id="active" value="True" name="active" {%if sugs.active %} checked {% endif %}> 
+</div>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <label for="premForm">Даты продвижения</label>
+            <div class="row form-custom" style="padding: 1rem;" id="premForm">
+                <div class="col-md-6 content-center">
+                    <label for="datetime1" style="width: 1.5rem;">c</label>
+                    <input type="date" name="datestart" id="datetime1" value="{{sugs.advance_date_start}}" min="2001-01-01" max="2110-12-31">
+                </div>
+                <div class="col-md-6 content-center">
+                    <label for="datetime2" style="width: 1.5rem;">до</label>
+                    <input type="date" name="dateend" id="datetime2" value="{{sugs.advance_date_end}}" min="2001-01-01" max="2110-12-31">
+                </div>
+            <div class="mb-3">
+                <label for="premstart" class="form-label">Начать продвижение</label>
+                <input name="premstart" id="premstart" {% if sugs.advance%}checked{%endif%} type="checkbox" value="True" class="form-check-input">
+            </div>
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Название</label>
+                <input required name="title" type="text" class="form-custom form-control" id="formGroupExampleInput" value="{{sugs.title}}">
+            </div>
+            <div>
+                <label for="floatingTextarea2">Описание</label>
+                <textarea required name="description" class="form-custom form-control">{{sugs.description}}</textarea>
+              </div><div class="offset-title"></div>
+              <div>
+                <label for="floatingTextarea2">Краткое описание</label>
+                <textarea name="short_desc" class="form-custom form-control" placeholder="Классная, уютная зона отдыха для вас и ...">{{sugs.short_desc}}</textarea>
+              </div><div class="offset-title"></div>
+              <div>
+                <label for="floatingTextarea2">Тарифный план</label>
+                <textarea required name="price" class="form-custom form-control" id="floatingTextarea2" style="height: 100px">{{sugs.price}}</textarea>
+              </div><div class="offset-title"></div>
+
+            <div class="mb-3">
+            <p class="text-center" style="color:skyblue">Введите ссылку ИЛИ номер телефона</p>
+                <div class="row">
+                    <div class="col">
+                        <label for="contactUrl" class="form-label">Ссылка</label>
+                        <input required type="text" class="form-custom form-control url" id="contactUrl" placeholder="https://nbd.com">
+                    </div>
+                    <div class="col">
+                        <label for="contactTel" class="form-label">Номер телефона</label>
+                        <input required type="text" class="form-custom form-control phone" id="contactTel" minlength="12" maxlength="12" placeholder="+7(***)***-****" value="+7">
+                    </div>
+                </div>
+            </div>
+              
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Адрес</label>
+                <input required name="address" type="text" class="form-custom form-control" id="formGroupExampleInput2" value="{{sugs.address}}">
+              </div>
+              <div style="height:1rem"></div>
+            <div class="row">
+            <div class="col">
+                <p>Тэг</p>
+                <p><select required name="tag" class="sugSelect form-custom">
+                    {% for tag in tags %}
+                    <option {% if tag == sugs.tag %} selected {% endif %} value="{{tag}}">{{tag}}</option>
+                    {% endfor %}
+                   </select></p>
+            </div>
+            <div class="col" id="similar"> 
+                <p>Связанные предложения</p>
+                <div class="similarEdit form-custom">
+                {% for sug in similar %}
+                    {% if sug.id != sugs.id %}
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" {% if sug.id in sugs.similar_sug %} checked {% endif %} id="sug{{sug.id}}" value="{{sug.id}}" name="similar_sug{{sug.id}}">
+                            <label class="form-check-label" for="sug{{sug.id}}" class="form-label">{{sug.title}}</label>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+                </div>
+            </div>
+            </div>
+            <div class="col">
+                {% for filter_tag in filter_tags %}
+                <div class="col">
+                    <p>{{filter_tag.question}}</p>
+                    <div class="filterTag form-custom">
+                    {% for answer in filter_tag.answer %}
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" {% if answer in sugs.filter_param %} checked {% endif %} id="filter_tag{{loop.index}}" value="{{answer}}" name="filter_tag{{loop.index}}">
+                        <label class="form-check-label" for="filter_tag{{loop.index}}" class="form-label">{{answer}}</label>
+                    </div>
+                    {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="offset-title"></div>    
+          </div>
+          
+          <div class="col" style="padding: 0 0 0 5rem;">
+            <div class="offset-title"></div>
+            <div class="row justify-content-center" style="text-align:center">
+                <div class="col-md-12 offset-0">
+                    <div class="input-file-row">
+                        <label class="input-file" >
+                            <input type="file" name="cover" id="cover" accept="image/*">
+                            <span>Выберите обложку</span>
+                        </label>
+                        <div class="input-file-list"></div>
+                    </div>
+                    <div class="row justify-content-center" id="preview-area1">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center" style="text-align:center">
+                <div class="col offset-0">
+                    <div class="input-file-row">
+                        <label class="input-file" >
+                            <input type="file" name="images" id="images" accept="image/*" multiple>
+                            <span>Выберите не обложку</span>
+                        </label>
+                        <div class="input-file-list"></div>
+                    </div>
+                    <div class="row justify-content-center" id="preview-area1">
+                    </div>
+                </div>
+            </div>
+                    <div> 
+                        <div class="row">
+                        <img class="img-fluid input-file-list-item" src="{{sugs.cover}}"/>
+                        </div>
+                        <div>
+                            <label>Удалить обложку</label>
+                            <input type="checkbox" id="delete1" value="True" name="{{sugs.cover}}"> 
+                        </div>
+                    </div>
+                        <div class="offset-title"></div>
+                    <div class="row"> 
+                            {% for el in sugs.images %}
+                            <div class="col-4" style="padding: 0 0 0.7rem;">
+                            <img class="img-fluid input-file-list-item" src="{{el}}"/>
+                                <label>Удалить картинку</label>
+                                <input type="checkbox" id="delete2{{loop.index}}" value="True" name="{{el}}"> 
+                            </div>
+                            {% endfor %}
+                    </div>
+            </div>  
+          </div>
+<!-- попап -->
+          <div class="popup-bg"  style="z-index: 300;"> 
+            <div class="popup">
+                <p class="text-center">Ожидайте, идёт сохранение предложения...</p>    
+            </div>
+        </div>
+
+        </form>
+       
+<script>
+    $(".sugSelect").change(function(){
+        var tag = $(this).val();
+        $.ajax({
+            url:"get_similar_sug",
+            type: "GET",
+            data: {'tag':`${tag}`},
+            success(data){
+                let sim = $("#similar")
+                sim.replaceWith(data)
+            }
+        })
+    })
+    var count = 8 - {{sugs.images | length}}
+    
+    $('[id ^= "delete2"]').change(function(e){
+        if ($(this).is(":checked")){
+            count++
+        }else if(count == 0){
+            $(this).prop("checked", true);
+            alert("Максимум 8 фото");
+        }else{
+            count--
+        }
+    });
+            if ($('#verif').val() === 'True') { $('#verif').attr('checked', 'true') } 
+            $('#verif').on('click', function() {
+                if ($('#verif').val() == 'True') 
+                    { 
+                        $('#verif').val('False'),
+                        $('#verif').attr('checked', null) 
+                    } 
+                    else
+                        { $('#verif').val('True') }
+            })
+
+            let inputUrl = document.getElementById('contactUrl');
+            let inputTel = document.getElementById('contactTel');
+            
+            if ('{{sugs.contact}}'.indexOf('+7') >= 0) {
+                inputTel.setAttribute("value", "{{sugs.contact}}")
+                inputUrl.setAttribute('disabled', 'true')
+            } else {
+                inputUrl.setAttribute("value", "{{sugs.contact}}")
+                inputTel.setAttribute('disabled', 'true')
+            }
+
+            inputUrl.addEventListener("input", function(){
+                inputTel.disabled = (this.value != '');
+                inputTel.required = (this.value === '');
+             })
+             
+             inputTel.addEventListener("input", function(){
+                 inputUrl.disabled = (this.value != '');
+                 inputUrl.required = (this.value === '');
+               })
+
+            function inputCheck() {
+                if (document.getElementById('contactUrl').value !== '') { $('#contactUrl').attr("name", "contact"); }
+                else { $('#contactTel').attr("name", "contact"); }
+            }
+
+            $(document).ready(function(){
+                $('form').submit(function(){
+                    $(this).find('input[type=submit], button[type=submit]').prop('disabled', true);
+                    $('.popup-bg').fadeIn(600);
+                });
+            });
+
+            let button = document.querySelector("#delete1");
+            button.disabled = true;
+
+            var dt = new DataTransfer();
+            var dt2 = new DataTransfer();
+
+            $('#cover').on('change', function () {
+                button.disabled = false;
+                let $files_list = $(this).closest('.input-file').next();
+                $files_list.empty();
+
+                for (var i = 0; i < this.files.length; i++) {
+                    let file = this.files.item(i);
+                    dt.items.add(file);
+
+                    let reader = new FileReader();
+                    reader.readAsDataURL(file);
+                    reader.onloadend = function () {
+                        let new_file_input = '<div class="input-file-list-item">' +
+                            '<img class="input-file-list-img" src="' + reader.result + '">' +
+                            '<span class="input-file-list-name">' + file.name + '</span>' +
+                            '<a href="#" id="deleteUploadCover" onclick="deleteUploadCover(); removeFilesItem(this); return false;" class="input-file-list-remove">X</a>' +
+                            '</div>';
+                        $files_list.append(new_file_input);
+                    };
+                };
+                this.files = dt.files;
+                $("#delete1").prop("checked", true);
+                button.disabled = true;
+            });
+
+            function deleteUploadCover () {
+                $("#delete1").prop("checked", false);
+                button.disabled = true;
+            };
+            
+            
+
+            $('#images').on('change', function () {
+                let $files_list = $(this).closest('.input-file').next();
+                
+
+                for (var i = 0; i < this.files.length && count > 0; i++) {
+                    let file = this.files.item(i);
+                    dt2.items.add(file);
+
+                    let reader = new FileReader();
+                    reader.readAsDataURL(file);
+                    reader.onloadend = function () {
+                        let new_file_input = '<div class="input-file-list-item">' +
+                            '<img class="input-file-list-img" src="' + reader.result + '">' +
+                            '<span class="input-file-list-name">' + file.name + '</span>' +
+                            '<a href="#" onclick="removeFilesItem2(this); return false;" class="input-file-list-remove">X</a>' +
+                            '</div>';
+                        $files_list.append(new_file_input);
+                    };
+                    count--
+                };
+                this.files = dt2.files;
+            });
+
+
+            //функция удаления старой обложки при загрузке новой 
+            function removeFilesItem(target) {
+                let name = $(target).prev().text();
+                let input = $(target).closest('.input-file-row').find('input[type=file]');
+                $(target).closest('.input-file-list-item').remove();
+                for (let i = 0; i < dt.items.length; i++) {
+                    if (name === dt.items[i].getAsFile().name) {
+                        dt.items.remove(i);
+                    };
+                };
+                input[0].files = dt.files;
+            };
+            //функция удаления картинок
+            function removeFilesItem2(target) {
+                count++
+                let name = $(target).prev().text();
+                let input = $(target).closest('.input-file-row').find('input[type=file]');
+                $(target).closest('.input-file-list-item').remove();
+                for (let i = 0; i < dt2.items.length; i++) {
+                    if (name === dt2.items[i].getAsFile().name) {
+                        dt2.items.remove(i);
+                    };
+                };
+                input[0].files = dt2.files;
+            };
+</script>
+
+    </div>
+
+</div>
+
+
+{% endblock %}

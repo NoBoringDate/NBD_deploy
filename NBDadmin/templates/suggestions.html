@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block title %}{{page_title}}{% endblock %}
+{% block nav_button %}
+{% if role != "marketer"%}<div class="nav-btn"><a class="btn blue-nav-button" type="button" href="/addsuggestion">Добавить предложение</a></div>{% endif %}
+{% endblock %}
+
+{% block under_nav_menu %}
+<div style="height: 64px;"></div>
+<div class="under-nav">
+  <div>
+    {% for tag in tags %}
+      <a class="active" href="#tag{{tag}}">{{tag}}</a>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+
+{% block content %} 
+      
+<div class="container">
+<div>
+  <p style="font-size: 2rem;" class="text-center">Предложения</p>
+  <p class="text-center" style="font-size: 0.9rem; color:rgb(100, 102, 104);margin:0">Всего предложений: {{sugs_count}}</p> 
+</div>
+    <div>
+      {% for tag in tags_counter %}
+        <div class="tag-line">
+          <p>
+          <a class="anchor disabled-link" href="#tag{{tag}}" name="tag{{tag}}" id="tag{{tag}}"></a>
+          {{tag}}
+          </p>
+          <p class="">Количество предложений по тегу : {{tags_counter[tag] | length }}</p>
+        </div>
+        <div class="row">
+      {% for sug in tags_counter[tag] %}
+      <div class="col mb-3">
+        <a href="/suggestions/{{sug.id}}" style="text-decoration:none; color:black">
+        <div class="card" style="width: 300px; box-shadow: 0.1em 0.1em 5px rgba(122,122,122,0.5); background-color: white" >
+          <div class="outer crop" style="width: 300px; height: 300px;">
+            <img class="inner" style="width: 280px; padding: 10px 0 0 5px" src="{{sug.cover}}">
+          </div>
+            <div class="card-body"  style="height: 7.5rem;">
+              <p class="card-title" style="height: 2.3rem; font-size: 1.1rem">{{sug.title[:40]}}</p>
+              <div style="display: flex; justify-content:space-between; padding: 10px">
+                {% if sug.verif %}
+                <img id="verification{{sug.verif}}" height="30px" src="/static/img/accept.png" alt="verification">
+                {% endif %}
+                {% if sug.active %}
+                <img id="active{{sug.active}}" height="30px" src="/static/img/eye.png" alt="active">
+                {% endif %}
+                {% if sug.advance %}
+                <img id="advance{{sug.advance}}" height="30px" src="/static/img/star.png" alt="advance">
+                {% endif %}
+              </div>
+              <div style="display: flex; justify-content:space-between">
+                <p class="card-title" style="height: 1.3rem; font-size: 0.7rem">Tag:{{sug.tag}}</p>
+              </div>
+              
+            </div>
+        </div>
+        </a>
+      </div>
+      {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

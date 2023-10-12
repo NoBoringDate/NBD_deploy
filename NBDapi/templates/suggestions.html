@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}{{page_title}}{% endblock %}
+{% block link %}
+<link rel="stylesheet" href="{{ url_for('static', path='/css/Articles-Cards-images.css') }}">
+{% endblock %}
+{% block nav_button %}
+<div class="collapse navbar-collapse" id="navcol-3">
+    <ul class="navbar-nav mx-auto"></ul><a class="btn btn-success link-dark border rounded-pill border-dark"
+        href="/addsuggestion" type="button">Добавить предложение</a>
+</div>
+{% endblock %}
+{% block content %}
+
+
+<div class="container" style="margin-top: 10px;">
+    <div class="row">
+        {% for el in sugs %}
+        <div class="col-md-3 d-lg-flex justify-content-lg-center" style="margin-top: 5px;margin-bottom: 5px;">
+            <div class="card shadow-lg"><img class="img-thumbnail" style="height: 200px;"
+                    src="{{ url_for('BotStorage', path=el.cover[14:]) }}" width="300" height="auto">
+                <div class="card-body p-4">
+                    <h4 class="text-center card-title">{{el.title[:22]}}</h4>
+                </div>
+                <a class="btn btn-success link-dark border rounded-pill border-dark" href="/suggestions/{{el.id}}" type="button" style="margin-right: 10px;margin-left: 10px;margin-bottom: 5px;margin-top: 5px;">Подробнее</a>
+                <a class="btn btn-success link-dark border rounded-pill border-dark" href="/suggestions/edit/{{el.id}}" type="button" style="margin-right: 10px;margin-left: 10px;margin-bottom: 5px;margin-top: 5px;">Редактировать</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{%endblock%}

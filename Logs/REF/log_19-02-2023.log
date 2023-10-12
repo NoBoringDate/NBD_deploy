@@ -1,0 +1,57 @@
+01:37:14 | INFO | GET http://localhost:5656/
+01:37:14 | INFO | Request Body: 
+01:37:14 | INFO | Headers:
+01:37:14 | INFO | 	host: localhost:5656
+01:37:14 | INFO | 	connection: close
+01:37:14 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+01:37:14 | INFO | 	accept: */*
+01:37:14 | INFO | 	accept-encoding: gzip,deflate
+01:37:14 | INFO | 	referer: http://noboringdate.ru/
+02:17:53 | INFO | GET http://localhost:5656/
+02:17:53 | INFO | Request Body: 
+02:17:53 | INFO | Headers:
+02:17:53 | INFO | 	host: localhost:5656
+02:17:53 | INFO | 	connection: close
+02:17:53 | INFO | 	cache-control: no-cache
+02:17:53 | INFO | 	pragma: no-cache
+02:17:53 | INFO | 	accept: */*
+02:17:53 | INFO | 	accept-encoding: gzip, deflate
+02:17:53 | INFO | 	from: bingbot(at)microsoft.com
+02:17:53 | INFO | 	user-agent: Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/103.0.5060.134 Safari/537.36
+13:01:26 | INFO | GET http://localhost:5656/
+13:01:26 | INFO | Request Body: 
+13:01:26 | INFO | Headers:
+13:01:26 | INFO | 	host: localhost:5656
+13:01:26 | INFO | 	connection: close
+13:01:26 | INFO | 	accept: */*
+13:01:26 | INFO | 	referer: https://antoshabrain.blogspot.com
+13:01:26 | INFO | 	accept-encoding: gzip
+13:01:26 | INFO | 	user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0
+14:48:12 | INFO | GET http://localhost:5656/
+14:48:12 | INFO | Request Body: 
+14:48:12 | INFO | Headers:
+14:48:12 | INFO | 	host: localhost:5656
+14:48:12 | INFO | 	connection: close
+14:48:12 | INFO | 	cache-control: no-cache
+14:48:12 | INFO | 	pragma: no-cache
+14:48:12 | INFO | 	accept: */*
+14:48:12 | INFO | 	accept-encoding: gzip, deflate
+14:48:12 | INFO | 	from: bingbot(at)microsoft.com
+14:48:12 | INFO | 	user-agent: Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/103.0.5060.134 Safari/537.36
+15:21:30 | INFO | GET http://localhost:5656/
+15:21:30 | INFO | Request Body: 
+15:21:30 | INFO | Headers:
+15:21:30 | INFO | 	host: localhost:5656
+15:21:30 | INFO | 	connection: close
+15:21:30 | INFO | 	referer: NOBORINGDATE.RU
+15:21:30 | INFO | 	cache-control: no-cache, must-revalidate
+15:21:30 | INFO | 	pragma: no-cache
+15:21:30 | INFO | 	user-agent: Mozilla/5.0 (compatible; BackupLand/1.0; https://go.backupland.com/; Domain check for viruses;)
+15:21:30 | INFO | 	accept: */*
+15:21:30 | INFO | 	accept-encoding: gzip
+21:33:26 | INFO | GET http://localhost:5656/
+21:33:26 | INFO | Request Body: 
+21:33:26 | INFO | Headers:
+21:33:26 | INFO | 	host: localhost:5656
+21:33:26 | INFO | 	connection: close
+21:33:26 | INFO | 	user-agent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)

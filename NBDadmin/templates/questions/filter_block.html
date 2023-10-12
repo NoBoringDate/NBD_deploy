@@ -1,0 +1,52 @@
+<div class="col-md-6" style="padding: 0.5rem;" id="filter_block{{f_ques.id}}">
+    <div class="box_f" id="hiden_box_f{{f_ques.id}}" style="padding: 1.7rem; background-color: transparent; border: 0.1rem solid #5EBB9C; border-radius: 0.5rem;">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <p style="font-size: 0.75rem; height:1.8rem" onclick="visible_block_f('{{f_ques.id}}');" class="open_f col-md-6 btn green-button-ques">Открыть/скрыть ответы</p>
+            <div class="col-md-3"></div>
+        </div> 
+        <div class="row">
+            <div class="col-md-8"><h5 class="text-center" style="font-size: 1.3rem; letter-spacing:0.05rem">{{f_ques.question}}</h5></div>    
+            <div class="col-md-4">
+                <div class="row content-center" style="padding: 0 0 0.5rem">
+                    <button class="green-full-button text-center" style="height: auto; width:auto" onclick="editFilterQues('{{f_ques.id}}');">Изменить</button>
+                </div>
+                <div class="row content-center">
+                    <button class="pink-full-button text-center" style="height: auto; width:auto" onclick="alertDeleteQuesFilter('{{f_ques.id}}')">Удалить</button>
+                </div>
+            </div>
+        </div>
+        <div class="offset-title"></div>
+        <!-- ответ на вопрос -->
+        <div style="padding: 0.3rem;">
+            <div class="row">
+                <div class="col-md-6"><p style="color:#63b6e7; height: 0.5rem; font-size:0.9rem;">Ответ:</p></div>
+                <div class="col-md-6 content-end"><button class="green-full-button" onclick="editFilterAnswer('{{f_ques.id}}');">Изменить</button></div>
+            </div>
+        </div>
+        <div class="viewsug-text">
+        {% for f_answer in f_ques.answer %}
+            <div class="row">
+                <div>
+                    <div class="row">
+                        <p style="font-size:1rem; height: 0.5rem">- {{f_answer}}</p>  
+                    </div>
+                </div>   
+            </div>
+        {% endfor %} 
+        </div>
+        <div style="height: 0.5rem;"></div> 
+        <!-- ответ на ответ -->
+        <div style="padding: 0.3rem;">
+            <div class="row">
+                <div class="col-md-6 "><p style="color:#63b6e7; height: 0.5rem; font-size:0.9rem;">Ответ на ответ:</p></div>
+                <div class="col-md-6 content-end"><button class="green-full-button" onclick="editFilterAnswerToAnswer('{{f_ques.id}}');">Изменить</button></div>
+            </div>
+        </div>    
+        <div class="viewsug-text">
+            {% for answer_to_answer in f_ques.answer_to_answer %}
+                <p style="font-size:1rem; height: 0.5rem">- {{answer_to_answer}}</p>
+            {% endfor %} 
+        </div>
+    </div>   
+    </div>

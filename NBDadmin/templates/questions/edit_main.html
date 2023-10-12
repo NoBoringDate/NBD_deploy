@@ -1,0 +1,26 @@
+<div class="popup-bg" style="z-index: 300;" id="popup-bg"> 
+    <div class="popup">
+        <div>
+            <div class="col" style="padding: 1rem;" id="edit_main_block{{ques.id}}">
+                <div class="row">
+                    <p class="text-center" style="font-size: 1.5rem;">Редактирование вопроса</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <form id="main_question">        
+                            <textarea required id="editMainQues" class="form-custom form-control" name="question">{{ques.question}}</textarea>   <!-- вопрос -->
+                        </form>
+                    </div> 
+                    <div class="col-md-4">
+                        <div class="row content-center" style="padding: 0 0 0.5rem">
+                            <button class="green-full-button text-center" style="height: auto; width:auto" onclick="postMainQues('{{ques.id}}');">Сохранить</button>
+                        </div>
+                        <div class="row content-center">
+                            <button class="pink-full-button text-center" style="height: auto; width:auto" onclick="cancel_popup();">Отмена</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+</div>

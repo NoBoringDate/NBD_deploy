@@ -1,0 +1,279 @@
+{% extends "base.html" %}
+{% block title %}{{page_title}}{% endblock %}
+
+{% block content %} 
+
+<div class="container">
+    <div class="header">
+        <div class="content-center">
+            <h2 class="text-center" style="padding-bottom: 40px; margin-right: 30px">Промоутеры</h2>
+        </div>
+        <form id="promo">
+        <div class="doc content-center">
+            <div class="date" style="display: flex; align-items:center">
+                <label for="datetime1">от</label>
+                <input type="datetime-local" name="datestart" id="datetime1" style="margin-right: 20px;">
+                <label for="datetime2">до</label>
+                <input type="datetime-local" name="dateend" id="datetime2" style="margin-right: 20px;">
+            </div>
+            <a class="btn green-full-button" style="padding: 5px 50px;" onclick="promoStat();">Снять отчёт за период</a>
+        </div>
+        </form>
+    </div>
+    <div class="table">
+        <div class="addPromo" style="display: flex; justify-content:space-between; margin:40px 0 10px;">
+            <a class="btn green-full-button" style="padding: 5px 50px;" onclick="exportPromo();">Экспорт таблицы</a>
+            <a class="btn blue-full-button" style="padding: 5px 50px;" id="addPromoter">Добавить</a>
+        </div>
+        <form id="formAdd">
+        <!-- НИЖЕ НУЖНО СДЕЛАТЬ ЦИКЛ -->
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Имя</th>
+                <th>Платформа</th>
+                <th></th>
+                <th>Реферальная ссылка</th>
+                <th>Счетчик</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+                {% for promoter in proms %}
+              <tr id="promoter{{promoter.id}}">
+                <td><p class="name{{promoter.id}}">{{promoter.full_name}}</p></td>
+                <td><p class="distr{{promoter.id}}">{{promoter.distribution_chanell}}</p></td>
+                <td>
+                    <a id="link{{promoter.id}}" data-name="Скопировано!" onclick="copyPromo('{{promoter.id}}');">
+                        <img class="copy-promo" id="copy-promo{{promoter.id}}" src="/static/img/copy.png" alt="copy">
+                    </a>
+                </td>
+                <td>
+                    <p class="ref{{promoter.id}}">{{promoter.ref_link}}</p>
+                </td>
+                <td><p class="count{{promoter.id}}">{{promoter.people_counter}}</p></td>
+                <td><div class="buttons{{promoter.id}}"><a class="btn" style="padding: 0;" onclick="editPromo('{{promoter.id}}');">
+                    <img style="height: 30px; width: 30px" src="/static/img/12.jpg" alt="edit"></a>
+                    <a class="btn" style="padding: 0;" onclick="alertDelete('{{promoter.id}}');">
+                    <img style="height: 30px; width: 30px" src="/static/img/delete_btn.png" alt="delete"></a></div>
+                </td>
+              </tr>
+                {% endfor %}
+            </tbody>
+          </table>  </form>
+    </div>
+</div>
+
+<script>
+
+    // копирование полной ссылки рефералки
+    function copyPromo(id) {
+        let refLink = document.getElementsByClassName('ref' + id)[0].innerHTML;
+        let linkStart = '{{link_template}}';
+        const el = document.createElement('textarea');
+        el.value = linkStart + refLink;
+        el.setAttribute('readonly', '');
+        el.style.position = 'absolute';
+        el.style.left = '-9999px';
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+
+        let copiedLink = document.getElementById('link'+id);
+        $(copiedLink).attr('id', 'copy');
+        function deleteOldId() {
+            $('#copy').attr('id', 'link' + id)
+        }
+        setTimeout(deleteOldId, 2500);
+    }
+
+    const todayStart = new Date();
+    todayStart.setMinutes(todayStart.getMinutes());
+    todayStart.setHours(3, 0, 0, 0);
+    document.getElementById('datetime1').value = todayStart.toISOString().slice(0, -1);
+
+    const todayEnd = new Date();
+    todayEnd.setMinutes(todayEnd.getMinutes());
+    todayEnd.setHours(26, 59, 0, 0);
+    document.getElementById('datetime2').value = todayEnd.toISOString().slice(0, -1);
+
+    function promoStat() {
+        let form = $('#promo')
+        $.ajax({
+            url: '/promoters/datestat',
+            type: 'POST',
+            data: form.serialize(),
+            dataType: 'binary',
+            xhrFields: {
+                'responseType': 'blob'
+            },
+            success: function(data, status, xhr) {
+                var blob = new Blob([data], {type: xhr.getResponseHeader('Content-Type')});
+                var link = document.createElement('a');
+                link.href = window.URL.createObjectURL(blob);
+                link.download = 'promo_statistic.xlsx';
+                link.click();
+            }        
+        })
+    }
+
+    function exportPromo() {
+        $.ajax({
+            url: '/promoters/stat',
+            type: 'POST',
+            xhrFields: {
+                'responseType': 'blob'
+            },
+            success: function(data, status, xhr) {
+                var blob = new Blob([data], {type: xhr.getResponseHeader('Content-Type')});
+                var link = document.createElement('a');
+                link.href = window.URL.createObjectURL(blob);
+                link.download = 'all_promoter.xlsx';
+                link.click();
+            }        
+        })
+    }
+
+    $('#addPromoter').on('click', function() {
+        $(this).hide();
+        let tr = document.createElement('tr');
+            $(tr).attr('id', 'addTr');
+        let tdName = document.createElement('td');
+        let tdDistr = document.createElement('td');
+        let copyBtn = document.createElement('td'); 
+            let copy = document.createElement('a'); 
+            $(copy).attr('class', 'copyBtn'); 
+            $(copy).appendTo(copyBtn);
+        let tdRef = document.createElement('td');
+        let tdCount = document.createElement('td'); 
+        let countStart = document.createElement('p'); 
+            $(countStart).attr('class', 'countStart'); 
+            countStart.innerText = '0'; 
+            $(countStart).appendTo(tdCount);
+        let tdSave = document.createElement('td');
+        let divSave = document.createElement('div');
+            $(divSave).attr('class', 'buttons');
+        let btnSave = document.createElement('a');
+        let btnCancel = document.createElement('a');
+        let tdNameInput = document.createElement('input');
+        let tdDistrInput = document.createElement('input');
+        let tdRefInput = document.createElement('input');
+        btnSave.innerText = 'Сохранить';
+            $(btnSave).appendTo(divSave);
+            $(btnSave).attr('id', 'btnSave');
+            $(btnSave).attr('onclick', 'inputSave();');
+        btnCancel.innerText = 'Отменить';
+            $(btnCancel).appendTo(divSave);
+            $(btnCancel).attr('id', 'btnCancel');
+            $(btnCancel).attr('onclick', 'inputCancel();');
+
+            $(divSave).appendTo(tdSave);
+        $(tdNameInput).appendTo(tdRef);
+        $(tdDistrInput).appendTo(tdDistr);
+        $(tdRefInput).appendTo(tdName);
+
+        $(tdNameInput).attr('name', 'full_name');
+        $(tdDistrInput).attr('name', 'distribution_chanell');
+        $(tdRefInput).attr('name', 'ref_link');
+
+        $(tdRef).appendTo(tr);
+        $(tdDistr).appendTo(tr);
+        $(copyBtn).appendTo(tr);
+        $(tdName).appendTo(tr);
+        $(tdCount).appendTo(tr);
+        $(tdSave).appendTo(tr);
+
+        document.getElementById('tbody').prepend(tr);
+    });
+    
+function inputSave() {
+    $('#addPromoter').show();
+    if (document.getElementsByName('full_name')[0].value.trim() === '') { return }
+    if (document.getElementsByName('distribution_chanell')[0].value.trim() === '') { return }
+    let form = $('#formAdd')
+    $.ajax({
+        url: '/promoters/add/',
+        type: 'POST',
+        data: form.serialize(),
+        success(data) {
+            $('#addTr').attr('id', "promoter"+data['id']);
+            document.getElementsByName("full_name")[0].outerHTML = "<p class='name"+ data['id'] +" '>" + data['full_name'] + "</p>" ;
+            document.getElementsByName("distribution_chanell")[0].outerHTML = "<p class='distr"+ data['id'] +" '>" + data['distribution_chanell'] + "</p>" ;
+            document.getElementsByClassName("copyBtn")[0].outerHTML = "<a id='link"+ data['id'] +"' data-name='Скопировано!' onclick='copyPromo("+ data['id'] +");'><img class='copy-promo' id='copy-promo"+ data['id'] +"' src='/static/img/copy.png' alt='copy'></a>";
+            document.getElementsByName("ref_link")[0].outerHTML = "<p class='ref"+ data['id'] +" '>" + data['ref_link'] + "</p>" ;
+            document.getElementsByClassName("countStart")[0].outerHTML = "<p class='count"+data['id']+"'>"+ data['people_counter'] +"</p>";
+            document.getElementsByClassName("buttons")[0].outerHTML = "<div class='buttons"+ data['id'] + "'>  " + "<a class='btn' style='padding: 0;' onclick='editPromo(" + data['id'] + ");'><img style='height: 30px; width: 30px' src='/static/img/12.jpg' alt='edit'></a>" + "<a class='btn' style='padding: 0;' onclick='alertDelete(" + data['id'] + ");'><img style='height: 30px; width: 30px' src='/static/img/delete_btn.png' alt='delete'></a>" + "</div>";
+        }
+    })
+}
+
+function inputCancel() {
+    $('#addPromoter').show();
+    $('#addTr').remove();
+}
+
+function alertDelete (id) {
+    var del = confirm("Вы уверены, что хотите удалить ответ?");
+    var form = {"id":`${id}`};
+    if (del) {
+      $.ajax({
+        url: '/promoters/delete',
+        type: 'POST',
+        data: form,
+        success(data) {
+            $('#promoter' + id).remove();
+            alert("Успешно удалено");
+        }
+    });
+    } else {
+    }
+    } 
+
+function editPromo(id) {
+    document.getElementsByClassName("name" + id)[0].outerHTML = 
+        "<input class='name"+ id + "' value='" + document.getElementsByClassName("name" + id)[0].innerHTML + "'>" ;
+    document.getElementsByClassName("distr" + id)[0].outerHTML = 
+        "<input class='distr"+ id + "' value='" + document.getElementsByClassName("distr" + id)[0].innerHTML + "'>" ;
+    document.getElementById('copy-promo' + id).outerHTML = "<p id='copy-promo" + id + "'>"
+    document.getElementsByClassName("ref" + id)[0].outerHTML = 
+        "<input class='ref"+ id + "' value='" + document.getElementsByClassName("ref" + id)[0].innerHTML + "'>" ;
+    document.getElementsByClassName("buttons" + id)[0].outerHTML = 
+        "<div class='buttons"+ id +"'>" + "<a class='btn' style='padding: 0;' onclick='editSave(" + id + ");'><img style='height: 30px; width: 30px' src='/static/img/accept.png' alt='edit'></a>"
+             + "<a class='btn' style='padding: 0;' onclick='editCancel(" + id + ");'><img style='height: 30px; width: 30px' src='/static/img/delete_btn.png' alt='delete'></a>" + "</div>";
+}
+
+function editSave(id) {
+    if (document.getElementsByClassName('name'+id)[0].value.trim() === '') { return }
+    if (document.getElementsByClassName('distr'+id)[0].value.trim() === '') { return }
+    let form = { 'full_name': document.getElementsByClassName('name'+id)[0].value, 
+                    'distribution_chanell': document.getElementsByClassName('distr'+id)[0].value,
+                        'ref_link': document.getElementsByClassName('ref'+id)[0].value,
+                            'people_counter': document.getElementsByClassName('count'+id)[0].innerHTML,
+                                'id': id } 
+    $.ajax({
+        url: '/promoters/edit/',
+        type: 'POST',
+        data: form,
+        success(data) {
+            document.getElementsByClassName("name" + id)[0].outerHTML = "<p class='name"+id +" '>" + document.getElementsByClassName("name" + id)[0].value + "</p>" ;
+            document.getElementsByClassName("distr" + id)[0].outerHTML = "<p class='distr"+id +" '>" + document.getElementsByClassName("distr" + id)[0].value + "</p>" ;
+            document.getElementById("copy-promo" + id).outerHTML = "<img class='copy-promo' id='copy-promo" + id + "' onclick='copyPromo(" + id + ");' src='/static/img/copy.png' alt='copy'>";
+            document.getElementsByClassName("ref" + id)[0].outerHTML = "<p class='ref"+id +" '>" + document.getElementsByClassName("ref" + id)[0].value + "</p>" ;
+            document.getElementsByClassName("buttons" + id)[0].outerHTML = "<div class='buttons"+ id + "'>  " + "<a class='btn' style='padding: 0;' onclick='editPromo(" + id + ");'><img style='height: 30px; width: 30px' src='/static/img/12.jpg' alt='edit'></a>" + "<a class='btn' style='padding: 0;' onclick='alertDelete(" + id + ");'><img style='height: 30px; width: 30px' src='/static/img/delete_btn.png' alt='delete'></a>" + "</div>";         
+        }
+    })
+}
+
+function editCancel(id) {
+    document.getElementsByClassName("name" + id)[0].outerHTML = "<p class='name"+id +" '>" + document.getElementsByClassName("name" + id)[0].value + "</p>" ;
+    document.getElementsByClassName("distr" + id)[0].outerHTML = "<p class='distr"+id +" '>" + document.getElementsByClassName("distr" + id)[0].value + "</p>" ;
+    document.getElementById("copy-promo" + id).outerHTML = "<img class='copy-promo' id='copy-promo" + id + "' onclick='copyPromo(" + id + ");' src='/static/img/copy.png' alt='copy'>";
+    document.getElementsByClassName("ref" + id)[0].outerHTML = "<p class='ref"+id +" '>" + document.getElementsByClassName("ref" + id)[0].value + "</p>" ;
+    document.getElementsByClassName("buttons" + id)[0].outerHTML = "<div class='buttons"+ id + "'>  " + "<a class='btn' style='padding: 0;' onclick='editPromo(" + id + ");'><img style='height: 30px; width: 30px' src='/static/img/12.jpg' alt='edit'></a>" + "<a class='btn' style='padding: 0;' onclick='alertDelete(" + id + ");'><img style='height: 30px; width: 30px' src='/static/img/delete_btn.png' alt='delete'></a>" + "</div>";
+}
+
+</script>
+
+
+{% endblock %}

@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block title %}{{page_title}}{% endblock %}
+
+{% block content %}
+<div class="container">
+    {% if user.role=="admin" %}
+    <form id="message">
+        <p style="font-size: 2rem;" class="text-center">Рассылка</p>
+        
+        <div class="content-center message">
+            <textarea id="message_textarea" name="message"></textarea>
+            <a class="btn green-button" id="sendMessage" onclick="sendMessage();">Отправить</a>
+        </div>
+    </form>
+    {% endif %}
+    <div class="message-table">
+        <table class="table table-striped">
+            <thead>
+            <tr class="text-center">
+                <th>Кто</th>
+                <th>Что</th>
+                <th>Когда</th>
+                <th>Процесс</th>
+            </tr>
+            </thead>
+            <tbody id="tbody">
+                {% for message in messages %}
+                    <tr>
+                        <td><p>{{message.user}}</p></td>
+                        <td><p>{{message.text_message}}</p></td>
+                        <td><p>{{message.send_date}}</p></td>
+                        <td><p>Завершено</p></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<script>
+
+function sendMessage() {
+    if (document.getElementById('message_textarea').value.trim() === '') { return }
+    let form = $('#message')
+    $.ajax({
+        url: '/sendmessage',
+        type: 'POST',
+        data: form.serialize()
+    })
+    }
+$('#sendMessage').on('click', function() {
+    let tr = document.createElement('tr');
+    let tdUser = document.createElement('td');
+    let tdMessage = document.createElement('td');
+    let tdDate = document.createElement('td');
+    let tdProcess = document.createElement('td');
+
+    tdUser.innerText = userNameFromCookies();
+    tdMessage.innerText = document.getElementsByName("message")[0].value;
+    tdDate.innerText = (date + "." + month + "." + d.getFullYear() + " " + hours + ":" + minutes);
+    tdProcess.innerText = 'В процессе';
+
+    $(tdUser).appendTo(tr);
+    $(tdMessage).appendTo(tr);
+    $(tdDate).appendTo(tr);
+    $(tdProcess).appendTo(tr);
+
+    document.getElementById('tbody').prepend(tr);
+});
+
+    var d = new Date();
+    var date = d.getDate();
+    var month = d.getMonth() + 1;
+    var hours = d.getHours();
+    var minutes = d.getMinutes();
+
+    if (date < 10) { date = '0' + date; }
+    if (month < 10) { month = '0' + month; }
+    if (hours < 10) { hours = '0' + hours; }
+    if (minutes < 10) { minutes = '0' + minutes; }
+
+    function userNameFromCookies() {
+        var cookies = document.cookie.split("; ");
+        for (var i = 0; i < cookies.length; i++) {
+            let cks = cookies[i].split("=");
+            if (cks[0] == "username") { return cks[1] }
+        }
+    }
+
+</script>
+
+{% endblock %}

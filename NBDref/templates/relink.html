@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>NBD</title>
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/mystyle.css">
+    <script src="static/js/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <!-- navbar-шапка -->
+    <nav class="navbar navbar-expand-lg bg-dark light-text mb-3 fixed-top"> 
+      <div class="container row-cols-3">
+        <div class="col"><img src="static/img/logo.png" height="35px"></div>
+        <div class="col light-text" style="height: 50px"><p style ="text-align: center; font-size: 35px">NBD</p></div>
+        <div class="col"></div>
+      </div>
+    </nav>
+
+
+    <div class="container col-auto text-center text-sm-left align-self-center mt-3 mt-sm-0" style=" position: absolute; top: 50%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)">
+      <p style="font-size: 1.8rem;">{{link.sug_title}}</p>
+      <button onclick="relink();" class="blue-button lead" style="width: 250px; font-size: 1.3rem">Перейти</button>
+    </div>
+ 
+<script>
+
+function relink() {
+  $.ajax({
+    url: "/success?id={{link.id}}&session={{link.session}}",
+    type: "GET",
+    success() {
+      window.location.href='{{link.sug_link}}'
+    }
+  })
+}
+
+$.ajax({
+  url: "/success?id={{link.id}}&session={{link.session}}",
+  type: "GET",
+  success() {
+    window.location.href='{{link.sug_link}}'
+  }
+})
+
+
+</script>
+
+      <script src="static/js/bootstrap.min.js"></script>
+      <script src="static/js/bootstrap.bundle.min.js"></script>
+    
+  </body>
+  </html>
+  

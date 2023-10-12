@@ -1,0 +1,42 @@
+<div class="popup-bg-ques" style="z-index: 300;" id="popup-bg_add"> 
+<div class="popup-ques">
+<div style="height: 33rem; width: 100%">
+    <div>
+        <form method="post" id="newFilter"> 
+        <div class="col" style="padding: 1rem;" id="new_filter_ques">
+            <div class="row">
+                <div class="col-md-8"><textarea id="NFques" name="question" class="form-custom form-control"></textarea></div>    <!-- вопрос -->
+                <div class="col-md-4">
+                    <div class="row content-center" style="padding: 0 0 0.5rem">
+                        <a class="btn green-full-button text-center" style="height: auto; width:auto" onclick="newFilter();">Сохранить</a>
+                    </div>
+                    <div class="row content-center">
+                        <a class="btn pink-full-button text-center" style="height: auto; width:auto" onclick="cancel_popup_ques();">Отмена</a>
+                    </div>
+                </div>
+            </div>
+            <div class="offset-title"></div>
+            <div>
+                <div class="row">
+                    <div class="col-md-6" id="answerFS">
+                        <div style="padding: 0 0 0.5rem 0;">
+                            <p style="color:#63b6e7; height: 0.5rem; font-size:0.9rem;">Ответ:</p>
+                            <input id="NFanswer" class="form-custom form-control" required name="answer1" style="font-size:1rem; width: 100%"> <!-- ответ на вопрос -->
+                        </div>
+                        <a class="btn row blue-full-button content-center" onclick="add_answer_f_s(1);">+</a>
+                    </div>
+                    <div class="col-md-6" id="ans_to_ans">
+                        <div style="padding: 0 0 0.5rem 0;">
+                            <p style="color:#63b6e7; height: 0.5rem; font-size:0.9rem;">Ответ на ответ:</p>
+                            <input id="NFanswerToAnswer" class="form-custom form-control" required name="answer_to_answer1" style="font-size:1rem; width: 100%"> <!-- ответ на вопрос -->
+                        </div>
+                        <a class="btn row blue-full-button content-center" onclick="add_answer_to_answer_f_s(1);">+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>    
+</div>
+</div>
+</div>

@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}{{page_title}}{% endblock %}
+
+{% block content %} 
+
+<div class="container">
+    <div class="header">
+        <h2 class="text-center">Текста</h2>
+        <br>
+        <h5 class="text-center" style="color: rgba(0, 0, 0, 0.7);"><span style="font-weight: 600;color:black">{}</span> - вместо данных скобок будет вставляться Username
+            <br>( пожалуйста не убирайте их там, где они уже стоят )</h5>
+        <br>
+    </div>
+    <div class="table">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Текст</th>
+                    <th>Описание</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <form id="texts">
+                {% for text in texts %}
+                <tr>
+                    <td style="width: 47%"><p name="text{{text.id}}">{{text.text}}</p></td>
+                    <td style="width: 47%"><p name="description{{text.id}}">{{text.description}}</p></td>
+                    <td><a name="buttons{{text.id}}" class="btn" style="padding: 0;" onclick="editText('{{text.id}}');">
+                        <img style="height: 1.3rem; width: 1.3rem" src="/static/img/12.jpg" alt="edit"></a>
+                    </td>
+                </tr>
+                {% endfor %}
+                </form>
+            </tbody>
+        </table>
+    </div>    
+    </div>
+</div>
+
+<script>
+
+function editText(id) {
+    document.getElementsByName('text'+id)[0].outerHTML = '<textarea style="width:100%" name="text'+ id + '">' + document.getElementsByName("text" + id)[0].innerHTML +'</textarea>';
+    document.getElementsByName('description'+id)[0].outerHTML = '<textarea style="width:100%" name="description'+ id + '">' + document.getElementsByName("description" + id)[0].innerHTML +'</textarea>';
+    document.getElementsByName('buttons'+id)[0].outerHTML = "<div name='buttons"+id+"'><a class='btn' style='padding: 0;' onclick='editSave(" + id + ");'><img style='height: 1.3rem; width: 1.3rem' src='/static/img/accept.png' alt='edit'></a>"
+        + "<a class='btn' style='padding: 0;' onclick='editCancel(" + id + ");'><img style='height: 1.3rem; width: 1.3rem' src='/static/img/delete_btn.png' alt='delete'></a></div>";
+}
+
+function editSave(id) {
+    // if (document.getElementsByName('text'+id)[0].innerHTML.trim() === '') { return }
+    // if (document.getElementsByName('description'+id)[0].innerHTML.trim() === '') { return }
+    let form = { 'id': id, 
+                    'text': document.getElementsByName('text'+id)[0].value,
+                        'description': document.getElementsByName('description'+id)[0].value} 
+    console.log(form);
+    $.ajax({
+        url: '/texts/edit/',
+        type: 'POST',
+        data: form,
+        success(data) {
+            document.getElementsByName("text" + id)[0].outerHTML = "<p name='text"+id +"'>" + document.getElementsByName("text" + id)[0].value + "</p>" ;
+            document.getElementsByName("description" + id)[0].outerHTML = "<p name='description"+id +"'>" + document.getElementsByName("description" + id)[0].value + "</p>" ;
+            document.getElementsByName("buttons" + id)[0].outerHTML = '<a name="buttons' + id + '" class="btn" style="padding: 0;" onclick="editText(\''+ id +'\');">' +
+                '<img style="height: 1.3rem; width: 1.3rem" src="/static/img/12.jpg" alt="edit"></a>';         
+        }
+    })
+}
+
+function editCancel(id) {
+    document.getElementsByName("text" + id)[0].outerHTML = "<p name='text"+id +" '>" + document.getElementsByName("text" + id)[0].innerHTML + "</p>" ;
+    document.getElementsByName("description" + id)[0].outerHTML = "<p name='description"+id +" '>" + document.getElementsByName("description" + id)[0].innerHTML + "</p>" ;
+    document.getElementsByName("buttons" + id)[0].outerHTML = '<a name="buttons' + id + '" class="btn" style="padding: 0;" onclick="editText(\''+ id +'\');">' +
+        '<img style="height: 1.3rem; width: 1.3rem" src="/static/img/12.jpg" alt="edit"></a>';
+}
+
+</script>
+
+
+{% endblock %}

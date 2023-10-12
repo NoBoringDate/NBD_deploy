@@ -1,0 +1,597 @@
+14:31:42 | ERROR | Error:
+Traceback (most recent call last):
+
+  File "/usr/local/lib/python3.10/site-packages/anyio/streams/memory.py", line 94, in receive
+    return self.receive_nowait()
+           │    └ <function MemoryObjectReceiveStream.receive_nowait at 0x7f63f3549870>
+           └ MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=0, open_rece...
+  File "/usr/local/lib/python3.10/site-packages/anyio/streams/memory.py", line 89, in receive_nowait
+    raise WouldBlock
+          └ <class 'anyio.WouldBlock'>
+
+anyio.WouldBlock
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/usr/local/lib/python3.10/site-packages/starlette/middleware/base.py", line 43, in call_next
+    message = await recv_stream.receive()
+                    │           └ <function MemoryObjectReceiveStream.receive at 0x7f63f3549900>
+                    └ MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=0, open_rece...
+  File "/usr/local/lib/python3.10/site-packages/anyio/streams/memory.py", line 114, in receive
+    raise EndOfStream
+          └ <class 'anyio.EndOfStream'>
+
+anyio.EndOfStream
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "/usr/local/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 3
+               │     └ 9
+               └ <function _main at 0x7f63f4696440>
+  File "/usr/local/lib/python3.10/multiprocessing/spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 3
+           │    └ <function BaseProcess._bootstrap at 0x7f63f48656c0>
+           └ <SpawnProcess name='SpawnProcess-1' parent=1 started>
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x7f63f4864d30>
+    └ <SpawnProcess name='SpawnProcess-1' parent=1 started>
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x7f63f46a61d0>, 'target': <bound method Server.run of <uvicorn.server.Server obj...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-1' parent=1 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-1' parent=1 started>
+    │    └ <function subprocess_started at 0x7f63f3cc53f0>
+    └ <SpawnProcess name='SpawnProcess-1' parent=1 started>
+  File "/usr/local/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 8888)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x7f63f46a6230>>
+  File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ [<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 8888)>]
+           │       │   │    └ <function Server.serve at 0x7f63f3cc4700>
+           │       │   └ <uvicorn.server.Server object at 0x7f63f46a6230>
+           │       └ <function run at 0x7f63f469d6c0>
+           └ <module 'asyncio' from '/usr/local/lib/python3.10/asyncio/__init__.py'>
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object Server.serve at 0x7f63f2cda1f0>
+           │    └ <function BaseEventLoop.run_until_complete at 0x7f63f40d2d40>
+           └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7f63f40d2cb0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7f63f40d4820>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 1899, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7f63f46381f0>
+    └ <Handle <TaskStepMethWrapper object at 0x7f63f1f37b20>()>
+  File "/usr/local/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x7f63f1f37b20>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x7f63f1f37b20>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x7f63f1f37b20>()>
+  File "/usr/local/lib/python3.10/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7f63f2d65630>
+  File "/usr/local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f63f1f34f70>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f63f1f34f70>>
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+                 │    └ <fastapi.applications.FastAPI object at 0x7f63f3cf6350>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7f63f2d65630>
+  File "/usr/local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f63f1f34f70>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f63f1f34f70>>
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+  File "/usr/local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f63f1f34f70>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f63f1f34f70>>
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7f63f308b8b0>
+          └ <fastapi.applications.FastAPI object at 0x7f63f3cf6350>
+  File "/usr/local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x7f63f2767b50>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f63f1f34f70>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+          │    └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7f63f308b910>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7f63f308b8b0>
+> File "/usr/local/lib/python3.10/site-packages/starlette/middleware/base.py", line 72, in __call__
+    response = await self.dispatch_func(request, call_next)
+                     │    │             │        └ <function BaseHTTPMiddleware.__call__.<locals>.call_next at 0x7f63f2804790>
+                     │    │             └ <starlette.requests.Request object at 0x7f63f1f34520>
+                     │    └ <function log_middle at 0x7f63f2d29b40>
+                     └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7f63f308b910>
+
+  File "/app/NBDapp/api_views.py", line 47, in log_middle
+    response = await call_next(request)
+                     │         └ <starlette.requests.Request object at 0x7f63f1f34520>
+                     └ <function BaseHTTPMiddleware.__call__.<locals>.call_next at 0x7f63f2804790>
+
+  File "/usr/local/lib/python3.10/site-packages/starlette/middleware/base.py", line 46, in call_next
+    raise app_exc
+          └ AttributeError("'NoneType' object has no attribute 'ready_suggestions'")
+  File "/usr/local/lib/python3.10/site-packages/starlette/middleware/base.py", line 36, in coro
+    await self.app(scope, request.receive, send_stream.send)
+          │    │   │      │       │        │           └ <function MemoryObjectSendStream.send at 0x7f63f354a050>
+          │    │   │      │       │        └ MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=0, open_receive...
+          │    │   │      │       └ <property object at 0x7f63f33b6b60>
+          │    │   │      └ <starlette.requests.Request object at 0x7f63f1f34520>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x7f63f3089780>
+          └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7f63f308b910>
+  File "/usr/local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/usr/local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7f63f281b9a0>
+          │    │   │      └ <function set_body.<locals>.receive at 0x7f63f281b7f0>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+          │    └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x7f63f3089fc0>
+          └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x7f63f3089780>
+  File "/usr/local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/usr/local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7f63f281b9a0>
+          │    │   │      └ <function set_body.<locals>.receive at 0x7f63f281b7f0>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+          │    └ <fastapi.routing.APIRouter object at 0x7f63f3cf5c60>
+          └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x7f63f3089fc0>
+  File "/usr/local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7f63f281b9a0>
+          │     │      │      └ <function set_body.<locals>.receive at 0x7f63f281b7f0>
+          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+          │     └ <function Route.handle at 0x7f63f320a680>
+          └ <fastapi.routing.APIRoute object at 0x7f63f3086320>
+  File "/usr/local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7f63f281b9a0>
+          │    │   │      └ <function set_body.<locals>.receive at 0x7f63f281b7f0>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+          │    └ <function request_response.<locals>.app at 0x7f63f2d584c0>
+          └ <fastapi.routing.APIRoute object at 0x7f63f3086320>
+  File "/usr/local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+                     │    └ <starlette.requests.Request object at 0x7f63f1f37880>
+                     └ <function get_request_handler.<locals>.app at 0x7f63f2d58430>
+  File "/usr/local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+                         └ <function run_endpoint_function at 0x7f63f3209480>
+  File "/usr/local/lib/python3.10/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+                 │         │      └ {'tg_id': 891483443}
+                 │         └ <function next_sug at 0x7f63f2d583a0>
+                 └ <fastapi.dependencies.models.Dependant object at 0x7f63f3087a90>
+
+  File "/app/NBDapp/api_views.py", line 475, in next_sug
+    if r_sug.ready_suggestions.index(r_sug.sended_suggestion)+1 < len(r_sug.ready_suggestions):
+       │                             │                                └ None
+       │                             └ None
+       └ None
+
+AttributeError: 'NoneType' object has no attribute 'ready_suggestions'
+17:25:04 | ERROR | Error:
+Traceback (most recent call last):
+
+  File "/usr/local/lib/python3.10/site-packages/anyio/streams/memory.py", line 94, in receive
+    return self.receive_nowait()
+           │    └ <function MemoryObjectReceiveStream.receive_nowait at 0x7f63f3549870>
+           └ MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=0, open_rece...
+  File "/usr/local/lib/python3.10/site-packages/anyio/streams/memory.py", line 89, in receive_nowait
+    raise WouldBlock
+          └ <class 'anyio.WouldBlock'>
+
+anyio.WouldBlock
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/usr/local/lib/python3.10/site-packages/starlette/middleware/base.py", line 43, in call_next
+    message = await recv_stream.receive()
+                    │           └ <function MemoryObjectReceiveStream.receive at 0x7f63f3549900>
+                    └ MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=0, open_rece...
+  File "/usr/local/lib/python3.10/site-packages/anyio/streams/memory.py", line 114, in receive
+    raise EndOfStream
+          └ <class 'anyio.EndOfStream'>
+
+anyio.EndOfStream
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "/usr/local/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 3
+               │     └ 9
+               └ <function _main at 0x7f63f4696440>
+  File "/usr/local/lib/python3.10/multiprocessing/spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 3
+           │    └ <function BaseProcess._bootstrap at 0x7f63f48656c0>
+           └ <SpawnProcess name='SpawnProcess-1' parent=1 started>
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x7f63f4864d30>
+    └ <SpawnProcess name='SpawnProcess-1' parent=1 started>
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x7f63f46a61d0>, 'target': <bound method Server.run of <uvicorn.server.Server obj...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-1' parent=1 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-1' parent=1 started>
+    │    └ <function subprocess_started at 0x7f63f3cc53f0>
+    └ <SpawnProcess name='SpawnProcess-1' parent=1 started>
+  File "/usr/local/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 8888)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x7f63f46a6230>>
+  File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ [<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 8888)>]
+           │       │   │    └ <function Server.serve at 0x7f63f3cc4700>
+           │       │   └ <uvicorn.server.Server object at 0x7f63f46a6230>
+           │       └ <function run at 0x7f63f469d6c0>
+           └ <module 'asyncio' from '/usr/local/lib/python3.10/asyncio/__init__.py'>
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object Server.serve at 0x7f63f2cda1f0>
+           │    └ <function BaseEventLoop.run_until_complete at 0x7f63f40d2d40>
+           └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7f63f40d2cb0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7f63f40d4820>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 1899, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7f63f46381f0>
+    └ <Handle <TaskStepMethWrapper object at 0x7f63f1f57eb0>()>
+  File "/usr/local/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x7f63f1f57eb0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x7f63f1f57eb0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x7f63f1f57eb0>()>
+  File "/usr/local/lib/python3.10/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7f63f2d65630>
+  File "/usr/local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f63f1ee3f10>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f63f1ee3f10>>
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+                 │    └ <fastapi.applications.FastAPI object at 0x7f63f3cf6350>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7f63f2d65630>
+  File "/usr/local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f63f1ee3f10>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f63f1ee3f10>>
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+  File "/usr/local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f63f1ee3f10>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f63f1ee3f10>>
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7f63f308b8b0>
+          └ <fastapi.applications.FastAPI object at 0x7f63f3cf6350>
+  File "/usr/local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x7f63f281b7f0>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f63f1ee3f10>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+          │    └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7f63f308b910>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7f63f308b8b0>
+> File "/usr/local/lib/python3.10/site-packages/starlette/middleware/base.py", line 72, in __call__
+    response = await self.dispatch_func(request, call_next)
+                     │    │             │        └ <function BaseHTTPMiddleware.__call__.<locals>.call_next at 0x7f63f281b1c0>
+                     │    │             └ <starlette.requests.Request object at 0x7f63f1f55cc0>
+                     │    └ <function log_middle at 0x7f63f2d29b40>
+                     └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7f63f308b910>
+
+  File "/app/NBDapp/api_views.py", line 47, in log_middle
+    response = await call_next(request)
+                     │         └ <starlette.requests.Request object at 0x7f63f1f55cc0>
+                     └ <function BaseHTTPMiddleware.__call__.<locals>.call_next at 0x7f63f281b1c0>
+
+  File "/usr/local/lib/python3.10/site-packages/starlette/middleware/base.py", line 46, in call_next
+    raise app_exc
+          └ AttributeError("'NoneType' object has no attribute 'sended_suggestion'")
+  File "/usr/local/lib/python3.10/site-packages/starlette/middleware/base.py", line 36, in coro
+    await self.app(scope, request.receive, send_stream.send)
+          │    │   │      │       │        │           └ <function MemoryObjectSendStream.send at 0x7f63f354a050>
+          │    │   │      │       │        └ MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=0, open_receive...
+          │    │   │      │       └ <property object at 0x7f63f33b6b60>
+          │    │   │      └ <starlette.requests.Request object at 0x7f63f1f55cc0>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x7f63f3089780>
+          └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7f63f308b910>
+  File "/usr/local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/usr/local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7f63f281b2e0>
+          │    │   │      └ <function set_body.<locals>.receive at 0x7f63f281be20>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+          │    └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x7f63f3089fc0>
+          └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x7f63f3089780>
+  File "/usr/local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/usr/local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7f63f281b2e0>
+          │    │   │      └ <function set_body.<locals>.receive at 0x7f63f281be20>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+          │    └ <fastapi.routing.APIRouter object at 0x7f63f3cf5c60>
+          └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x7f63f3089fc0>
+  File "/usr/local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7f63f281b2e0>
+          │     │      │      └ <function set_body.<locals>.receive at 0x7f63f281be20>
+          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+          │     └ <function Route.handle at 0x7f63f320a680>
+          └ <fastapi.routing.APIRoute object at 0x7f63f3086f80>
+  File "/usr/local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7f63f281b2e0>
+          │    │   │      └ <function set_body.<locals>.receive at 0x7f63f281be20>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+          │    └ <function request_response.<locals>.app at 0x7f63f2d58160>
+          └ <fastapi.routing.APIRoute object at 0x7f63f3086f80>
+  File "/usr/local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+                     │    └ <starlette.requests.Request object at 0x7f63f1ee3e20>
+                     └ <function get_request_handler.<locals>.app at 0x7f63f2d580d0>
+  File "/usr/local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+                         └ <function run_endpoint_function at 0x7f63f3209480>
+  File "/usr/local/lib/python3.10/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+                 │         │      └ {'tg_id': 366418446}
+                 │         └ <function get_suugestion at 0x7f63f2d58040>
+                 └ <fastapi.dependencies.models.Dependant object at 0x7f63f3085840>
+
+  File "/app/NBDapp/api_views.py", line 417, in get_suugestion
+    sug = await Suggestion.filter(id = r_sug.sended_suggestion).first()
+                │          │           └ None
+                │          └ <classmethod(<function Model.filter at 0x7f63f3059510>)>
+                └ <class 'DataBase.Models.Suggestion'>
+
+AttributeError: 'NoneType' object has no attribute 'sended_suggestion'
+17:25:06 | ERROR | Error:
+Traceback (most recent call last):
+
+  File "/usr/local/lib/python3.10/site-packages/anyio/streams/memory.py", line 94, in receive
+    return self.receive_nowait()
+           │    └ <function MemoryObjectReceiveStream.receive_nowait at 0x7f63f3549870>
+           └ MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=0, open_rece...
+  File "/usr/local/lib/python3.10/site-packages/anyio/streams/memory.py", line 89, in receive_nowait
+    raise WouldBlock
+          └ <class 'anyio.WouldBlock'>
+
+anyio.WouldBlock
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/usr/local/lib/python3.10/site-packages/starlette/middleware/base.py", line 43, in call_next
+    message = await recv_stream.receive()
+                    │           └ <function MemoryObjectReceiveStream.receive at 0x7f63f3549900>
+                    └ MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=0, open_rece...
+  File "/usr/local/lib/python3.10/site-packages/anyio/streams/memory.py", line 114, in receive
+    raise EndOfStream
+          └ <class 'anyio.EndOfStream'>
+
+anyio.EndOfStream
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "/usr/local/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 3
+               │     └ 9
+               └ <function _main at 0x7f63f4696440>
+  File "/usr/local/lib/python3.10/multiprocessing/spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 3
+           │    └ <function BaseProcess._bootstrap at 0x7f63f48656c0>
+           └ <SpawnProcess name='SpawnProcess-1' parent=1 started>
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x7f63f4864d30>
+    └ <SpawnProcess name='SpawnProcess-1' parent=1 started>
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x7f63f46a61d0>, 'target': <bound method Server.run of <uvicorn.server.Server obj...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-1' parent=1 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-1' parent=1 started>
+    │    └ <function subprocess_started at 0x7f63f3cc53f0>
+    └ <SpawnProcess name='SpawnProcess-1' parent=1 started>
+  File "/usr/local/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 8888)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x7f63f46a6230>>
+  File "/usr/local/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ [<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 8888)>]
+           │       │   │    └ <function Server.serve at 0x7f63f3cc4700>
+           │       │   └ <uvicorn.server.Server object at 0x7f63f46a6230>
+           │       └ <function run at 0x7f63f469d6c0>
+           └ <module 'asyncio' from '/usr/local/lib/python3.10/asyncio/__init__.py'>
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object Server.serve at 0x7f63f2cda1f0>
+           │    └ <function BaseEventLoop.run_until_complete at 0x7f63f40d2d40>
+           └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7f63f40d2cb0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7f63f40d4820>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 1899, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7f63f46381f0>
+    └ <Handle <TaskStepMethWrapper object at 0x7f63f0dabeb0>()>
+  File "/usr/local/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x7f63f0dabeb0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x7f63f0dabeb0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x7f63f0dabeb0>()>
+  File "/usr/local/lib/python3.10/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7f63f2d65630>
+  File "/usr/local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f63f0daa920>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f63f0daa920>>
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+                 │    └ <fastapi.applications.FastAPI object at 0x7f63f3cf6350>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7f63f2d65630>
+  File "/usr/local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f63f0daa920>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f63f0daa920>>
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+  File "/usr/local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f63f0daa920>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f63f0daa920>>
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7f63f308b8b0>
+          └ <fastapi.applications.FastAPI object at 0x7f63f3cf6350>
+  File "/usr/local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x7f63f281b9a0>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f63f0daa920>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+          │    └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7f63f308b910>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7f63f308b8b0>
+> File "/usr/local/lib/python3.10/site-packages/starlette/middleware/base.py", line 72, in __call__
+    response = await self.dispatch_func(request, call_next)
+                     │    │             │        └ <function BaseHTTPMiddleware.__call__.<locals>.call_next at 0x7f63f0cc4b80>
+                     │    │             └ <starlette.requests.Request object at 0x7f63f0dc18d0>
+                     │    └ <function log_middle at 0x7f63f2d29b40>
+                     └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7f63f308b910>
+
+  File "/app/NBDapp/api_views.py", line 47, in log_middle
+    response = await call_next(request)
+                     │         └ <starlette.requests.Request object at 0x7f63f0dc18d0>
+                     └ <function BaseHTTPMiddleware.__call__.<locals>.call_next at 0x7f63f0cc4b80>
+
+  File "/usr/local/lib/python3.10/site-packages/starlette/middleware/base.py", line 46, in call_next
+    raise app_exc
+          └ AttributeError("'NoneType' object has no attribute 'sended_suggestion'")
+  File "/usr/local/lib/python3.10/site-packages/starlette/middleware/base.py", line 36, in coro
+    await self.app(scope, request.receive, send_stream.send)
+          │    │   │      │       │        │           └ <function MemoryObjectSendStream.send at 0x7f63f354a050>
+          │    │   │      │       │        └ MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=0, open_receive...
+          │    │   │      │       └ <property object at 0x7f63f33b6b60>
+          │    │   │      └ <starlette.requests.Request object at 0x7f63f0dc18d0>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x7f63f3089780>
+          └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7f63f308b910>
+  File "/usr/local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/usr/local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7f63f0cc4e50>
+          │    │   │      └ <function set_body.<locals>.receive at 0x7f63f0cc40d0>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+          │    └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x7f63f3089fc0>
+          └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x7f63f3089780>
+  File "/usr/local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/usr/local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7f63f0cc4e50>
+          │    │   │      └ <function set_body.<locals>.receive at 0x7f63f0cc40d0>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+          │    └ <fastapi.routing.APIRouter object at 0x7f63f3cf5c60>
+          └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x7f63f3089fc0>
+  File "/usr/local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7f63f0cc4e50>
+          │     │      │      └ <function set_body.<locals>.receive at 0x7f63f0cc40d0>
+          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+          │     └ <function Route.handle at 0x7f63f320a680>
+          └ <fastapi.routing.APIRoute object at 0x7f63f3086f80>
+  File "/usr/local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7f63f0cc4e50>
+          │    │   │      └ <function set_body.<locals>.receive at 0x7f63f0cc40d0>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('192.168.48.4', 8888), ...
+          │    └ <function request_response.<locals>.app at 0x7f63f2d58160>
+          └ <fastapi.routing.APIRoute object at 0x7f63f3086f80>
+  File "/usr/local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+                     │    └ <starlette.requests.Request object at 0x7f63f0da8e50>
+                     └ <function get_request_handler.<locals>.app at 0x7f63f2d580d0>
+  File "/usr/local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+                         └ <function run_endpoint_function at 0x7f63f3209480>
+  File "/usr/local/lib/python3.10/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+                 │         │      └ {'tg_id': 366418446}
+                 │         └ <function get_suugestion at 0x7f63f2d58040>
+                 └ <fastapi.dependencies.models.Dependant object at 0x7f63f3085840>
+
+  File "/app/NBDapp/api_views.py", line 417, in get_suugestion
+    sug = await Suggestion.filter(id = r_sug.sended_suggestion).first()
+                │          │           └ None
+                │          └ <classmethod(<function Model.filter at 0x7f63f3059510>)>
+                └ <class 'DataBase.Models.Suggestion'>
+
+AttributeError: 'NoneType' object has no attribute 'sended_suggestion'

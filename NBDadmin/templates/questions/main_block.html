@@ -1,0 +1,71 @@
+    <!-- вопрос -->            
+    <div class="col-md-6" style="padding: 0.5rem;" id="main_block{{main_ques.id}}">
+        <div class="box_main" id="hiden_box_m{{main_ques.id}}" style="padding: 1.7rem; background-color: transparent; border: 0.1rem solid #5EBB9C; border-radius: 0.5rem;">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <p style="font-size: 0.75rem; height:1.8rem" onclick="visible_block_main('{{main_ques.id}}')" class="col-md-6 btn green-button-ques">Открыть/скрыть ответы</p>
+                <div class="col-md-3"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-8"><p style="font-size: 1.3rem;">{{main_ques.question}}</p></div>    
+                <div class="col-md-4">
+                    <div class="row content-center" style="padding: 0 0 0.5rem">
+                        <button class="green-full-button text-center" style="height: auto; width:auto" id="edit_main_popup" onclick="edit_main_ques('{{main_ques.id}}');">Изменить</button>
+                    </div>
+                    <div class="row content-center">
+                        <button class="pink-full-button text-center" style="height: auto; width:auto" onclick="alertDeleteQuesMain('{{main_ques.id}}');">Удалить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="offset-title"></div>
+                <!-- ответ на вопрос -->                
+                {% for main_answer in var_ques[main_ques.id] %}
+                                <div id="main_answer{{main_answer.id}}" class="row" style="border: 0.1rem solid #63b7e795; border-radius: 0.5rem; padding: 0 0.3rem 0 0.3rem">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-md-2 text-end"><p style="height: 0.5rem; font-size: 0.8rem; color:#63b6e7">Ответ:</p></div>
+                                            <div class="col-md-10"><p style="font-size:1rem; width:100%; font-size: 1.1rem">{{main_answer.answer}}</p></div>    
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div style="font-size: 0.9rem; display:flex; justify-content:space-between"> 
+                                            <div style="display: flex;">    
+                                                <p style="color:#63b6e7">intellect :</p>  <!-- значение интеллекта для ответа -->  
+                                                <p class="text-center" style="width: 2.5rem;">{{main_answer.intellect}}</p>
+                                            </div>    
+                                            <div style="display: flex;">    
+                                                <p style="color:#63b6e7">physical :</p>   <!-- значение физ активность для ответа -->
+                                                <p class="text-center" style="width: 2.5rem;">{{main_answer.phys}}</p>
+                                            </div>         
+                                            <div style="display: flex;">    
+                                                <p style="color:#63b6e7">skill :</p>   <!-- значение навыков для ответа -->
+                                                <p class="text-center" style="width: 2.5rem;">{{main_answer.skill}}</p>
+                                            </div>  
+                                            <div style="width: 1.5rem;">
+                                                <a class="btn" style="padding: 0;" onclick="edit_main_ans('{{main_answer.id}}');">
+                                                <img style="height: 1.3rem; width: 1.3rem" src="/static/img/12.jpg" alt="edit"></a>
+                                            </div>
+                                            <div style="width: 1.5rem;">
+                                                <a class="btn" style="padding: 0;" onclick="alertDeleteAns('{{main_answer.id}}');">
+                                                <img style="height: 1.3rem; width: 1.3rem" src="/static/img/delete_btn.png" alt="delete"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ответ на ответ -->
+                                    <div>
+                                        <div>
+                                            <div class="row">
+                                                <div class="col-md-3 text-end"><p style="height: 0.5rem; font-size: 0.75rem; color:#63b6e7">Ответ на ответ:</p></div>
+                                                <div class="col-md-9"><p style="font-size:1rem;">{{main_answer.answer_to_answer}}</p></div>    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                {% endfor %}    
+                <div class="col content-center">
+                    <div class="row" style="height: 1rem;"></div>
+                    <button class="row blue-full-button" onclick="add_answer_main('{{main_ques.id}}');">Добавить новый ответ</button>
+                </div>
+        </div>    
+</div>

@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% block title %}{{page_title}}{% endblock %}
+
+{% block content %}
+<style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg .tg-lboi{border-color:inherit;text-align:left;vertical-align:middle}
+    .tg .tg-9wq8{border-color:inherit;text-align:center;vertical-align:middle}
+    .tg .tg-7od5{background-color:#9aff99;border-color:inherit;text-align:left;vertical-align:top}
+    .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+    .tg .tg-q32f{background-color:#9AFF99;border-color:inherit;text-align:left;vertical-align:top}
+    .tg .tg-tmd1{background-color:#656565;border-color:inherit;color:#343434;text-align:left;vertical-align:top}
+    .tg .tg-re1e{background-color:#656565;border-color:inherit;text-align:left;vertical-align:top}
+    </style>
+    <div class="container">
+    <table class="tg" style="undefined;table-layout: fixed; width: 1085px">
+    <colgroup>
+    <col style="width: 187px">
+    <col style="width: 166px">
+    <col style="width: 204px">
+    <col style="width: 207px">
+    <col style="width: 139px">
+    <col style="width: 182px">
+    </colgroup>
+    <thead>
+      <tr>
+        <th class="tg-0pky">Вопрос 1</th>
+        <th class="tg-0pky">Ответ 1</th>
+        <th class="tg-0pky">Вопрос 2</th>
+        <th class="tg-0pky">Ответ 2</th>
+        <th class="tg-0pky">Вопрос 3</th>
+        <th class="tg-0pky">Ответ 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="tg-lboi" rowspan="13">{{question[0].question}}</td>
+        <td class="tg-9wq8" rowspan="6">{{variable[0].answer}}<br><br><br></td>
+        <td class="tg-9wq8" rowspan="6">{{question[1].question}}</td>
+        <td class="tg-lboi" rowspan="3">{{variable[4].answer}}<br></td>
+        <td class="tg-lboi" rowspan="3">{{question[4].question}}<br></td>
+        <td class="tg-q32f">{{variable[11].answer}}</td>
+      </tr>
+      <tr>
+        <td class="tg-7od5">{{variable[10].answer}}</td>
+      </tr>
+      <tr>
+        <td class="tg-7od5">{{variable[12].answer}}</td>
+      </tr>
+      <tr>
+        <td class="tg-lboi" rowspan="3">{{variable[5].answer}}<br></td>
+        <td class="tg-lboi" rowspan="3">{{question[5].question}}<br></td>
+        <td class="tg-tmd1"></td>
+      </tr>
+      <tr>
+        <td class="tg-7od5">{{variable[13].answer}}</td>
+      </tr>
+      <tr>
+        <td class="tg-7od5">{{variable[14].answer}}</td>
+      </tr>
+      <tr>
+        <td class="tg-9wq8" rowspan="4">{{variable[1].answer}}</td>
+        <td class="tg-lboi" rowspan="4">{{question[2].question}}</td>
+        <td class="tg-7od5">{{variable[6].answer}}</td>
+        <td class="tg-re1e"></td>
+        <td class="tg-re1e"></td>
+      </tr>
+      <tr>
+        <td class="tg-lboi" rowspan="2">{{variable[7].answer}}</td>
+        <td class="tg-lboi" rowspan="2">{{question[6].question}}</td>
+        <td class="tg-7od5">{{variable[15].answer}}</td>
+      </tr>
+      <tr>
+        <td class="tg-7od5">{{variable[16].answer}}</td>
+      </tr>
+      <tr>
+        <td class="tg-7od5">{{variable[8].answer}}</td>
+        <td class="tg-re1e"></td>
+        <td class="tg-re1e"></td>
+      </tr>
+      <tr>
+        <td class="tg-9wq8" rowspan="3">{{variable[2].answer}}</td>
+        <td class="tg-9wq8" rowspan="3">{{question[3].question}}</td>
+        <td class="tg-7od5">{{variable[9].answer}}</td>
+        <td class="tg-re1e"></td>
+        <td class="tg-re1e"></td>
+      </tr>
+      <tr>
+        <td class="tg-7od5">{{variable[10].answer}}</td>
+        <td class="tg-re1e"></td>
+        <td class="tg-re1e"></td>
+      </tr>
+      <tr>
+        <td class="tg-7od5">{{variable[3].answer}}</td>
+        <td class="tg-re1e"></td>
+        <td class="tg-re1e"></td>
+      </tr>
+    </tbody>
+    </table>
+</div>
+
+{% endblock %}

@@ -1,0 +1,66 @@
+<div class="popup-bg" style="z-index: 300;" id="popup-bg"> 
+    <div class="popup">
+        <div>
+            <div class="col" style="padding: 1rem;">
+                
+                    <div>
+                        <p class="text-center" style="font-size: 1.5rem;">Редактирование ответа</p>
+                    </div>
+                    <div class="offset-title"></div>
+                    <form method="post" id="main_answer">
+                    <div class="row"><!-- ответ на вопрос -->
+
+                        <div style="padding: 0.2rem 0.5rem 1rem 0.5rem;">
+                            <div class="row" style=" padding: 0 0 0.5rem 0">
+                                <p class="col-md-6" style="height: 0.5rem;">Ответ:</p>
+                                <div class="col-md-6 content-end">
+                                    <a class="btn col-md-6 green-full-button content-center" style="font-size: 0.7rem; height: 1.5rem; width: 5rem" onclick="postMainAnswer('{{ans.id}}');" type="submit" id="submit">Сохранить</a>
+                                    <a class="btn col-md-6 pink-full-button content-center" style="font-size: 0.7rem; height: 1.5rem; width: 5rem" onclick="cancel_popup();">Отменить</a>
+                                </div>
+                            </div>
+                            <input required class="form-custom form-control" name="answer" id="editMainAnswer" style="font-size:1rem; width:100%;" value="{{ans.answer}}">
+                        </div> 
+
+                        <div>
+                            <div class="row"> 
+                                <div class="col content-center">    
+                                    <p style="font-size:0.8rem;">intellect :</p>  <!-- значение интеллекта для ответа -->  
+                                    <p><select required name="intellect" style="height: 1.3rem ; width: 3rem; border: 2px solid #63b6e7">
+                                        <option value="{{ans.intellect}}" selected disabled hidden>{{ans.intellect}}</option>
+                                        <option value="1">1</option>
+                                        <option value="0.5">0.5</option>
+                                        <option value="0">0</option>
+                                       </select></p>
+                                </div>    
+                                <div class="col content-center">    
+                                    <p style="font-size:0.8rem">physical :</p>   <!-- значение физ активность для ответа -->
+                                    <p><select required name="phys" style="height: 1.3rem ; width: 3rem; border: 2px solid #63b6e7">
+                                        <option value="{{ans.phys}}" selected disabled hidden>{{ans.phys}}</option>
+                                        <option value="1">1</option>
+                                        <option value="0.5">0.5</option>
+                                        <option value="0">0</option>
+                                       </select></p>
+                                </div>         
+                                <div class="col content-center">    
+                                    <p style="font-size:0.8rem">skill :</p>   <!-- значение навыков для ответа -->
+                                    <p><select required name="skill" style="height: 1.3rem ; width: 3rem; border: 2px solid #63b6e7">
+                                        <option value="{{ans.skill}}" selected disabled hidden>{{ans.skill}}</option>
+                                        <option value="1">1</option>
+                                        <option value="0.5">0.5</option>
+                                        <option value="0">0</option>
+                                       </select></p>
+                                </div>  
+                            </div>
+                            <div style="padding: 0 0.5rem 0.8rem">
+                                <p style="height: 0.5rem;">Ответ на ответ:</p>
+                                    <input required class="form-custom form-control" name="answer_to_answer" id="editMainAnswerToAnswer" class="content-center" style="font-size:1rem; width: 100%" value="{{ans.answer_to_answer}}">
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                </form> 
+                    </div>
+            </div>
+        </div>    
+</div>

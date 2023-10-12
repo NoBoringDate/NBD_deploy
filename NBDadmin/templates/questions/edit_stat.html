@@ -1,0 +1,21 @@
+<div class="popup-bg" style="z-index: 300;" id="popup-bg"> 
+    <div class="popup">
+        <div style=" width: 100%">
+        <div class="col" style="padding: 1rem;" id="edit_stat_block{{s_ques.id}}">
+            <form method="post" id="statQues">
+                <div class="row">
+                    <textarea id="ESquestion" name="question" class="col-md-8 text-center form-custom form-control" style=" letter-spacing:0.05rem">{{s_ques.question}}</textarea>    <!-- вопрос -->
+                    <div class="col-md-4">
+                        <div class="row content-center" style="padding: 0 0 0.5rem">
+                            <a class="btn green-full-button text-center" style="height: auto; width:auto" onclick="saveStatQues('{{s_ques.id}}');">Сохранить</a>
+                        </div>
+                        <div class="row content-center">
+                            <a class="btn pink-full-button text-center" style="height: auto; width:auto" onclick="cancel_popup();">Отмена</a>
+                        </div>
+                    </div>
+                </div>
+            </form>    
+        </div>
+        </div>
+    </div>
+</div>
